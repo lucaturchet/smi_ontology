@@ -66,31 +66,35 @@ function loadTOC(){
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://www.gnu.org/licenses/gpl.html" target="_blank"><img src="https://img.shields.io/badge/License-https://www.gnu.org/licenses/gpl.html-blue.svg" alt="https://www.gnu.org/licenses/gpl.html" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Luca Turchet. Smart Musical Insturments (SMI) ontology.</dd>
+<dd>Luca Turchet, Paolo Bouquet, Andrea Molinari, George Fazekas. The Smart Musical Insturments ontology. Journal of Web Semantics, 2020 (submitted)</dd>
 </dl>
 
-<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+
+
+
 </div>
 <div class="status">
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a place holder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
-</div>
+</div>     <div id="abstract">The Smart Musical Instruments (SMIs) is an emerging category of musical instruments that belongs to the wider class of Musical Things within the Internet of Musical Things paradigm. SMIs encompass sensors, actuators, embedded intelligence, and wireless connectivity to local networks and to the Internet. Interoperability represents a key issue within this domain, where heterogeneous SMIs are envisioned to exchange information between each other and a plethora of Musical Things. This paper proposes an ontology for the representation of the knowledge related to SMIs, with the aim of facilitating interoperability between SMIs as well as with other Musical Things interacting with them. 
+There was no previous comprehensive data model for the SMIs domain, however the new ontology relates to existing ontologies, including the SOSA Ontology for the representation of sensors and actuators, the Audio Effects Ontology dealing with the description of digital audio effects, and the IoMusT Ontology for the representation Musical Things and IoMusT ecosystems. This paper documents the design of the ontology and its evaluation with respect to specific requirements gathered from an extensive literature review, which was based on scenarios involving SMIs stakeholders, such as performers and studio producers.</div>
 <div id="toc"></div> 
+
+
+
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+This ontology has the following namespaces.
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://purl.org/ontology/iomust/smi&gt;</td></tr>
+<tr><td><b>smi</b></td><td>&lt;http://purl.org/ontology/iomust/smi&gt;</td></tr>
 <tr><td><b>cc</b></td><td>&lt;http://web.resource.org/cc&gt;</td></tr>
 <tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
 <tr><td><b>qudt</b></td><td>&lt;http://qudt.org/schema/qudt&gt;</td></tr>
@@ -2862,11 +2866,19 @@ This section provides details for each class and property defined by Smart Music
 </div>
     
 
+
 <!--REFERENCES SECTION-->
   <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
+<ul>
+	<li>Luca Turchet, Paolo Bouquet, Andrea Molinari, George Fazekas. The Smart Musical Insturments ontology. Journal of Web Semantics, 2020 (submitted).
+	</li>	
+	<li>L. Turchet. Smart Musical Instruments: vision, design principles, and future directions. IEEE Access, 7, 8944–8963, 2019.
+PDF freely available at: <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8501898">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8501898</a>
+	</li>
+</ul>
+
 
 </div>
 <div id="acknowledgements">
