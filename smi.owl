@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/ontology/iomust/smi"
-     xml:base="http://purl.org/ontology/iomust/smi#"
+     xml:base="http://purl.org/ontology/iomust/smi"
      xmlns:cc="http://web.resource.org/cc/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:mo="http://purl.org/ontology/mo/"
@@ -100,15 +100,6 @@
     
 
 
-    <!-- http://purl.org/ontology/iomust/smi#maps -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#maps">
-        <rdfs:domain rdf:resource="http://purl.org/ontology/iomust/smi#MappingTrasform"/>
-        <rdfs:range rdf:resource="https://w3id.org/aufx/ontology/1.0#Parameter"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/ontology/iomust/smi#SMIcomponent -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#SMIcomponent">
@@ -192,6 +183,15 @@
         <rdfs:range rdf:resource="http://purl.org/ontology/iomust/smi#MappingHandler"/>
         <rdfs:comment>A SMI&apos;s MappingTransform is implemented by a SMI&apos;s MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin.</rdfs:comment>
         <rdfs:label>mapping implementation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/smi#maps -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#maps">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/iomust/smi#MappingTrasform"/>
+        <rdfs:range rdf:resource="https://w3id.org/aufx/ontology/1.0#Parameter"/>
     </owl:ObjectProperty>
     
 
@@ -392,6 +392,12 @@
     <!-- http://purl.org/ontology/iomust/internet_of_things/SmartInstrument -->
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/internet_of_things/Thing -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/Thing"/>
     
 
 
@@ -910,12 +916,6 @@
     <!-- http://qudt.org/schema/qudt#Unit -->
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt#Unit"/>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/internet_of_things/Thing -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/Thing"/>
     
 
 
