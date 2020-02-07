@@ -44,7 +44,6 @@
      xmlns:note-prov-aq-20130430="http://www.w3.org/TR/2013/NOTE-prov-aq-20130430/"
      xmlns:prov-o-inverses-20130430="http://www.w3.org/ns/prov-o-inverses-20130430#">
     <owl:Ontology rdf:about="http://purl.org/ontology/iomust/smi">
-        <owl:versionIRI rdf:resource="http://purl.org/ontology/iomust/smi/0.1"/>
         <dc:contributor>Andrea Molinari</dc:contributor>
         <dc:contributor>Gyorgy Fazekas</dc:contributor>
         <dc:contributor>Paolo Bouquet</dc:contributor>
@@ -138,7 +137,7 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#component_platform">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/studio/device/component"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things/Thing"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/iomust/internet_of_things/Thing"/>
     </owl:ObjectProperty>
     
 
@@ -900,9 +899,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things/Thing -->
+    <!-- http://purl.org/ontology/iomust/internet_of_things/Thing -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things/Thing"/>
+    <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/Thing"/>
     
 
 
