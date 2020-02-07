@@ -1,0 +1,2484 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things", "http://purl.org/ontology/studio/main", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/aufx/ontology/1.0", "http://www.w3.org/ns/sosa", "http://purl.org/ontology/studio/device", "http://purl.org/ontology/studio/sigproc", "http://purl.org/ontology/iomust/smi", "http://purl.org/ontology/studio/microphone", "http://purl.org/ontology/iomust", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/ontology/studio/multitrack", "http://purl.org/ontology/mo", "http://purl.org/ontology/smi", "http://purl.org/ontology/iomust/internet_of_things" ],
+    "title" : {
+      "undefined" : "Smart Musical Insturments (SMI) ontology"
+    },
+    "iri" : "http://purl.org/ontology/iomust/smi",
+    "version" : "http://purl.org/ontology/iomust/smi/0.1",
+    "author" : [ "Luca Turchet" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://www.gnu.org/licenses/gpl.html",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Luca Turchet",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Gyorgy Fazekas",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Andrea Molinari",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Paolo Bouquet",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-02-06T10:00:00",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "https://www.gnu.org/licenses/gpl.html",
+        "type" : "iri"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/iomust/smi",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/iomust/smi/0.1",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Smart Musical Insturments (SMI) ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "176",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "178",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "179",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "130",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/ontology/smi#GestureInterface",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GestureInterface"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#AcousticInstrument",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcousticInstrument",
+      "undefined" : "Acoustic Instrument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://w3id.org/aufx/ontology/1.0#PlugInAPI",
+    "baseIri" : "https://w3id.org/aufx/ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlugInAPI"
+    },
+    "subClasses" : [ "22" ],
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#VisualEngine",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VisualEngine",
+      "undefined" : "Visual Engine"
+    },
+    "comment" : {
+      "undefined" : "A piece of software that handles visual processing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/sigproc/ADC",
+    "baseIri" : "http://purl.org/ontology/studio/sigproc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ADC"
+    },
+    "subClasses" : [ "35", "36" ],
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SoundDeliverySystem",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoundDeliverySystem"
+    },
+    "subClasses" : [ "47", "48" ],
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#Magnetometer",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Magnetometer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt#Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/ontology/smi#Decibel",
+      "baseIri" : "http://purl.org/ontology/smi",
+      "labels" : {
+        "IRI-based" : "Decibel"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmbeddedVibrationSpeakerSystem"
+    },
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#ElectroAcousticInstrument",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectroAcousticInstrument",
+      "undefined" : "Electro Acoustic Instrument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#MappingTrasform",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MappingTrasform",
+      "en" : "Mapping Transform"
+    },
+    "comment" : {
+      "undefined" : "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin."
+    },
+    "attributes" : [ "external" ],
+    "id" : "72",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/sigproc/LowPassFilter",
+    "baseIri" : "http://purl.org/ontology/studio/sigproc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowPassFilter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Instrument",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Instrument"
+    },
+    "subClasses" : [ "75", "76", "71", "19" ],
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#InertialMeasurementUnit",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InertialMeasurementUnit"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#multichannel",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "multichannel"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/multitrack#MultitrackProject",
+    "baseIri" : "http://purl.org/ontology/studio/multitrack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultitrackProject"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://purl.org/ontology/studio/device/HardwareDevice",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HardwareDevice"
+    },
+    "subClasses" : [ "5", "10", "61" ],
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#DACactuator",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DACactuator"
+    },
+    "comment" : {
+      "undefined" : "Digital to Analog converter for haptic signals"
+    },
+    "attributes" : [ "external" ],
+    "id" : "80",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SMIVirtualRealityMusicalInstrument",
+      "undefined" : "SMI Virtual Reality Musical Instrument"
+    },
+    "intersection" : [ "33", "76" ],
+    "attributes" : [ "external", "intersection" ],
+    "id" : "58",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#RE",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RE"
+    },
+    "comment" : {
+      "en" : "Rack Extensions for a plugin API (by Propellerheads)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/aufx/ontology/1.0#SoftwareImplementation",
+    "baseIri" : "https://w3id.org/aufx/ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareImplementation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://w3id.org/aufx/ontology/1.0#PlugIn",
+    "equivalent" : [ "83" ],
+    "baseIri" : "https://w3id.org/aufx/ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlugIn"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#AudioTrackingSensor",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AudioTrackingSensor"
+    },
+    "subClasses" : [ "68" ],
+    "comment" : {
+      "undefined" : "A sensor that detects audio signals"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#DACaudio",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DACaudio"
+    },
+    "comment" : {
+      "undefined" : "Digital to Analog converter for audio signals"
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#VirtualRealityMusicalInstrument",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VirtualRealityMusicalInstrument",
+      "undefined" : "Virtual Reality Musical Instrument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#RibbonSensor",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RibbonSensor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument",
+    "baseIri" : "http://purl.org/ontology/iomust/internet_of_things",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartInstrument"
+    },
+    "subClasses" : [ "58", "32", "38" ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Sensor",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sensor"
+    },
+    "subClasses" : [ "4", "7" ],
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SMIHardwareDevice",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SMIHardwareDevice"
+    },
+    "subClasses" : [ "9", "1", "13", "15", "17", "18" ],
+    "comment" : {
+      "undefined" : "Any hardware components of a smart instrument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/device/SoftwareDevice",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareDevice"
+    },
+    "subClasses" : [ "92", "30" ],
+    "attributes" : [ "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://purl.org/ontology/studio/device/Converter",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Converter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SingleBoardComputer",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingleBoardComputer",
+      "undefined" : "Single Board Computer"
+    },
+    "comment" : {
+      "undefined" : "The SMI Single Board Computer is an hardware component which is embedded into a SMI and runs software devices, including the SMI Sound Engine"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2", "10" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SMISoftwareDevice",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SMISoftwareDevice",
+      "undefined" : "SMI Software Device"
+    },
+    "subClasses" : [ "98", "100", "29", "64", "104" ],
+    "comment" : {
+      "en" : "Any software component of a smart musical instrument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#ADCaudio",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ADCaudio",
+      "undefined" : "ADC audio"
+    },
+    "comment" : {
+      "undefined" : "Audio to Digital converter for audio signals"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Actuator",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actuator"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#Microphone_Transducer",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Microphone_Transducer"
+    },
+    "comment" : {
+      "undefined" : "The sensor embedded in a microphone"
+    },
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#Potentiometer",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Potentiometer"
+    },
+    "id" : "52",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#PushButton",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PushButton"
+    },
+    "id" : "70",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#HapticDeliverySystem",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HapticDeliverySystem"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things/Thing",
+    "baseIri" : "http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Thing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://w3id.org/aufx/ontology/1.0#VST",
+    "baseIri" : "https://w3id.org/aufx/ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VST"
+    },
+    "subClasses" : [ "127", "128" ],
+    "attributes" : [ "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#DistanceSensor",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DistanceSensor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#VisualDeliverySystem",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VisualDeliverySystem"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#GestureSensorHandler",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GestureSensorHandler",
+      "undefined" : "Gesture Sensor Handler"
+    },
+    "comment" : {
+      "en" : "A piece of software which carries out observations through sensors (like a microphone or a pressure sensor). Typically an SMI sensor observer acts upon the digital values of an ADC (analogue to digital converter)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/device/Plugin",
+    "equivalent" : [ "27" ],
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Plugin",
+      "undefined" : "Plugin"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#HapticEngine",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HapticEngine",
+      "undefined" : "Haptic Engine"
+    },
+    "comment" : {
+      "undefined" : "A piece of software that handles haptic processing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "104",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/main/Transform",
+    "baseIri" : "http://purl.org/ontology/studio/main",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transform"
+    },
+    "subClasses" : [ "73" ],
+    "attributes" : [ "external" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smiChannel",
+    "baseIri" : "http://purl.org/ontology/iomust",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "smiChannel"
+    },
+    "subClasses" : [ "77" ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#VST2",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VST2",
+      "en" : "VST 2"
+    },
+    "attributes" : [ "external" ],
+    "id" : "127",
+    "superClasses" : [ "126" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#VST3",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VST3",
+      "en" : "VST 3"
+    },
+    "attributes" : [ "external" ],
+    "id" : "128",
+    "superClasses" : [ "126" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/sigproc/DAC",
+    "baseIri" : "http://purl.org/ontology/studio/sigproc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DAC"
+    },
+    "subClasses" : [ "86", "80" ],
+    "attributes" : [ "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://purl.org/ontology/studio/microphone/Microphone",
+    "baseIri" : "http://purl.org/ontology/studio/microphone",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Microphone"
+    },
+    "attributes" : [ "external" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SMIElectricAcousticIntrument",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SMIElectricAcousticIntrument",
+      "undefined" : "SMI Electric Acoustic Instrument"
+    },
+    "intersection" : [ "33", "71" ],
+    "attributes" : [ "external", "intersection" ],
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SoundEngine",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoundEngine",
+      "undefined" : "Sound Engine"
+    },
+    "comment" : {
+      "undefined" : "A piece of software that handles audio processing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "100",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EmbeddedLoudspeakerSystem"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://w3id.org/aufx/ontology/1.0#Parameter",
+    "baseIri" : "https://w3id.org/aufx/ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#AudioInputInterface",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AudioInputInterface"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "175",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "30", "10" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "176"
+  }, {
+    "instances" : 0,
+    "union" : [ "100", "64", "93", "104" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "178"
+  }, {
+    "instances" : 0,
+    "union" : [ "100", "29", "64", "104" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SMIElectricInstrument",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SMIElectricInstrument",
+      "undefined" : "SMI Electric Instrument"
+    },
+    "intersection" : [ "75", "33" ],
+    "attributes" : [ "external", "intersection" ],
+    "id" : "38",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#Gyroscope",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gyroscope"
+    },
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#GestureTrackingSensor",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GestureTrackingSensor"
+    },
+    "subClasses" : [ "70", "40", "42", "44", "46", "50", "52", "54", "56" ],
+    "comment" : {
+      "undefined" : "A sensor that detects the performer's gestures"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SoftwareMultitrackProject",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareMultitrackProject",
+      "en" : "Software Multitrack Project"
+    },
+    "attributes" : [ "external" ],
+    "id" : "92",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Platform",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Platform"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Signal",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Signal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#Accelerometer",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Accelerometer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#ADCsensor",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ADCsensor",
+      "undefined" : "ADC sensor"
+    },
+    "comment" : {
+      "undefined" : "Analog to Digital converter for gesture tracking sensors"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#GestureSensorTransform",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GestureSensorTransform",
+      "en" : "Gesture Sensor Transform"
+    },
+    "comment" : {
+      "en" : "A transformation applied by a SMI Gesture Sensor Handler to the signal observed by a sensor tracking a player's gesture"
+    },
+    "attributes" : [ "external" ],
+    "id" : "96",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#ElectricInstrument",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectricInstrument",
+      "undefined" : "Electric Instrument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "75",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SMITransform",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SMITransform",
+      "en" : "SMI Transform"
+    },
+    "subClasses" : [ "72", "96" ],
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "146" ]
+  }, {
+    "iri" : "http://purl.org/ontology/smi#MappingHandler",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MappingHandler",
+      "undefined" : "Mapping Handler"
+    },
+    "comment" : {
+      "undefined" : "A piece of software that handles the mapping functions from sensor values to plugin parameters"
+    },
+    "attributes" : [ "external" ],
+    "id" : "98",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "143",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "130",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/smi#PressureSensors",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PressureSensors"
+    },
+    "attributes" : [ "external" ],
+    "id" : "54",
+    "superClasses" : [ "4" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "100", "104" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "222",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "167",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "181",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "10",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "10",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "10",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "10",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#works_at_audio_sampling_rate",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "works_at_audio_sampling_rate",
+      "en" : "works at audio sampling rate"
+    },
+    "domain" : "24",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#has_name",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "has_name",
+      "undefined" : "has name"
+    },
+    "domain" : "27",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "26"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "33",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "4",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "4",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "4",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "4",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "4",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "4",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "4",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "4",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "33",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "62",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#threshold",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "threshold",
+      "undefined" : "threshold"
+    },
+    "domain" : "64",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "63"
+  }, {
+    "range" : "62",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "7",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "4",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#processes_sensor_signal",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "processes_sensor_signal",
+      "en" : "processes sensor signal"
+    },
+    "domain" : "64",
+    "comment" : {
+      "undefined" : "Both the SMI Audio Input Handler and the SMI Gesture Sensor Handler process the (simple) results of an Observation"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#mapping_function_parameter",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "mapping_function_parameter",
+      "undefined" : "mapping function parameter"
+    },
+    "domain" : "72",
+    "comment" : {
+      "undefined" : "A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#mapping_function_type",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "mapping_function_type",
+      "undefined" : "mapping function type"
+    },
+    "domain" : "72",
+    "comment" : {
+      "undefined" : "A mathematical function that can be e.g., linear, exponential, logarithmic"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "89"
+  }, {
+    "range" : "73",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "73",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "30",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "30",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "30",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "30",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#filter_type",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "filter_type",
+      "undefined" : "filter type"
+    },
+    "domain" : "74",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#cutoff_frequency",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "cutoff_frequency",
+      "undefined" : "cutoff frequency"
+    },
+    "domain" : "74",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "107"
+  }, {
+    "range" : "10",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "91",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "91",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "44",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "56",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "54",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "56",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "54",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "44",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "46",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "42",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "56",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "44",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "46",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#mapping_implementation",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "mapping_implementation",
+      "undefined" : "mapping implementation"
+    },
+    "superproperty" : [ "124" ],
+    "domain" : "72",
+    "comment" : {
+      "undefined" : "A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://purl.org/ontology/studio/device/component",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "component"
+    },
+    "domain" : "130",
+    "subproperty" : [ "131", "132", "133" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "44",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "46",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "54",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "56",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "54",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "42",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "40",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "42",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/hasResult",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "85",
+    "annotations" : {
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://purl.org/ontology/mo/Signal",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasResult"
+    },
+    "domain" : "143",
+    "comment" : {
+      "undefined" : "We added Signal as a possible result of the SOSA \"hasResult\" object property. This is done to align the SOSA with the MusicOntology: this way we link the result of an Observation produced by a sensor to a Signal."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "44",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "46",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#implementation",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "implementation"
+    },
+    "domain" : "146",
+    "subproperty" : [ "123", "147", "148" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "17",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "86",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "17",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#sensor_handler_implementation",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "sensor_handler_implementation",
+      "en" : "sensor handler implementation"
+    },
+    "superproperty" : [ "124" ],
+    "domain" : "96",
+    "comment" : {
+      "undefined" : "Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#midi_port",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "154",
+    "label" : {
+      "IRI-based" : "midi_port",
+      "undefined" : "midi port"
+    },
+    "domain" : "85",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "153"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "13",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "17",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://w3id.org/aufx/ontology/1.0#implementation",
+    "baseIri" : "https://w3id.org/aufx/ontology/1.0",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "implementation"
+    },
+    "superproperty" : [ "124" ],
+    "domain" : "130",
+    "attributes" : [ "external", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "15",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "17",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "13",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "17",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "13",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "35",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "56",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "15",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "18",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "56",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "54",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "range" : "56",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "54",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#component_platform",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "component_platform"
+    },
+    "superproperty" : [ "129" ],
+    "domain" : "2",
+    "attributes" : [ "external", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "128",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "29",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SMIhosts",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "SMIhosts",
+      "en" : "SMI hosts"
+    },
+    "domain" : "100",
+    "attributes" : [ "external", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "100",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "72",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "29",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#component_mic",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "172",
+    "label" : {
+      "IRI-based" : "component_mic"
+    },
+    "superproperty" : [ "129" ],
+    "domain" : "68",
+    "attributes" : [ "external", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "100",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "98",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "29",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "98",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "104",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#converter_sample_rate",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "175",
+    "label" : {
+      "IRI-based" : "converter_sample_rate",
+      "undefined" : "converter sample rate"
+    },
+    "domain" : "178",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "190"
+  }, {
+    "range" : "29",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "100",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "81",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "range" : "62",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "81",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#executes",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "179",
+    "label" : {
+      "IRI-based" : "executes",
+      "undefined" : "executes"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "20",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "20",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "20",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "40",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "42",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "46",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "44",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "54",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "56",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "50",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "40",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "70",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "50",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "126",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "126",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smimaps",
+    "baseIri" : "http://purl.org/ontology/iomust",
+    "range" : "174",
+    "label" : {
+      "IRI-based" : "smimaps"
+    },
+    "domain" : "72",
+    "attributes" : [ "external", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "78",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "146",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "34",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "34",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "13",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "13",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "21",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#works_at_sensor_sampling_rate",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "222",
+    "label" : {
+      "IRI-based" : "works_at_sensor_sampling_rate",
+      "en" : "works at sensor sampling rate"
+    },
+    "domain" : "64",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://purl.org/ontology/smi#SMIcomponent",
+    "baseIri" : "http://purl.org/ontology/smi",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "SMIcomponent"
+    },
+    "superproperty" : [ "129" ],
+    "domain" : "176",
+    "attributes" : [ "external", "object" ],
+    "id" : "131"
+  } ]
+}

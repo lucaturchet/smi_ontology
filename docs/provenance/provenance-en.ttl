@@ -1,0 +1,16 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/ontology/iomust/smi/0.1> a prov:Entity;
+	 dc:title "Smart Musical Insturments (SMI) ontology";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2020-02-06T10:00:00";
+.
+:agent0 a prov:Agent; foaf:name "Luca Turchet".
+:agent1 a prov:Agent; foaf:name "Andrea Molinari".
+:agent2 a prov:Agent; foaf:name "Gyorgy Fazekas".
+:agent3 a prov:Agent; foaf:name "Paolo Bouquet".
