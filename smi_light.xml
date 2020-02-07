@@ -30,6 +30,7 @@
      xmlns:device="http://purl.org/ontology/studio/device/"
      xmlns:iomust="http://purl.org/ontology/iomust/internet_of_things/"
      xmlns:schema="http://schema.org/"
+     xmlns:studio="http://purl.org/ontology/studio/"
      xmlns:terms1="http://open.vocab.org/terms/"
      xmlns:sigproc="http://purl.org/ontology/spd/sigproc/"
      xmlns:ontology="https://w3id.org/aufx/ontology/1.0#"
@@ -42,15 +43,18 @@
      xmlns:prov-links-20130430="http://www.w3.org/ns/prov-links-20130430#"
      xmlns:note-prov-aq-20130430="http://www.w3.org/TR/2013/NOTE-prov-aq-20130430/"
      xmlns:prov-o-inverses-20130430="http://www.w3.org/ns/prov-o-inverses-20130430#">
-    <owl:Ontology rdf:about="http://purl.org/ontology/iomust/smi">
+    <owl:Ontology rdf:about="http://purl.org/ontology/iomust/smi/">
+        <owl:versionIRI rdf:resource="http://purl.org/ontology/iomust/smi/0.1"/>
         <dc:contributor>Andrea Molinari</dc:contributor>
         <dc:contributor>Gyorgy Fazekas</dc:contributor>
         <dc:contributor>Paolo Bouquet</dc:contributor>
         <dc:creator>Luca Turchet</dc:creator>
         <dc:rights rdf:resource="https://www.gnu.org/licenses/gpl.html"/>
+        <terms:abstract rdf:resource="http://purl.org/ontology/iomust/smi"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-06T10:00:00</terms:created>
         <terms:title>Smart Musical Insturments (SMI) ontology</terms:title>
         <cc:license rdf:resource="https://www.gnu.org/licenses/gpl.html"/>
+        <owl:versionInfo rdf:resource="http://purl.org/ontology/iomust/smi/0.1"/>
     </owl:Ontology>
     
 
@@ -83,12 +87,11 @@
     
 
 
-    <!-- http://purl.org/ontology/smi#SMI_mapping_sensor_to_parameter -->
+    <!-- http://purl.org/ontology/iomust/smi/maps -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/smi#SMI_mapping_sensor_to_parameter">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi/maps">
         <rdfs:domain rdf:resource="http://purl.org/ontology/smi#MappingTrasform"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/smi#MappingHandler"/>
-        <rdfs:label xml:lang="en">SMI mapping sensor to parameter</rdfs:label>
+        <rdfs:range rdf:resource="https://w3id.org/aufx/ontology/1.0#Parameter"/>
     </owl:ObjectProperty>
     
 
@@ -386,6 +389,12 @@
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#PushButton">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/smi#GestureTrackingSensor"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/smi/Channel -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/iomust/smi/Channel"/>
     
 
 
@@ -817,7 +826,7 @@
     <!-- http://purl.org/ontology/smi#multichannel -->
 
     <owl:Class rdf:about="http://purl.org/ontology/smi#multichannel">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/studio/mixer/Channel"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/smi/Channel"/>
     </owl:Class>
     
 
@@ -858,12 +867,6 @@
     <!-- http://purl.org/ontology/studio/microphone/Microphone -->
 
     <owl:Class rdf:about="http://purl.org/ontology/studio/microphone/Microphone"/>
-    
-
-
-    <!-- http://purl.org/ontology/studio/mixer/Channel -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/studio/mixer/Channel"/>
     
 
 
