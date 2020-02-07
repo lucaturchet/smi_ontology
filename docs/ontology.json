@@ -3,9 +3,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/smi#SMIHardwareDevice"
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
     }, {
-      "@id" : "http://purl.org/ontology/smi#SMISoftwareDevice"
+      "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
     } ]
   } ]
 }, {
@@ -13,9 +13,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/smi#HapticEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#HapticEngine"
     }, {
-      "@id" : "http://purl.org/ontology/smi#SoundEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine"
     } ]
   } ]
 }, {
@@ -25,7 +25,7 @@
     "@list" : [ {
       "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
     }, {
-      "@id" : "http://purl.org/ontology/smi#ElectroAcousticInstrument"
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument"
     } ]
   } ]
 }, {
@@ -35,7 +35,7 @@
     "@list" : [ {
       "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
     }, {
-      "@id" : "http://purl.org/ontology/smi#ElectricInstrument"
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
     } ]
   } ]
 }, {
@@ -45,7 +45,7 @@
     "@list" : [ {
       "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
     }, {
-      "@id" : "http://purl.org/ontology/smi#VirtualRealityMusicalInstrument"
+      "@id" : "http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument"
     } ]
   } ]
 }, {
@@ -53,23 +53,23 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#Accelerometer"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#DistanceSensor"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Gyroscope"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#InertialMeasurementUnit"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Magnetometer"
+    }, {
       "@id" : "http://purl.org/ontology/iomust/smi#Potentiometer"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#PressureSensors"
     }, {
       "@id" : "http://purl.org/ontology/iomust/smi#PushButton"
     }, {
-      "@id" : "http://purl.org/ontology/smi#Accelerometer"
-    }, {
-      "@id" : "http://purl.org/ontology/smi#DistanceSensor"
-    }, {
-      "@id" : "http://purl.org/ontology/smi#Gyroscope"
-    }, {
-      "@id" : "http://purl.org/ontology/smi#InertialMeasurementUnit"
-    }, {
-      "@id" : "http://purl.org/ontology/smi#Magnetometer"
-    }, {
-      "@id" : "http://purl.org/ontology/smi#PressureSensors"
-    }, {
-      "@id" : "http://purl.org/ontology/smi#RibbonSensor"
+      "@id" : "http://purl.org/ontology/iomust/smi#RibbonSensor"
     } ]
   } ]
 }, {
@@ -77,17 +77,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/smi#AudioInputInterface"
+      "@id" : "http://purl.org/ontology/iomust/smi#AudioInputInterface"
     }, {
-      "@id" : "http://purl.org/ontology/smi#GestureInterface"
+      "@id" : "http://purl.org/ontology/iomust/smi#GestureInterface"
     }, {
-      "@id" : "http://purl.org/ontology/smi#HapticDeliverySystem"
+      "@id" : "http://purl.org/ontology/iomust/smi#HapticDeliverySystem"
     }, {
-      "@id" : "http://purl.org/ontology/smi#SingleBoardComputer"
+      "@id" : "http://purl.org/ontology/iomust/smi#SingleBoardComputer"
     }, {
-      "@id" : "http://purl.org/ontology/smi#SoundDeliverySystem"
+      "@id" : "http://purl.org/ontology/iomust/smi#SoundDeliverySystem"
     }, {
-      "@id" : "http://purl.org/ontology/smi#VisualDeliverySystem"
+      "@id" : "http://purl.org/ontology/iomust/smi#VisualDeliverySystem"
     } ]
   } ]
 }, {
@@ -95,13 +95,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/smi#GestureSensorHandler"
+      "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler"
     }, {
-      "@id" : "http://purl.org/ontology/smi#HapticEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#HapticEngine"
     }, {
-      "@id" : "http://purl.org/ontology/smi#SoundEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine"
     }, {
-      "@id" : "http://purl.org/ontology/smi#VisualEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#VisualEngine"
     } ]
   } ]
 }, {
@@ -109,15 +109,15 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/smi#GestureSensorHandler"
+      "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler"
     }, {
-      "@id" : "http://purl.org/ontology/smi#HapticEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#HapticEngine"
     }, {
-      "@id" : "http://purl.org/ontology/smi#MappingHandler"
+      "@id" : "http://purl.org/ontology/iomust/smi#MappingHandler"
     }, {
-      "@id" : "http://purl.org/ontology/smi#SoundEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine"
     }, {
-      "@id" : "http://purl.org/ontology/smi#VisualEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#VisualEngine"
     } ]
   } ]
 }, {
@@ -125,11 +125,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/smi#GestureSensorHandler"
+      "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler"
     }, {
-      "@id" : "http://purl.org/ontology/smi#HapticEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#HapticEngine"
     }, {
-      "@id" : "http://purl.org/ontology/smi#SoundEngine"
+      "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine"
     }, {
       "@id" : "http://purl.org/ontology/studio/device/Converter"
     } ]
@@ -191,37 +191,7 @@
     "@id" : "http://purl.org/ontology/iomust/smi/0.1"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#Potentiometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/iomust/smi#PushButton",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/iomust/smiChannel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/ontology/iomust/smimaps",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#MappingTrasform"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/aufx/ontology/1.0#Parameter"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Instrument",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/Signal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/ontology/smi#ADCaudio",
+  "@id" : "http://purl.org/ontology/iomust/smi#ADCaudio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Audio to Digital converter for audio signals"
@@ -233,10 +203,10 @@
     "@id" : "http://purl.org/ontology/studio/sigproc/ADC"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/ontology/smi#ADCsensor"
+    "@id" : "http://purl.org/ontology/iomust/smi#ADCsensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#ADCsensor",
+  "@id" : "http://purl.org/ontology/iomust/smi#ADCsensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Analog to Digital converter for gesture tracking sensors"
@@ -248,13 +218,13 @@
     "@id" : "http://purl.org/ontology/studio/sigproc/ADC"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#Accelerometer",
+  "@id" : "http://purl.org/ontology/iomust/smi#Accelerometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#AcousticInstrument",
+  "@id" : "http://purl.org/ontology/iomust/smi#AcousticInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Acoustic Instrument"
@@ -263,13 +233,13 @@
     "@id" : "http://purl.org/ontology/mo/Instrument"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#AudioInputInterface",
+  "@id" : "http://purl.org/ontology/iomust/smi#AudioInputInterface",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMIHardwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#AudioTrackingSensor",
+  "@id" : "http://purl.org/ontology/iomust/smi#AudioTrackingSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A sensor that detects audio signals"
@@ -278,7 +248,7 @@
     "@id" : "http://www.w3.org/ns/sosa/Sensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#DACactuator",
+  "@id" : "http://purl.org/ontology/iomust/smi#DACactuator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Digital to Analog converter for haptic signals"
@@ -287,10 +257,10 @@
     "@id" : "http://purl.org/ontology/studio/sigproc/DAC"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/ontology/smi#DACaudio"
+    "@id" : "http://purl.org/ontology/iomust/smi#DACaudio"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#DACaudio",
+  "@id" : "http://purl.org/ontology/iomust/smi#DACaudio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Digital to Analog converter for audio signals"
@@ -299,16 +269,16 @@
     "@id" : "http://purl.org/ontology/studio/sigproc/DAC"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#Decibel",
+  "@id" : "http://purl.org/ontology/iomust/smi#Decibel",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://qudt.org/schema/qudt#Unit" ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#DistanceSensor",
+  "@id" : "http://purl.org/ontology/iomust/smi#DistanceSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#ElectricInstrument",
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Electric Instrument"
@@ -317,7 +287,7 @@
     "@id" : "http://purl.org/ontology/mo/Instrument"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#ElectroAcousticInstrument",
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Electro Acoustic Instrument"
@@ -326,25 +296,25 @@
     "@id" : "http://purl.org/ontology/mo/Instrument"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem",
+  "@id" : "http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SoundDeliverySystem"
+    "@id" : "http://purl.org/ontology/iomust/smi#SoundDeliverySystem"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem",
+  "@id" : "http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SoundDeliverySystem"
+    "@id" : "http://purl.org/ontology/iomust/smi#SoundDeliverySystem"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#GestureInterface",
+  "@id" : "http://purl.org/ontology/iomust/smi#GestureInterface",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMIHardwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#GestureSensorHandler",
+  "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -354,10 +324,10 @@
     "@value" : "Gesture Sensor Handler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMISoftwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#GestureSensorTransform",
+  "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorTransform",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -368,13 +338,13 @@
     "@value" : "Gesture Sensor Transform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMITransform"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMITransform"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/ontology/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor",
+  "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A sensor that detects the performer's gestures"
@@ -383,19 +353,19 @@
     "@id" : "http://www.w3.org/ns/sosa/Sensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#Gyroscope",
+  "@id" : "http://purl.org/ontology/iomust/smi#Gyroscope",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#HapticDeliverySystem",
+  "@id" : "http://purl.org/ontology/iomust/smi#HapticDeliverySystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMIHardwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#HapticEngine",
+  "@id" : "http://purl.org/ontology/iomust/smi#HapticEngine",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A piece of software that handles haptic processing"
@@ -404,22 +374,22 @@
     "@value" : "Haptic Engine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMISoftwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#InertialMeasurementUnit",
+  "@id" : "http://purl.org/ontology/iomust/smi#InertialMeasurementUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#Magnetometer",
+  "@id" : "http://purl.org/ontology/iomust/smi#Magnetometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#MappingHandler",
+  "@id" : "http://purl.org/ontology/iomust/smi#MappingHandler",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A piece of software that handles the mapping functions from sensor values to plugin parameters"
@@ -428,10 +398,10 @@
     "@value" : "Mapping Handler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMISoftwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#MappingTrasform",
+  "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin."
@@ -441,25 +411,37 @@
     "@value" : "Mapping Transform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMITransform"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMITransform"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#Microphone_Transducer",
+  "@id" : "http://purl.org/ontology/iomust/smi#Microphone_Transducer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The sensor embedded in a microphone"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#AudioTrackingSensor"
+    "@id" : "http://purl.org/ontology/iomust/smi#AudioTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#PressureSensors",
+  "@id" : "http://purl.org/ontology/iomust/smi#Potentiometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#RE",
+  "@id" : "http://purl.org/ontology/iomust/smi#PressureSensors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#PushButton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#RE",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -469,13 +451,13 @@
     "@id" : "https://w3id.org/aufx/ontology/1.0#PlugInAPI"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#RibbonSensor",
+  "@id" : "http://purl.org/ontology/iomust/smi#RibbonSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureTrackingSensor"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SMIElectricAcousticIntrument",
+  "@id" : "http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "SMI Electric Acoustic Instrument"
@@ -487,7 +469,7 @@
     "@id" : "_:genid17"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SMIElectricInstrument",
+  "@id" : "http://purl.org/ontology/iomust/smi#SMIElectricInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "SMI Electric Instrument"
@@ -499,7 +481,7 @@
     "@id" : "_:genid20"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SMIHardwareDevice",
+  "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Any hardware components of a smart instrument"
@@ -508,7 +490,7 @@
     "@id" : "http://purl.org/ontology/studio/device/HardwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SMISoftwareDevice",
+  "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -521,7 +503,7 @@
     "@id" : "http://purl.org/ontology/studio/device/SoftwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SMITransform",
+  "@id" : "http://purl.org/ontology/iomust/smi#SMITransform",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -531,7 +513,7 @@
     "@id" : "http://purl.org/ontology/studio/main/Transform"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument",
+  "@id" : "http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "SMI Virtual Reality Musical Instrument"
@@ -543,7 +525,7 @@
     "@id" : "_:genid23"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SMIcomponent",
+  "@id" : "http://purl.org/ontology/iomust/smi#SMIcomponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
@@ -555,10 +537,10 @@
     "@id" : "http://purl.org/ontology/studio/device/component"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SMIhosts",
+  "@id" : "http://purl.org/ontology/iomust/smi#SMIhosts",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#SoundEngine"
+    "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -568,7 +550,7 @@
     "@id" : "http://purl.org/ontology/studio/multitrack#MultitrackProject"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SingleBoardComputer",
+  "@id" : "http://purl.org/ontology/iomust/smi#SingleBoardComputer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The SMI Single Board Computer is an hardware component which is embedded into a SMI and runs software devices, including the SMI Sound Engine"
@@ -577,12 +559,12 @@
     "@value" : "Single Board Computer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMIHardwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
   }, {
     "@id" : "http://www.w3.org/ns/sosa/Platform"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SoftwareMultitrackProject",
+  "@id" : "http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -592,13 +574,13 @@
     "@id" : "http://purl.org/ontology/studio/device/SoftwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SoundDeliverySystem",
+  "@id" : "http://purl.org/ontology/iomust/smi#SoundDeliverySystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMIHardwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#SoundEngine",
+  "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A piece of software that handles audio processing"
@@ -607,10 +589,10 @@
     "@value" : "Sound Engine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMISoftwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#VST2",
+  "@id" : "http://purl.org/ontology/iomust/smi#VST2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -620,10 +602,10 @@
     "@id" : "https://w3id.org/aufx/ontology/1.0#VST"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/ontology/smi#VST3"
+    "@id" : "http://purl.org/ontology/iomust/smi#VST3"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#VST3",
+  "@id" : "http://purl.org/ontology/iomust/smi#VST3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -633,7 +615,7 @@
     "@id" : "https://w3id.org/aufx/ontology/1.0#VST"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#VirtualRealityMusicalInstrument",
+  "@id" : "http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Virtual Reality Musical Instrument"
@@ -642,13 +624,13 @@
     "@id" : "http://purl.org/ontology/mo/Instrument"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#VisualDeliverySystem",
+  "@id" : "http://purl.org/ontology/iomust/smi#VisualDeliverySystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMIHardwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#VisualEngine",
+  "@id" : "http://purl.org/ontology/iomust/smi#VisualEngine",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A piece of software that handles visual processing"
@@ -657,13 +639,13 @@
     "@value" : "Visual Engine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#SMISoftwareDevice"
+    "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#component_mic",
+  "@id" : "http://purl.org/ontology/iomust/smi#component_mic",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#Microphone_Transducer"
+    "@id" : "http://purl.org/ontology/iomust/smi#Microphone_Transducer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/ontology/studio/microphone/Microphone"
@@ -672,7 +654,7 @@
     "@id" : "http://purl.org/ontology/studio/device/component"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#component_platform",
+  "@id" : "http://purl.org/ontology/iomust/smi#component_platform",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/ns/sosa/Platform"
@@ -684,7 +666,7 @@
     "@id" : "http://purl.org/ontology/studio/device/component"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#converter_sample_rate",
+  "@id" : "http://purl.org/ontology/iomust/smi#converter_sample_rate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid9"
@@ -696,7 +678,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#cutoff_frequency",
+  "@id" : "http://purl.org/ontology/iomust/smi#cutoff_frequency",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/studio/sigproc/LowPassFilter"
@@ -708,10 +690,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#executes",
+  "@id" : "http://purl.org/ontology/iomust/smi#executes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#SingleBoardComputer"
+    "@id" : "http://purl.org/ontology/iomust/smi#SingleBoardComputer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "executes"
@@ -720,7 +702,7 @@
     "@id" : "_:genid4"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#filter_type",
+  "@id" : "http://purl.org/ontology/iomust/smi#filter_type",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/studio/sigproc/LowPassFilter"
@@ -732,7 +714,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#has_name",
+  "@id" : "http://purl.org/ontology/iomust/smi#has_name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/aufx/ontology/1.0#PlugIn"
@@ -744,7 +726,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#implementation",
+  "@id" : "http://purl.org/ontology/iomust/smi#implementation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/studio/main/Transform"
@@ -753,13 +735,13 @@
     "@id" : "https://w3id.org/aufx/ontology/1.0#SoftwareImplementation"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#mapping_function_parameter",
+  "@id" : "http://purl.org/ontology/iomust/smi#mapping_function_parameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "mapping function parameter"
@@ -768,13 +750,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#mapping_function_type",
+  "@id" : "http://purl.org/ontology/iomust/smi#mapping_function_type",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A mathematical function that can be e.g., linear, exponential, logarithmic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "mapping function type"
@@ -783,25 +765,34 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#mapping_implementation",
+  "@id" : "http://purl.org/ontology/iomust/smi#mapping_implementation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "mapping implementation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/smi#MappingHandler"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingHandler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#implementation"
+    "@id" : "http://purl.org/ontology/iomust/smi#implementation"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#midi_port",
+  "@id" : "http://purl.org/ontology/iomust/smi#maps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/aufx/ontology/1.0#Parameter"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#midi_port",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/mo/Signal"
@@ -813,19 +804,19 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#multichannel",
+  "@id" : "http://purl.org/ontology/iomust/smi#multichannel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/iomust/smiChannel"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#processes_sensor_signal",
+  "@id" : "http://purl.org/ontology/iomust/smi#processes_sensor_signal",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Both the SMI Audio Input Handler and the SMI Gesture Sensor Handler process the (simple) results of an Observation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureSensorHandler"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -835,29 +826,29 @@
     "@id" : "http://purl.org/ontology/mo/Signal"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#sensor_handler_implementation",
+  "@id" : "http://purl.org/ontology/iomust/smi#sensor_handler_implementation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureSensorTransform"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorTransform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "sensor handler implementation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureSensorHandler"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#implementation"
+    "@id" : "http://purl.org/ontology/iomust/smi#implementation"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#threshold",
+  "@id" : "http://purl.org/ontology/iomust/smi#threshold",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureSensorHandler"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "threshold"
@@ -866,7 +857,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#works_at_audio_sampling_rate",
+  "@id" : "http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid14"
@@ -879,10 +870,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/smi#works_at_sensor_sampling_rate",
+  "@id" : "http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/smi#GestureSensorHandler"
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -891,6 +882,15 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smiChannel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Instrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Signal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/ontology/studio/device/Converter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -993,6 +993,6 @@
   "@id" : "https://w3id.org/aufx/ontology/1.0#implementation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/smi#implementation"
+    "@id" : "http://purl.org/ontology/iomust/smi#implementation"
   } ]
 } ]

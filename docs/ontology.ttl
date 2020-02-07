@@ -59,87 +59,87 @@
 #    Object Properties
 #################################################################
 
-###  http://purl.org/ontology/iomust/smimaps
-<http://purl.org/ontology/iomust/smimaps> rdf:type owl:ObjectProperty ;
-                                          rdfs:domain <http://purl.org/ontology/smi#MappingTrasform> ;
-                                          rdfs:range <https://w3id.org/aufx/ontology/1.0#Parameter> .
+###  http://purl.org/ontology/iomust/smi#SMIcomponent
+:SMIcomponent rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :SMIHardwareDevice
+                                          :SMISoftwareDevice
+                                        )
+                          ] ;
+              rdfs:range <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
 
 
-###  http://purl.org/ontology/smi#SMIcomponent
-<http://purl.org/ontology/smi#SMIcomponent> rdf:type owl:ObjectProperty ;
-                                            rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
-                                            rdfs:domain [ rdf:type owl:Class ;
-                                                          owl:unionOf ( <http://purl.org/ontology/smi#SMIHardwareDevice>
-                                                                        <http://purl.org/ontology/smi#SMISoftwareDevice>
-                                                                      )
-                                                        ] ;
-                                            rdfs:range <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
+###  http://purl.org/ontology/iomust/smi#SMIhosts
+:SMIhosts rdf:type owl:ObjectProperty ;
+          rdfs:domain :SoundEngine ;
+          rdfs:range <http://purl.org/ontology/studio/multitrack#MultitrackProject> ;
+          rdfs:label "SMI hosts"@en .
 
 
-###  http://purl.org/ontology/smi#SMIhosts
-<http://purl.org/ontology/smi#SMIhosts> rdf:type owl:ObjectProperty ;
-                                        rdfs:domain <http://purl.org/ontology/smi#SoundEngine> ;
-                                        rdfs:range <http://purl.org/ontology/studio/multitrack#MultitrackProject> ;
-                                        rdfs:label "SMI hosts"@en .
+###  http://purl.org/ontology/iomust/smi#component_mic
+:component_mic rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
+               rdfs:domain :Microphone_Transducer ;
+               rdfs:range <http://purl.org/ontology/studio/microphone/Microphone> .
 
 
-###  http://purl.org/ontology/smi#component_mic
-<http://purl.org/ontology/smi#component_mic> rdf:type owl:ObjectProperty ;
-                                             rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
-                                             rdfs:domain <http://purl.org/ontology/smi#Microphone_Transducer> ;
-                                             rdfs:range <http://purl.org/ontology/studio/microphone/Microphone> .
+###  http://purl.org/ontology/iomust/smi#component_platform
+:component_platform rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
+                    rdfs:domain <http://www.w3.org/ns/sosa/Platform> ;
+                    rdfs:range <http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things/Thing> .
 
 
-###  http://purl.org/ontology/smi#component_platform
-<http://purl.org/ontology/smi#component_platform> rdf:type owl:ObjectProperty ;
-                                                  rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
-                                                  rdfs:domain <http://www.w3.org/ns/sosa/Platform> ;
-                                                  rdfs:range <http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things/Thing> .
+###  http://purl.org/ontology/iomust/smi#executes
+:executes rdf:type owl:ObjectProperty ;
+          rdfs:domain :SingleBoardComputer ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :GestureSensorHandler
+                                     :HapticEngine
+                                     :SoundEngine
+                                     :VisualEngine
+                                   )
+                     ] ;
+          rdfs:label "executes" .
 
 
-###  http://purl.org/ontology/smi#executes
-<http://purl.org/ontology/smi#executes> rdf:type owl:ObjectProperty ;
-                                        rdfs:domain <http://purl.org/ontology/smi#SingleBoardComputer> ;
-                                        rdfs:range [ rdf:type owl:Class ;
-                                                     owl:unionOf ( <http://purl.org/ontology/smi#GestureSensorHandler>
-                                                                   <http://purl.org/ontology/smi#HapticEngine>
-                                                                   <http://purl.org/ontology/smi#SoundEngine>
-                                                                   <http://purl.org/ontology/smi#VisualEngine>
-                                                                 )
-                                                   ] ;
-                                        rdfs:label "executes" .
+###  http://purl.org/ontology/iomust/smi#implementation
+:implementation rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://purl.org/ontology/studio/main/Transform> ;
+                rdfs:range <https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> .
 
 
-###  http://purl.org/ontology/smi#implementation
-<http://purl.org/ontology/smi#implementation> rdf:type owl:ObjectProperty ;
-                                              rdfs:domain <http://purl.org/ontology/studio/main/Transform> ;
-                                              rdfs:range <https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> .
+###  http://purl.org/ontology/iomust/smi#mapping_implementation
+:mapping_implementation rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :implementation ;
+                        rdfs:domain :MappingTrasform ;
+                        rdfs:range :MappingHandler ;
+                        rdfs:comment "A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." ;
+                        rdfs:label "mapping implementation" .
 
 
-###  http://purl.org/ontology/smi#mapping_implementation
-<http://purl.org/ontology/smi#mapping_implementation> rdf:type owl:ObjectProperty ;
-                                                      rdfs:subPropertyOf <http://purl.org/ontology/smi#implementation> ;
-                                                      rdfs:domain <http://purl.org/ontology/smi#MappingTrasform> ;
-                                                      rdfs:range <http://purl.org/ontology/smi#MappingHandler> ;
-                                                      rdfs:comment "A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." ;
-                                                      rdfs:label "mapping implementation" .
+###  http://purl.org/ontology/iomust/smi#maps
+:maps rdf:type owl:ObjectProperty ;
+      rdfs:domain :MappingTrasform ;
+      rdfs:range <https://w3id.org/aufx/ontology/1.0#Parameter> .
 
 
-###  http://purl.org/ontology/smi#processes_sensor_signal
-<http://purl.org/ontology/smi#processes_sensor_signal> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain <http://purl.org/ontology/smi#GestureSensorHandler> ;
-                                                       rdfs:range <http://purl.org/ontology/mo/Signal> ;
-                                                       rdfs:comment "Both the SMI Audio Input Handler and the SMI Gesture Sensor Handler process the (simple) results of an Observation" ;
-                                                       rdfs:label "processes sensor signal"@en .
+###  http://purl.org/ontology/iomust/smi#processes_sensor_signal
+:processes_sensor_signal rdf:type owl:ObjectProperty ;
+                         rdfs:domain :GestureSensorHandler ;
+                         rdfs:range <http://purl.org/ontology/mo/Signal> ;
+                         rdfs:comment "Both the SMI Audio Input Handler and the SMI Gesture Sensor Handler process the (simple) results of an Observation" ;
+                         rdfs:label "processes sensor signal"@en .
 
 
-###  http://purl.org/ontology/smi#sensor_handler_implementation
-<http://purl.org/ontology/smi#sensor_handler_implementation> rdf:type owl:ObjectProperty ;
-                                                             rdfs:subPropertyOf <http://purl.org/ontology/smi#implementation> ;
-                                                             rdfs:domain <http://purl.org/ontology/smi#GestureSensorTransform> ;
-                                                             rdfs:range <http://purl.org/ontology/smi#GestureSensorHandler> ;
-                                                             rdfs:comment "Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform" ;
-                                                             rdfs:label "sensor handler implementation"@en .
+###  http://purl.org/ontology/iomust/smi#sensor_handler_implementation
+:sensor_handler_implementation rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf :implementation ;
+                               rdfs:domain :GestureSensorTransform ;
+                               rdfs:range :GestureSensorHandler ;
+                               rdfs:comment "Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform" ;
+                               rdfs:label "sensor handler implementation"@en .
 
 
 ###  http://purl.org/ontology/studio/device/component
@@ -155,93 +155,93 @@
 
 ###  https://w3id.org/aufx/ontology/1.0#implementation
 <https://w3id.org/aufx/ontology/1.0#implementation> rdf:type owl:ObjectProperty ;
-                                                    rdfs:subPropertyOf <http://purl.org/ontology/smi#implementation> .
+                                                    rdfs:subPropertyOf :implementation .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://purl.org/ontology/smi#converter_sample_rate
-<http://purl.org/ontology/smi#converter_sample_rate> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain [ rdf:type owl:Class ;
-                                                                   owl:unionOf ( <http://purl.org/ontology/smi#GestureSensorHandler>
-                                                                                 <http://purl.org/ontology/smi#HapticEngine>
-                                                                                 <http://purl.org/ontology/smi#SoundEngine>
-                                                                                 <http://purl.org/ontology/studio/device/Converter>
-                                                                               )
-                                                                 ] ;
-                                                     rdfs:range xsd:float ;
-                                                     rdfs:label "converter sample rate" .
+###  http://purl.org/ontology/iomust/smi#converter_sample_rate
+:converter_sample_rate rdf:type owl:DatatypeProperty ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( :GestureSensorHandler
+                                                   :HapticEngine
+                                                   :SoundEngine
+                                                   <http://purl.org/ontology/studio/device/Converter>
+                                                 )
+                                   ] ;
+                       rdfs:range xsd:float ;
+                       rdfs:label "converter sample rate" .
 
 
-###  http://purl.org/ontology/smi#cutoff_frequency
-<http://purl.org/ontology/smi#cutoff_frequency> rdf:type owl:DatatypeProperty ;
-                                                rdfs:domain <http://purl.org/ontology/studio/sigproc/LowPassFilter> ;
-                                                rdfs:range xsd:float ;
-                                                rdfs:label "cutoff frequency" .
+###  http://purl.org/ontology/iomust/smi#cutoff_frequency
+:cutoff_frequency rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <http://purl.org/ontology/studio/sigproc/LowPassFilter> ;
+                  rdfs:range xsd:float ;
+                  rdfs:label "cutoff frequency" .
 
 
-###  http://purl.org/ontology/smi#filter_type
-<http://purl.org/ontology/smi#filter_type> rdf:type owl:DatatypeProperty ;
-                                           rdfs:domain <http://purl.org/ontology/studio/sigproc/LowPassFilter> ;
-                                           rdfs:range xsd:string ;
-                                           rdfs:label "filter type" .
+###  http://purl.org/ontology/iomust/smi#filter_type
+:filter_type rdf:type owl:DatatypeProperty ;
+             rdfs:domain <http://purl.org/ontology/studio/sigproc/LowPassFilter> ;
+             rdfs:range xsd:string ;
+             rdfs:label "filter type" .
 
 
-###  http://purl.org/ontology/smi#has_name
-<http://purl.org/ontology/smi#has_name> rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain <https://w3id.org/aufx/ontology/1.0#PlugIn> ;
-                                        rdfs:range rdfs:Literal ;
-                                        rdfs:label "has name" .
+###  http://purl.org/ontology/iomust/smi#has_name
+:has_name rdf:type owl:DatatypeProperty ;
+          rdfs:domain <https://w3id.org/aufx/ontology/1.0#PlugIn> ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "has name" .
 
 
-###  http://purl.org/ontology/smi#mapping_function_parameter
-<http://purl.org/ontology/smi#mapping_function_parameter> rdf:type owl:DatatypeProperty ;
-                                                          rdfs:domain <http://purl.org/ontology/smi#MappingTrasform> ;
-                                                          rdfs:range xsd:float ;
-                                                          rdfs:comment "A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)" ;
-                                                          rdfs:label "mapping function parameter" .
+###  http://purl.org/ontology/iomust/smi#mapping_function_parameter
+:mapping_function_parameter rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :MappingTrasform ;
+                            rdfs:range xsd:float ;
+                            rdfs:comment "A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)" ;
+                            rdfs:label "mapping function parameter" .
 
 
-###  http://purl.org/ontology/smi#mapping_function_type
-<http://purl.org/ontology/smi#mapping_function_type> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain <http://purl.org/ontology/smi#MappingTrasform> ;
-                                                     rdfs:range xsd:string ;
-                                                     rdfs:comment "A mathematical function that can be e.g., linear, exponential, logarithmic" ;
-                                                     rdfs:label "mapping function type" .
+###  http://purl.org/ontology/iomust/smi#mapping_function_type
+:mapping_function_type rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :MappingTrasform ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "A mathematical function that can be e.g., linear, exponential, logarithmic" ;
+                       rdfs:label "mapping function type" .
 
 
-###  http://purl.org/ontology/smi#midi_port
-<http://purl.org/ontology/smi#midi_port> rdf:type owl:DatatypeProperty ;
-                                         rdfs:domain <http://purl.org/ontology/mo/Signal> ;
-                                         rdfs:range xsd:integer ;
-                                         rdfs:label "midi port" .
+###  http://purl.org/ontology/iomust/smi#midi_port
+:midi_port rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://purl.org/ontology/mo/Signal> ;
+           rdfs:range xsd:integer ;
+           rdfs:label "midi port" .
 
 
-###  http://purl.org/ontology/smi#threshold
-<http://purl.org/ontology/smi#threshold> rdf:type owl:DatatypeProperty ;
-                                         rdfs:domain <http://purl.org/ontology/smi#GestureSensorHandler> ;
-                                         rdfs:range xsd:float ;
-                                         rdfs:label "threshold" .
+###  http://purl.org/ontology/iomust/smi#threshold
+:threshold rdf:type owl:DatatypeProperty ;
+           rdfs:domain :GestureSensorHandler ;
+           rdfs:range xsd:float ;
+           rdfs:label "threshold" .
 
 
-###  http://purl.org/ontology/smi#works_at_audio_sampling_rate
-<http://purl.org/ontology/smi#works_at_audio_sampling_rate> rdf:type owl:DatatypeProperty ;
-                                                            rdfs:domain [ rdf:type owl:Class ;
-                                                                          owl:unionOf ( <http://purl.org/ontology/smi#HapticEngine>
-                                                                                        <http://purl.org/ontology/smi#SoundEngine>
-                                                                                      )
-                                                                        ] ;
-                                                            rdfs:range xsd:float ;
-                                                            rdfs:label "works at audio sampling rate"@en .
+###  http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate
+:works_at_audio_sampling_rate rdf:type owl:DatatypeProperty ;
+                              rdfs:domain [ rdf:type owl:Class ;
+                                            owl:unionOf ( :HapticEngine
+                                                          :SoundEngine
+                                                        )
+                                          ] ;
+                              rdfs:range xsd:float ;
+                              rdfs:label "works at audio sampling rate"@en .
 
 
-###  http://purl.org/ontology/smi#works_at_sensor_sampling_rate
-<http://purl.org/ontology/smi#works_at_sensor_sampling_rate> rdf:type owl:DatatypeProperty ;
-                                                             rdfs:domain <http://purl.org/ontology/smi#GestureSensorHandler> ;
-                                                             rdfs:range xsd:float ;
-                                                             rdfs:label "works at sensor sampling rate"@en .
+###  http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate
+:works_at_sensor_sampling_rate rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :GestureSensorHandler ;
+                               rdfs:range xsd:float ;
+                               rdfs:label "works at sensor sampling rate"@en .
 
 
 #################################################################
@@ -256,14 +256,294 @@
 <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> rdf:type owl:Class .
 
 
+###  http://purl.org/ontology/iomust/smi#ADCaudio
+:ADCaudio rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/ontology/studio/sigproc/ADC> ;
+          owl:disjointWith :ADCsensor ;
+          rdfs:comment "Audio to Digital converter for audio signals" ;
+          rdfs:label "ADC audio" .
+
+
+###  http://purl.org/ontology/iomust/smi#ADCsensor
+:ADCsensor rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/ontology/studio/sigproc/ADC> ;
+           rdfs:comment "Analog to Digital converter for gesture tracking sensors" ;
+           rdfs:label "ADC sensor" .
+
+
+###  http://purl.org/ontology/iomust/smi#Accelerometer
+:Accelerometer rdf:type owl:Class ;
+               rdfs:subClassOf :GestureTrackingSensor .
+
+
+###  http://purl.org/ontology/iomust/smi#AcousticInstrument
+:AcousticInstrument rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
+                    rdfs:label "Acoustic Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#AudioInputInterface
+:AudioInputInterface rdf:type owl:Class ;
+                     rdfs:subClassOf :SMIHardwareDevice .
+
+
+###  http://purl.org/ontology/iomust/smi#AudioTrackingSensor
+:AudioTrackingSensor rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                     rdfs:comment "A sensor that detects audio signals" .
+
+
+###  http://purl.org/ontology/iomust/smi#DACactuator
+:DACactuator rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/ontology/studio/sigproc/DAC> ;
+             owl:disjointWith :DACaudio ;
+             rdfs:comment "Digital to Analog converter for haptic signals" .
+
+
+###  http://purl.org/ontology/iomust/smi#DACaudio
+:DACaudio rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/ontology/studio/sigproc/DAC> ;
+          rdfs:comment "Digital to Analog converter for audio signals" .
+
+
+###  http://purl.org/ontology/iomust/smi#DistanceSensor
+:DistanceSensor rdf:type owl:Class ;
+                rdfs:subClassOf :GestureTrackingSensor .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectricInstrument
+:ElectricInstrument rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
+                    rdfs:label "Electric Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument
+:ElectroAcousticInstrument rdf:type owl:Class ;
+                           rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
+                           rdfs:label "Electro Acoustic Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem
+:EmbeddedLoudspeakerSystem rdf:type owl:Class ;
+                           rdfs:subClassOf :SoundDeliverySystem .
+
+
+###  http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem
+:EmbeddedVibrationSpeakerSystem rdf:type owl:Class ;
+                                rdfs:subClassOf :SoundDeliverySystem .
+
+
+###  http://purl.org/ontology/iomust/smi#GestureInterface
+:GestureInterface rdf:type owl:Class ;
+                  rdfs:subClassOf :SMIHardwareDevice .
+
+
+###  http://purl.org/ontology/iomust/smi#GestureSensorHandler
+:GestureSensorHandler rdf:type owl:Class ;
+                      rdfs:subClassOf :SMISoftwareDevice ;
+                      rdfs:comment "A piece of software which carries out observations through sensors (like a microphone or a pressure sensor). Typically an SMI sensor observer acts upon the digital values of an ADC (analogue to digital converter)."@en ;
+                      rdfs:label "Gesture Sensor Handler" .
+
+
+###  http://purl.org/ontology/iomust/smi#GestureSensorTransform
+:GestureSensorTransform rdf:type owl:Class ;
+                        rdfs:subClassOf :SMITransform ;
+                        owl:disjointWith :MappingTrasform ;
+                        rdfs:comment "A transformation applied by a SMI Gesture Sensor Handler to the signal observed by a sensor tracking a player's gesture"@en ;
+                        rdfs:label "Gesture Sensor Transform"@en .
+
+
+###  http://purl.org/ontology/iomust/smi#GestureTrackingSensor
+:GestureTrackingSensor rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                       rdfs:comment "A sensor that detects the performer's gestures" .
+
+
+###  http://purl.org/ontology/iomust/smi#Gyroscope
+:Gyroscope rdf:type owl:Class ;
+           rdfs:subClassOf :GestureTrackingSensor .
+
+
+###  http://purl.org/ontology/iomust/smi#HapticDeliverySystem
+:HapticDeliverySystem rdf:type owl:Class ;
+                      rdfs:subClassOf :SMIHardwareDevice .
+
+
+###  http://purl.org/ontology/iomust/smi#HapticEngine
+:HapticEngine rdf:type owl:Class ;
+              rdfs:subClassOf :SMISoftwareDevice ;
+              rdfs:comment "A piece of software that handles haptic processing" ;
+              rdfs:label "Haptic Engine" .
+
+
+###  http://purl.org/ontology/iomust/smi#InertialMeasurementUnit
+:InertialMeasurementUnit rdf:type owl:Class ;
+                         rdfs:subClassOf :GestureTrackingSensor .
+
+
+###  http://purl.org/ontology/iomust/smi#Magnetometer
+:Magnetometer rdf:type owl:Class ;
+              rdfs:subClassOf :GestureTrackingSensor .
+
+
+###  http://purl.org/ontology/iomust/smi#MappingHandler
+:MappingHandler rdf:type owl:Class ;
+                rdfs:subClassOf :SMISoftwareDevice ;
+                rdfs:comment "A piece of software that handles the mapping functions from sensor values to plugin parameters" ;
+                rdfs:label "Mapping Handler" .
+
+
+###  http://purl.org/ontology/iomust/smi#MappingTrasform
+:MappingTrasform rdf:type owl:Class ;
+                 rdfs:subClassOf :SMITransform ;
+                 rdfs:comment "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." ;
+                 rdfs:label "Mapping Transform"@en .
+
+
+###  http://purl.org/ontology/iomust/smi#Microphone_Transducer
+:Microphone_Transducer rdf:type owl:Class ;
+                       rdfs:subClassOf :AudioTrackingSensor ;
+                       rdfs:comment "The sensor embedded in a microphone" .
+
+
 ###  http://purl.org/ontology/iomust/smi#Potentiometer
 :Potentiometer rdf:type owl:Class ;
-               rdfs:subClassOf <http://purl.org/ontology/smi#GestureTrackingSensor> .
+               rdfs:subClassOf :GestureTrackingSensor .
+
+
+###  http://purl.org/ontology/iomust/smi#PressureSensors
+:PressureSensors rdf:type owl:Class ;
+                 rdfs:subClassOf :GestureTrackingSensor .
 
 
 ###  http://purl.org/ontology/iomust/smi#PushButton
 :PushButton rdf:type owl:Class ;
-            rdfs:subClassOf <http://purl.org/ontology/smi#GestureTrackingSensor> .
+            rdfs:subClassOf :GestureTrackingSensor .
+
+
+###  http://purl.org/ontology/iomust/smi#RE
+:RE rdf:type owl:Class ;
+    rdfs:subClassOf <https://w3id.org/aufx/ontology/1.0#PlugInAPI> ;
+    rdfs:comment "Rack Extensions for a plugin API (by Propellerheads)"@en .
+
+
+###  http://purl.org/ontology/iomust/smi#RibbonSensor
+:RibbonSensor rdf:type owl:Class ;
+              rdfs:subClassOf :GestureTrackingSensor .
+
+
+###  http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument
+:SMIElectricAcousticIntrument rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument>
+                                                                         :ElectroAcousticInstrument
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> ;
+                              rdfs:label "SMI Electric Acoustic Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#SMIElectricInstrument
+:SMIElectricInstrument rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument>
+                                                                  :ElectricInstrument
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> ;
+                       rdfs:label "SMI Electric Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#SMIHardwareDevice
+:SMIHardwareDevice rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.org/ontology/studio/device/HardwareDevice> ;
+                   rdfs:comment "Any hardware components of a smart instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#SMISoftwareDevice
+:SMISoftwareDevice rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.org/ontology/studio/device/SoftwareDevice> ;
+                   rdfs:comment "Any software component of a smart musical instrument"@en ;
+                   rdfs:label "SMI Software Device" .
+
+
+###  http://purl.org/ontology/iomust/smi#SMITransform
+:SMITransform rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/ontology/studio/main/Transform> ;
+              rdfs:label "SMI Transform"@en .
+
+
+###  http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument
+:SMIVirtualRealityMusicalInstrument rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument>
+                                                                               :VirtualRealityMusicalInstrument
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> ;
+                                    rdfs:label "SMI Virtual Reality Musical Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#SingleBoardComputer
+:SingleBoardComputer rdf:type owl:Class ;
+                     rdfs:subClassOf :SMIHardwareDevice ,
+                                     <http://www.w3.org/ns/sosa/Platform> ;
+                     rdfs:comment "The SMI Single Board Computer is an hardware component which is embedded into a SMI and runs software devices, including the SMI Sound Engine" ;
+                     rdfs:label "Single Board Computer" .
+
+
+###  http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject
+:SoftwareMultitrackProject rdf:type owl:Class ;
+                           rdfs:subClassOf <http://purl.org/ontology/studio/device/SoftwareDevice> ;
+                           rdfs:label "Software Multitrack Project"@en .
+
+
+###  http://purl.org/ontology/iomust/smi#SoundDeliverySystem
+:SoundDeliverySystem rdf:type owl:Class ;
+                     rdfs:subClassOf :SMIHardwareDevice .
+
+
+###  http://purl.org/ontology/iomust/smi#SoundEngine
+:SoundEngine rdf:type owl:Class ;
+             rdfs:subClassOf :SMISoftwareDevice ;
+             rdfs:comment "A piece of software that handles audio processing" ;
+             rdfs:label "Sound Engine" .
+
+
+###  http://purl.org/ontology/iomust/smi#VST2
+:VST2 rdf:type owl:Class ;
+      rdfs:subClassOf <https://w3id.org/aufx/ontology/1.0#VST> ;
+      owl:disjointWith :VST3 ;
+      rdfs:label "VST 2"@en .
+
+
+###  http://purl.org/ontology/iomust/smi#VST3
+:VST3 rdf:type owl:Class ;
+      rdfs:subClassOf <https://w3id.org/aufx/ontology/1.0#VST> ;
+      rdfs:label "VST 3"@en .
+
+
+###  http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument
+:VirtualRealityMusicalInstrument rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
+                                 rdfs:label "Virtual Reality Musical Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#VisualDeliverySystem
+:VisualDeliverySystem rdf:type owl:Class ;
+                      rdfs:subClassOf :SMIHardwareDevice .
+
+
+###  http://purl.org/ontology/iomust/smi#VisualEngine
+:VisualEngine rdf:type owl:Class ;
+              rdfs:subClassOf :SMISoftwareDevice ;
+              rdfs:comment "A piece of software that handles visual processing" ;
+              rdfs:label "Visual Engine" .
+
+
+###  http://purl.org/ontology/iomust/smi#multichannel
+:multichannel rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/ontology/iomust/smiChannel> .
 
 
 ###  http://purl.org/ontology/mo/Instrument
@@ -272,286 +552,6 @@
 
 ###  http://purl.org/ontology/mo/Signal
 <http://purl.org/ontology/mo/Signal> rdf:type owl:Class .
-
-
-###  http://purl.org/ontology/smi#ADCaudio
-<http://purl.org/ontology/smi#ADCaudio> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://purl.org/ontology/studio/sigproc/ADC> ;
-                                        owl:disjointWith <http://purl.org/ontology/smi#ADCsensor> ;
-                                        rdfs:comment "Audio to Digital converter for audio signals" ;
-                                        rdfs:label "ADC audio" .
-
-
-###  http://purl.org/ontology/smi#ADCsensor
-<http://purl.org/ontology/smi#ADCsensor> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/ontology/studio/sigproc/ADC> ;
-                                         rdfs:comment "Analog to Digital converter for gesture tracking sensors" ;
-                                         rdfs:label "ADC sensor" .
-
-
-###  http://purl.org/ontology/smi#Accelerometer
-<http://purl.org/ontology/smi#Accelerometer> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.org/ontology/smi#GestureTrackingSensor> .
-
-
-###  http://purl.org/ontology/smi#AcousticInstrument
-<http://purl.org/ontology/smi#AcousticInstrument> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
-                                                  rdfs:label "Acoustic Instrument" .
-
-
-###  http://purl.org/ontology/smi#AudioInputInterface
-<http://purl.org/ontology/smi#AudioInputInterface> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.org/ontology/smi#SMIHardwareDevice> .
-
-
-###  http://purl.org/ontology/smi#AudioTrackingSensor
-<http://purl.org/ontology/smi#AudioTrackingSensor> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
-                                                   rdfs:comment "A sensor that detects audio signals" .
-
-
-###  http://purl.org/ontology/smi#DACactuator
-<http://purl.org/ontology/smi#DACactuator> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://purl.org/ontology/studio/sigproc/DAC> ;
-                                           owl:disjointWith <http://purl.org/ontology/smi#DACaudio> ;
-                                           rdfs:comment "Digital to Analog converter for haptic signals" .
-
-
-###  http://purl.org/ontology/smi#DACaudio
-<http://purl.org/ontology/smi#DACaudio> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://purl.org/ontology/studio/sigproc/DAC> ;
-                                        rdfs:comment "Digital to Analog converter for audio signals" .
-
-
-###  http://purl.org/ontology/smi#DistanceSensor
-<http://purl.org/ontology/smi#DistanceSensor> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/ontology/smi#GestureTrackingSensor> .
-
-
-###  http://purl.org/ontology/smi#ElectricInstrument
-<http://purl.org/ontology/smi#ElectricInstrument> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
-                                                  rdfs:label "Electric Instrument" .
-
-
-###  http://purl.org/ontology/smi#ElectroAcousticInstrument
-<http://purl.org/ontology/smi#ElectroAcousticInstrument> rdf:type owl:Class ;
-                                                         rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
-                                                         rdfs:label "Electro Acoustic Instrument" .
-
-
-###  http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem
-<http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem> rdf:type owl:Class ;
-                                                         rdfs:subClassOf <http://purl.org/ontology/smi#SoundDeliverySystem> .
-
-
-###  http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem
-<http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <http://purl.org/ontology/smi#SoundDeliverySystem> .
-
-
-###  http://purl.org/ontology/smi#GestureInterface
-<http://purl.org/ontology/smi#GestureInterface> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://purl.org/ontology/smi#SMIHardwareDevice> .
-
-
-###  http://purl.org/ontology/smi#GestureSensorHandler
-<http://purl.org/ontology/smi#GestureSensorHandler> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://purl.org/ontology/smi#SMISoftwareDevice> ;
-                                                    rdfs:comment "A piece of software which carries out observations through sensors (like a microphone or a pressure sensor). Typically an SMI sensor observer acts upon the digital values of an ADC (analogue to digital converter)."@en ;
-                                                    rdfs:label "Gesture Sensor Handler" .
-
-
-###  http://purl.org/ontology/smi#GestureSensorTransform
-<http://purl.org/ontology/smi#GestureSensorTransform> rdf:type owl:Class ;
-                                                      rdfs:subClassOf <http://purl.org/ontology/smi#SMITransform> ;
-                                                      owl:disjointWith <http://purl.org/ontology/smi#MappingTrasform> ;
-                                                      rdfs:comment "A transformation applied by a SMI Gesture Sensor Handler to the signal observed by a sensor tracking a player's gesture"@en ;
-                                                      rdfs:label "Gesture Sensor Transform"@en .
-
-
-###  http://purl.org/ontology/smi#GestureTrackingSensor
-<http://purl.org/ontology/smi#GestureTrackingSensor> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
-                                                     rdfs:comment "A sensor that detects the performer's gestures" .
-
-
-###  http://purl.org/ontology/smi#Gyroscope
-<http://purl.org/ontology/smi#Gyroscope> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/ontology/smi#GestureTrackingSensor> .
-
-
-###  http://purl.org/ontology/smi#HapticDeliverySystem
-<http://purl.org/ontology/smi#HapticDeliverySystem> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://purl.org/ontology/smi#SMIHardwareDevice> .
-
-
-###  http://purl.org/ontology/smi#HapticEngine
-<http://purl.org/ontology/smi#HapticEngine> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.org/ontology/smi#SMISoftwareDevice> ;
-                                            rdfs:comment "A piece of software that handles haptic processing" ;
-                                            rdfs:label "Haptic Engine" .
-
-
-###  http://purl.org/ontology/smi#InertialMeasurementUnit
-<http://purl.org/ontology/smi#InertialMeasurementUnit> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://purl.org/ontology/smi#GestureTrackingSensor> .
-
-
-###  http://purl.org/ontology/smi#Magnetometer
-<http://purl.org/ontology/smi#Magnetometer> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.org/ontology/smi#GestureTrackingSensor> .
-
-
-###  http://purl.org/ontology/smi#MappingHandler
-<http://purl.org/ontology/smi#MappingHandler> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/ontology/smi#SMISoftwareDevice> ;
-                                              rdfs:comment "A piece of software that handles the mapping functions from sensor values to plugin parameters" ;
-                                              rdfs:label "Mapping Handler" .
-
-
-###  http://purl.org/ontology/smi#MappingTrasform
-<http://purl.org/ontology/smi#MappingTrasform> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.org/ontology/smi#SMITransform> ;
-                                               rdfs:comment "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." ;
-                                               rdfs:label "Mapping Transform"@en .
-
-
-###  http://purl.org/ontology/smi#Microphone_Transducer
-<http://purl.org/ontology/smi#Microphone_Transducer> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://purl.org/ontology/smi#AudioTrackingSensor> ;
-                                                     rdfs:comment "The sensor embedded in a microphone" .
-
-
-###  http://purl.org/ontology/smi#PressureSensors
-<http://purl.org/ontology/smi#PressureSensors> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.org/ontology/smi#GestureTrackingSensor> .
-
-
-###  http://purl.org/ontology/smi#RE
-<http://purl.org/ontology/smi#RE> rdf:type owl:Class ;
-                                  rdfs:subClassOf <https://w3id.org/aufx/ontology/1.0#PlugInAPI> ;
-                                  rdfs:comment "Rack Extensions for a plugin API (by Propellerheads)"@en .
-
-
-###  http://purl.org/ontology/smi#RibbonSensor
-<http://purl.org/ontology/smi#RibbonSensor> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.org/ontology/smi#GestureTrackingSensor> .
-
-
-###  http://purl.org/ontology/smi#SMIElectricAcousticIntrument
-<http://purl.org/ontology/smi#SMIElectricAcousticIntrument> rdf:type owl:Class ;
-                                                            owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument>
-                                                                                                       <http://purl.org/ontology/smi#ElectroAcousticInstrument>
-                                                                                                     ) ;
-                                                                                  rdf:type owl:Class
-                                                                                ] ;
-                                                            rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> ;
-                                                            rdfs:label "SMI Electric Acoustic Instrument" .
-
-
-###  http://purl.org/ontology/smi#SMIElectricInstrument
-<http://purl.org/ontology/smi#SMIElectricInstrument> rdf:type owl:Class ;
-                                                     owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument>
-                                                                                                <http://purl.org/ontology/smi#ElectricInstrument>
-                                                                                              ) ;
-                                                                           rdf:type owl:Class
-                                                                         ] ;
-                                                     rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> ;
-                                                     rdfs:label "SMI Electric Instrument" .
-
-
-###  http://purl.org/ontology/smi#SMIHardwareDevice
-<http://purl.org/ontology/smi#SMIHardwareDevice> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://purl.org/ontology/studio/device/HardwareDevice> ;
-                                                 rdfs:comment "Any hardware components of a smart instrument" .
-
-
-###  http://purl.org/ontology/smi#SMISoftwareDevice
-<http://purl.org/ontology/smi#SMISoftwareDevice> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://purl.org/ontology/studio/device/SoftwareDevice> ;
-                                                 rdfs:comment "Any software component of a smart musical instrument"@en ;
-                                                 rdfs:label "SMI Software Device" .
-
-
-###  http://purl.org/ontology/smi#SMITransform
-<http://purl.org/ontology/smi#SMITransform> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.org/ontology/studio/main/Transform> ;
-                                            rdfs:label "SMI Transform"@en .
-
-
-###  http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument
-<http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument> rdf:type owl:Class ;
-                                                                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument>
-                                                                                                             <http://purl.org/ontology/smi#VirtualRealityMusicalInstrument>
-                                                                                                           ) ;
-                                                                                        rdf:type owl:Class
-                                                                                      ] ;
-                                                                  rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> ;
-                                                                  rdfs:label "SMI Virtual Reality Musical Instrument" .
-
-
-###  http://purl.org/ontology/smi#SingleBoardComputer
-<http://purl.org/ontology/smi#SingleBoardComputer> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.org/ontology/smi#SMIHardwareDevice> ,
-                                                                   <http://www.w3.org/ns/sosa/Platform> ;
-                                                   rdfs:comment "The SMI Single Board Computer is an hardware component which is embedded into a SMI and runs software devices, including the SMI Sound Engine" ;
-                                                   rdfs:label "Single Board Computer" .
-
-
-###  http://purl.org/ontology/smi#SoftwareMultitrackProject
-<http://purl.org/ontology/smi#SoftwareMultitrackProject> rdf:type owl:Class ;
-                                                         rdfs:subClassOf <http://purl.org/ontology/studio/device/SoftwareDevice> ;
-                                                         rdfs:label "Software Multitrack Project"@en .
-
-
-###  http://purl.org/ontology/smi#SoundDeliverySystem
-<http://purl.org/ontology/smi#SoundDeliverySystem> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.org/ontology/smi#SMIHardwareDevice> .
-
-
-###  http://purl.org/ontology/smi#SoundEngine
-<http://purl.org/ontology/smi#SoundEngine> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://purl.org/ontology/smi#SMISoftwareDevice> ;
-                                           rdfs:comment "A piece of software that handles audio processing" ;
-                                           rdfs:label "Sound Engine" .
-
-
-###  http://purl.org/ontology/smi#VST2
-<http://purl.org/ontology/smi#VST2> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/aufx/ontology/1.0#VST> ;
-                                    owl:disjointWith <http://purl.org/ontology/smi#VST3> ;
-                                    rdfs:label "VST 2"@en .
-
-
-###  http://purl.org/ontology/smi#VST3
-<http://purl.org/ontology/smi#VST3> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://w3id.org/aufx/ontology/1.0#VST> ;
-                                    rdfs:label "VST 3"@en .
-
-
-###  http://purl.org/ontology/smi#VirtualRealityMusicalInstrument
-<http://purl.org/ontology/smi#VirtualRealityMusicalInstrument> rdf:type owl:Class ;
-                                                               rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
-                                                               rdfs:label "Virtual Reality Musical Instrument" .
-
-
-###  http://purl.org/ontology/smi#VisualDeliverySystem
-<http://purl.org/ontology/smi#VisualDeliverySystem> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://purl.org/ontology/smi#SMIHardwareDevice> .
-
-
-###  http://purl.org/ontology/smi#VisualEngine
-<http://purl.org/ontology/smi#VisualEngine> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.org/ontology/smi#SMISoftwareDevice> ;
-                                            rdfs:comment "A piece of software that handles visual processing" ;
-                                            rdfs:label "Visual Engine" .
-
-
-###  http://purl.org/ontology/smi#multichannel
-<http://purl.org/ontology/smi#multichannel> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.org/ontology/iomust/smiChannel> .
 
 
 ###  http://purl.org/ontology/studio/device/Converter
@@ -642,9 +642,9 @@
 #    Individuals
 #################################################################
 
-###  http://purl.org/ontology/smi#Decibel
-<http://purl.org/ontology/smi#Decibel> rdf:type owl:NamedIndividual ,
-                                                <http://qudt.org/schema/qudt#Unit> .
+###  http://purl.org/ontology/iomust/smi#Decibel
+:Decibel rdf:type owl:NamedIndividual ,
+                  <http://qudt.org/schema/qudt#Unit> .
 
 
 #################################################################
@@ -659,36 +659,36 @@
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Potentiometer
+  owl:members ( :Accelerometer
+                :DistanceSensor
+                :Gyroscope
+                :InertialMeasurementUnit
+                :Magnetometer
+                :Potentiometer
+                :PressureSensors
                 :PushButton
-                <http://purl.org/ontology/smi#Accelerometer>
-                <http://purl.org/ontology/smi#DistanceSensor>
-                <http://purl.org/ontology/smi#Gyroscope>
-                <http://purl.org/ontology/smi#InertialMeasurementUnit>
-                <http://purl.org/ontology/smi#Magnetometer>
-                <http://purl.org/ontology/smi#PressureSensors>
-                <http://purl.org/ontology/smi#RibbonSensor>
+                :RibbonSensor
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://purl.org/ontology/smi#AudioInputInterface>
-                <http://purl.org/ontology/smi#GestureInterface>
-                <http://purl.org/ontology/smi#HapticDeliverySystem>
-                <http://purl.org/ontology/smi#SingleBoardComputer>
-                <http://purl.org/ontology/smi#SoundDeliverySystem>
-                <http://purl.org/ontology/smi#VisualDeliverySystem>
+  owl:members ( :AudioInputInterface
+                :GestureInterface
+                :HapticDeliverySystem
+                :SingleBoardComputer
+                :SoundDeliverySystem
+                :VisualDeliverySystem
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://purl.org/ontology/smi#GestureSensorHandler>
-                <http://purl.org/ontology/smi#HapticEngine>
-                <http://purl.org/ontology/smi#MappingHandler>
-                <http://purl.org/ontology/smi#SoundEngine>
-                <http://purl.org/ontology/smi#VisualEngine>
+  owl:members ( :GestureSensorHandler
+                :HapticEngine
+                :MappingHandler
+                :SoundEngine
+                :VisualEngine
               )
 ] .
 

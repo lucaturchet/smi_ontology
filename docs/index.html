@@ -68,33 +68,31 @@ function loadTOC(){
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://www.gnu.org/licenses/gpl.html" target="_blank"><img src="https://img.shields.io/badge/License-https://www.gnu.org/licenses/gpl.html-blue.svg" alt="https://www.gnu.org/licenses/gpl.html" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Luca Turchet, Paolo Bouquet, Andrea Molinari, George Fazekas. The Smart Musical Insturments ontology. Journal of Web Semantics, 2020 (submitted)</dd>
+<dd>Luca Turchet. Smart Musical Insturments (SMI) ontology. Retrieved from: http://purl.org/ontology/iomust/smi/0.1</dd>
 </dl>
 
-
-
-
-
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
 </div>
 <div class="status">
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract">The Smart Musical Instruments (SMIs) is an emerging category of musical instruments that belongs to the wider class of Musical Things within the Internet of Musical Things paradigm. SMIs encompass sensors, actuators, embedded intelligence, and wireless connectivity to local networks and to the Internet. Interoperability represents a key issue within this domain, where heterogeneous SMIs are envisioned to exchange information between each other and a plethora of Musical Things. This paper proposes an ontology for the representation of the knowledge related to SMIs, with the aim of facilitating interoperability between SMIs as well as with other Musical Things interacting with them. 
-There was no previous comprehensive data model for the SMIs domain, however the new ontology relates to existing ontologies, including the SOSA Ontology for the representation of sensors and actuators, the Audio Effects Ontology dealing with the description of digital audio effects, and the IoMusT Ontology for the representation Musical Things and IoMusT ecosystems. This paper documents the design of the ontology and its evaluation with respect to specific requirements gathered from an extensive literature review, which was based on scenarios involving SMIs stakeholders, such as performers and studio producers.</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a place holder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This ontology has the following namespaces.
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<tr><td><b>smi</b></td><td>&lt;http://purl.org/ontology/iomust/smi&gt;</td></tr>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://purl.org/ontology/iomust/smi&gt;</td></tr>
 <tr><td><b>cc</b></td><td>&lt;http://web.resource.org/cc&gt;</td></tr>
 <tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
 <tr><td><b>qudt</b></td><td>&lt;http://qudt.org/schema/qudt&gt;</td></tr>
@@ -129,12 +127,14 @@ This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul class="hlist">
    <li>
-      <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">
+      <a href="#Accelerometer"
+         title="http://purl.org/ontology/iomust/smi#Accelerometer">
          <span>accelerometer</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#AcousticInstrument" title="http://purl.org/ontology/smi#AcousticInstrument">Acoustic Instrument</a>
+      <a href="#AcousticInstrument"
+         title="http://purl.org/ontology/iomust/smi#AcousticInstrument">Acoustic Instrument</a>
    </li>
    <li>
       <a href="#http://www.w3.org/ns/sosa/Actuator" title="http://www.w3.org/ns/sosa/Actuator">
@@ -142,113 +142,120 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#ADCaudio" title="http://purl.org/ontology/smi#ADCaudio">ADC audio</a>
+      <a href="#ADCaudio" title="http://purl.org/ontology/iomust/smi#ADCaudio">ADC audio</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#ADCsensor" title="http://purl.org/ontology/smi#ADCsensor">ADC sensor</a>
+      <a href="#ADCsensor" title="http://purl.org/ontology/iomust/smi#ADCsensor">ADC sensor</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#AudioInputInterface" title="http://purl.org/ontology/smi#AudioInputInterface">
+      <a href="#AudioInputInterface"
+         title="http://purl.org/ontology/iomust/smi#AudioInputInterface">
          <span>audio input interface</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#AudioTrackingSensor" title="http://purl.org/ontology/smi#AudioTrackingSensor">
+      <a href="#AudioTrackingSensor"
+         title="http://purl.org/ontology/iomust/smi#AudioTrackingSensor">
          <span>audio tracking sensor</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#DACactuator" title="http://purl.org/ontology/smi#DACactuator">
+      <a href="#DACactuator" title="http://purl.org/ontology/iomust/smi#DACactuator">
          <span>d a cactuator</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#DACaudio" title="http://purl.org/ontology/smi#DACaudio">
+      <a href="#DACaudio" title="http://purl.org/ontology/iomust/smi#DACaudio">
          <span>d a caudio</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">
+      <a href="#DistanceSensor"
+         title="http://purl.org/ontology/iomust/smi#DistanceSensor">
          <span>distance sensor</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#ElectricInstrument" title="http://purl.org/ontology/smi#ElectricInstrument">Electric Instrument</a>
+      <a href="#ElectricInstrument"
+         title="http://purl.org/ontology/iomust/smi#ElectricInstrument">Electric Instrument</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#ElectroAcousticInstrument"
-         title="http://purl.org/ontology/smi#ElectroAcousticInstrument">Electro Acoustic Instrument</a>
+      <a href="#ElectroAcousticInstrument"
+         title="http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument">Electro Acoustic Instrument</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem"
-         title="http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem">
+      <a href="#EmbeddedLoudspeakerSystem"
+         title="http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem">
          <span>embedded loudspeaker system</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem"
-         title="http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem">
+      <a href="#EmbeddedVibrationSpeakerSystem"
+         title="http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem">
          <span>embedded vibration speaker system</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#GestureInterface" title="http://purl.org/ontology/smi#GestureInterface">
+      <a href="#GestureInterface"
+         title="http://purl.org/ontology/iomust/smi#GestureInterface">
          <span>gesture interface</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-         title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+      <a href="#GestureSensorHandler"
+         title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#GestureSensorTransform"
-         title="http://purl.org/ontology/smi#GestureSensorTransform">Gesture Sensor Transform</a>
+      <a href="#GestureSensorTransform"
+         title="http://purl.org/ontology/iomust/smi#GestureSensorTransform">Gesture Sensor Transform</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-         title="http://purl.org/ontology/smi#GestureTrackingSensor">
+      <a href="#GestureTrackingSensor"
+         title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">
          <span>gesture tracking sensor</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">
+      <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">
          <span>gyroscope</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#HapticDeliverySystem"
-         title="http://purl.org/ontology/smi#HapticDeliverySystem">
+      <a href="#HapticDeliverySystem"
+         title="http://purl.org/ontology/iomust/smi#HapticDeliverySystem">
          <span>haptic delivery system</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
+      <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-         title="http://purl.org/ontology/smi#InertialMeasurementUnit">
+      <a href="#InertialMeasurementUnit"
+         title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">
          <span>inertial measurement unit</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">
+      <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">
          <span>magnetometer</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#MappingHandler" title="http://purl.org/ontology/smi#MappingHandler">Mapping Handler</a>
+      <a href="#MappingHandler"
+         title="http://purl.org/ontology/iomust/smi#MappingHandler">Mapping Handler</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#MappingTrasform" title="http://purl.org/ontology/smi#MappingTrasform">Mapping Transform</a>
+      <a href="#MappingTrasform"
+         title="http://purl.org/ontology/iomust/smi#MappingTrasform">Mapping Transform</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#Microphone_Transducer"
-         title="http://purl.org/ontology/smi#Microphone_Transducer">
+      <a href="#Microphone_Transducer"
+         title="http://purl.org/ontology/iomust/smi#Microphone_Transducer">
          <span>microphone transducer</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#multichannel" title="http://purl.org/ontology/smi#multichannel">
+      <a href="#multichannel" title="http://purl.org/ontology/iomust/smi#multichannel">
          <span>multichannel</span>
       </a>
    </li>
@@ -262,7 +269,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">
+      <a href="#PressureSensors"
+         title="http://purl.org/ontology/iomust/smi#PressureSensors">
          <span>pressure sensors</span>
       </a>
    </li>
@@ -272,17 +280,18 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#RE" title="http://purl.org/ontology/smi#RE">
+      <a href="#RE" title="http://purl.org/ontology/iomust/smi#RE">
          <span>r e</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">
+      <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">
          <span>ribbon sensor</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SMIHardwareDevice" title="http://purl.org/ontology/smi#SMIHardwareDevice">
+      <a href="#SMIHardwareDevice"
+         title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">
          <span>s m i hardware device</span>
       </a>
    </li>
@@ -292,70 +301,75 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SingleBoardComputer" title="http://purl.org/ontology/smi#SingleBoardComputer">Single Board Computer</a>
+      <a href="#SingleBoardComputer"
+         title="http://purl.org/ontology/iomust/smi#SingleBoardComputer">Single Board Computer</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SMIElectricAcousticIntrument"
-         title="http://purl.org/ontology/smi#SMIElectricAcousticIntrument">SMI Electric Acoustic Instrument</a>
+      <a href="#SMIElectricAcousticIntrument"
+         title="http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument">SMI Electric Acoustic Instrument</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SMIElectricInstrument"
-         title="http://purl.org/ontology/smi#SMIElectricInstrument">SMI Electric Instrument</a>
+      <a href="#SMIElectricInstrument"
+         title="http://purl.org/ontology/iomust/smi#SMIElectricInstrument">SMI Electric Instrument</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SMISoftwareDevice" title="http://purl.org/ontology/smi#SMISoftwareDevice">SMI Software Device</a>
+      <a href="#SMISoftwareDevice"
+         title="http://purl.org/ontology/iomust/smi#SMISoftwareDevice">SMI Software Device</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SMITransform" title="http://purl.org/ontology/smi#SMITransform">SMI Transform</a>
+      <a href="#SMITransform" title="http://purl.org/ontology/iomust/smi#SMITransform">SMI Transform</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument"
-         title="http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument">SMI Virtual Reality Musical Instrument</a>
+      <a href="#SMIVirtualRealityMusicalInstrument"
+         title="http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument">SMI Virtual Reality Musical Instrument</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SoftwareMultitrackProject"
-         title="http://purl.org/ontology/smi#SoftwareMultitrackProject">Software Multitrack Project</a>
+      <a href="#SoftwareMultitrackProject"
+         title="http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject">Software Multitrack Project</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">
+      <a href="#SoundDeliverySystem"
+         title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">
          <span>sound delivery system</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
+      <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#VirtualRealityMusicalInstrument"
-         title="http://purl.org/ontology/smi#VirtualRealityMusicalInstrument">Virtual Reality Musical Instrument</a>
+      <a href="#VirtualRealityMusicalInstrument"
+         title="http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument">Virtual Reality Musical Instrument</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#VisualDeliverySystem"
-         title="http://purl.org/ontology/smi#VisualDeliverySystem">
+      <a href="#VisualDeliverySystem"
+         title="http://purl.org/ontology/iomust/smi#VisualDeliverySystem">
          <span>visual delivery system</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#VisualEngine" title="http://purl.org/ontology/smi#VisualEngine">Visual Engine</a>
+      <a href="#VisualEngine" title="http://purl.org/ontology/iomust/smi#VisualEngine">Visual Engine</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#VST2" title="http://purl.org/ontology/smi#VST2">VST 2</a>
+      <a href="#VST2" title="http://purl.org/ontology/iomust/smi#VST2">VST 2</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#VST3" title="http://purl.org/ontology/smi#VST3">VST 3</a>
+      <a href="#VST3" title="http://purl.org/ontology/iomust/smi#VST3">VST 3</a>
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
-      <a href="#http://purl.org/ontology/smi#component_mic" title="http://purl.org/ontology/smi#component_mic">
+      <a href="#component_mic"
+         title="http://purl.org/ontology/iomust/smi#component_mic">
          <span>component mic</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#component_platform" title="http://purl.org/ontology/smi#component_platform">
+      <a href="#component_platform"
+         title="http://purl.org/ontology/iomust/smi#component_platform">
          <span>component platform</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#executes" title="http://purl.org/ontology/smi#executes">executes</a>
+      <a href="#executes" title="http://purl.org/ontology/iomust/smi#executes">executes</a>
    </li>
    <li>
       <a href="#http://www.w3.org/ns/sosa/hasResult" title="http://www.w3.org/ns/sosa/hasResult">
@@ -363,7 +377,8 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#implementation" title="http://purl.org/ontology/smi#implementation">
+      <a href="#implementation"
+         title="http://purl.org/ontology/iomust/smi#implementation">
          <span>implementation</span>
       </a>
    </li>
@@ -374,65 +389,66 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#mapping_implementation"
-         title="http://purl.org/ontology/smi#mapping_implementation">mapping implementation</a>
+      <a href="#mapping_implementation"
+         title="http://purl.org/ontology/iomust/smi#mapping_implementation">mapping implementation</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#processes_sensor_signal"
-         title="http://purl.org/ontology/smi#processes_sensor_signal">processes sensor signal</a>
+      <a href="#maps" title="http://purl.org/ontology/iomust/smi#maps">
+         <span>maps</span>
+      </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SMIcomponent" title="http://purl.org/ontology/smi#SMIcomponent">
+      <a href="#processes_sensor_signal"
+         title="http://purl.org/ontology/iomust/smi#processes_sensor_signal">processes sensor signal</a>
+   </li>
+   <li>
+      <a href="#SMIcomponent" title="http://purl.org/ontology/iomust/smi#SMIcomponent">
          <span>s m icomponent</span>
       </a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#sensor_handler_implementation"
-         title="http://purl.org/ontology/smi#sensor_handler_implementation">sensor handler implementation</a>
+      <a href="#sensor_handler_implementation"
+         title="http://purl.org/ontology/iomust/smi#sensor_handler_implementation">sensor handler implementation</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#SMIhosts" title="http://purl.org/ontology/smi#SMIhosts">SMI hosts</a>
-   </li>
-   <li>
-      <a href="#maps" title="http://purl.org/ontology/iomust/smimaps">
-         <span>smimaps</span>
-      </a>
+      <a href="#SMIhosts" title="http://purl.org/ontology/iomust/smi#SMIhosts">SMI hosts</a>
    </li>
 </ul><h4>Data Properties</h4><ul class="hlist">
    <li>
-      <a href="#http://purl.org/ontology/smi#converter_sample_rate"
-         title="http://purl.org/ontology/smi#converter_sample_rate">converter sample rate</a>
+      <a href="#converter_sample_rate"
+         title="http://purl.org/ontology/iomust/smi#converter_sample_rate">converter sample rate</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#cutoff_frequency" title="http://purl.org/ontology/smi#cutoff_frequency">cutoff frequency</a>
+      <a href="#cutoff_frequency"
+         title="http://purl.org/ontology/iomust/smi#cutoff_frequency">cutoff frequency</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#filter_type" title="http://purl.org/ontology/smi#filter_type">filter type</a>
+      <a href="#filter_type" title="http://purl.org/ontology/iomust/smi#filter_type">filter type</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#has_name" title="http://purl.org/ontology/smi#has_name">has name</a>
+      <a href="#has_name" title="http://purl.org/ontology/iomust/smi#has_name">has name</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#mapping_function_parameter"
-         title="http://purl.org/ontology/smi#mapping_function_parameter">mapping function parameter</a>
+      <a href="#mapping_function_parameter"
+         title="http://purl.org/ontology/iomust/smi#mapping_function_parameter">mapping function parameter</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#mapping_function_type"
-         title="http://purl.org/ontology/smi#mapping_function_type">mapping function type</a>
+      <a href="#mapping_function_type"
+         title="http://purl.org/ontology/iomust/smi#mapping_function_type">mapping function type</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#midi_port" title="http://purl.org/ontology/smi#midi_port">midi port</a>
+      <a href="#midi_port" title="http://purl.org/ontology/iomust/smi#midi_port">midi port</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#threshold" title="http://purl.org/ontology/smi#threshold">threshold</a>
+      <a href="#threshold" title="http://purl.org/ontology/iomust/smi#threshold">threshold</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#works_at_audio_sampling_rate"
-         title="http://purl.org/ontology/smi#works_at_audio_sampling_rate">works at audio sampling rate</a>
+      <a href="#works_at_audio_sampling_rate"
+         title="http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate">works at audio sampling rate</a>
    </li>
    <li>
-      <a href="#http://purl.org/ontology/smi#works_at_sensor_sampling_rate"
-         title="http://purl.org/ontology/smi#works_at_sensor_sampling_rate">works at sensor sampling rate</a>
+      <a href="#works_at_sensor_sampling_rate"
+         title="http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate">works at sensor sampling rate</a>
    </li>
 </ul><h4>Annotation Properties</h4><ul class="hlist">
    <li>
@@ -477,7 +493,7 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><h4>Named Individuals</h4><ul class="hlist">
    <li>
-      <a href="#http://purl.org/ontology/smi#Decibel" title="http://purl.org/ontology/smi#Decibel">
+      <a href="#Decibel" title="http://purl.org/ontology/iomust/smi#Decibel">
          <span>decibel</span>
       </a>
    </li>
@@ -500,12 +516,14 @@ This section provides details for each class and property defined by Smart Music
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">
+         <a href="#Accelerometer"
+            title="http://purl.org/ontology/iomust/smi#Accelerometer">
             <span>accelerometer</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#AcousticInstrument" title="http://purl.org/ontology/smi#AcousticInstrument">Acoustic Instrument</a>
+         <a href="#AcousticInstrument"
+            title="http://purl.org/ontology/iomust/smi#AcousticInstrument">Acoustic Instrument</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/sosa/Actuator" title="http://www.w3.org/ns/sosa/Actuator">
@@ -513,113 +531,120 @@ This section provides details for each class and property defined by Smart Music
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#ADCaudio" title="http://purl.org/ontology/smi#ADCaudio">ADC audio</a>
+         <a href="#ADCaudio" title="http://purl.org/ontology/iomust/smi#ADCaudio">ADC audio</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#ADCsensor" title="http://purl.org/ontology/smi#ADCsensor">ADC sensor</a>
+         <a href="#ADCsensor" title="http://purl.org/ontology/iomust/smi#ADCsensor">ADC sensor</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#AudioInputInterface" title="http://purl.org/ontology/smi#AudioInputInterface">
+         <a href="#AudioInputInterface"
+            title="http://purl.org/ontology/iomust/smi#AudioInputInterface">
             <span>audio input interface</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#AudioTrackingSensor" title="http://purl.org/ontology/smi#AudioTrackingSensor">
+         <a href="#AudioTrackingSensor"
+            title="http://purl.org/ontology/iomust/smi#AudioTrackingSensor">
             <span>audio tracking sensor</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#DACactuator" title="http://purl.org/ontology/smi#DACactuator">
+         <a href="#DACactuator" title="http://purl.org/ontology/iomust/smi#DACactuator">
             <span>d a cactuator</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#DACaudio" title="http://purl.org/ontology/smi#DACaudio">
+         <a href="#DACaudio" title="http://purl.org/ontology/iomust/smi#DACaudio">
             <span>d a caudio</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">
+         <a href="#DistanceSensor"
+            title="http://purl.org/ontology/iomust/smi#DistanceSensor">
             <span>distance sensor</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#ElectricInstrument" title="http://purl.org/ontology/smi#ElectricInstrument">Electric Instrument</a>
+         <a href="#ElectricInstrument"
+            title="http://purl.org/ontology/iomust/smi#ElectricInstrument">Electric Instrument</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#ElectroAcousticInstrument"
-            title="http://purl.org/ontology/smi#ElectroAcousticInstrument">Electro Acoustic Instrument</a>
+         <a href="#ElectroAcousticInstrument"
+            title="http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument">Electro Acoustic Instrument</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem"
-            title="http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem">
+         <a href="#EmbeddedLoudspeakerSystem"
+            title="http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem">
             <span>embedded loudspeaker system</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem"
-            title="http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem">
+         <a href="#EmbeddedVibrationSpeakerSystem"
+            title="http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem">
             <span>embedded vibration speaker system</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#GestureInterface" title="http://purl.org/ontology/smi#GestureInterface">
+         <a href="#GestureInterface"
+            title="http://purl.org/ontology/iomust/smi#GestureInterface">
             <span>gesture interface</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-            title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+         <a href="#GestureSensorHandler"
+            title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#GestureSensorTransform"
-            title="http://purl.org/ontology/smi#GestureSensorTransform">Gesture Sensor Transform</a>
+         <a href="#GestureSensorTransform"
+            title="http://purl.org/ontology/iomust/smi#GestureSensorTransform">Gesture Sensor Transform</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-            title="http://purl.org/ontology/smi#GestureTrackingSensor">
+         <a href="#GestureTrackingSensor"
+            title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">
             <span>gesture tracking sensor</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">
+         <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">
             <span>gyroscope</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#HapticDeliverySystem"
-            title="http://purl.org/ontology/smi#HapticDeliverySystem">
+         <a href="#HapticDeliverySystem"
+            title="http://purl.org/ontology/iomust/smi#HapticDeliverySystem">
             <span>haptic delivery system</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
+         <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-            title="http://purl.org/ontology/smi#InertialMeasurementUnit">
+         <a href="#InertialMeasurementUnit"
+            title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">
             <span>inertial measurement unit</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">
+         <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">
             <span>magnetometer</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#MappingHandler" title="http://purl.org/ontology/smi#MappingHandler">Mapping Handler</a>
+         <a href="#MappingHandler"
+            title="http://purl.org/ontology/iomust/smi#MappingHandler">Mapping Handler</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#MappingTrasform" title="http://purl.org/ontology/smi#MappingTrasform">Mapping Transform</a>
+         <a href="#MappingTrasform"
+            title="http://purl.org/ontology/iomust/smi#MappingTrasform">Mapping Transform</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#Microphone_Transducer"
-            title="http://purl.org/ontology/smi#Microphone_Transducer">
+         <a href="#Microphone_Transducer"
+            title="http://purl.org/ontology/iomust/smi#Microphone_Transducer">
             <span>microphone transducer</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#multichannel" title="http://purl.org/ontology/smi#multichannel">
+         <a href="#multichannel" title="http://purl.org/ontology/iomust/smi#multichannel">
             <span>multichannel</span>
          </a>
       </li>
@@ -633,7 +658,8 @@ This section provides details for each class and property defined by Smart Music
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">
+         <a href="#PressureSensors"
+            title="http://purl.org/ontology/iomust/smi#PressureSensors">
             <span>pressure sensors</span>
          </a>
       </li>
@@ -643,17 +669,18 @@ This section provides details for each class and property defined by Smart Music
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#RE" title="http://purl.org/ontology/smi#RE">
+         <a href="#RE" title="http://purl.org/ontology/iomust/smi#RE">
             <span>r e</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">
+         <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">
             <span>ribbon sensor</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SMIHardwareDevice" title="http://purl.org/ontology/smi#SMIHardwareDevice">
+         <a href="#SMIHardwareDevice"
+            title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">
             <span>s m i hardware device</span>
          </a>
       </li>
@@ -663,95 +690,100 @@ This section provides details for each class and property defined by Smart Music
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SingleBoardComputer" title="http://purl.org/ontology/smi#SingleBoardComputer">Single Board Computer</a>
+         <a href="#SingleBoardComputer"
+            title="http://purl.org/ontology/iomust/smi#SingleBoardComputer">Single Board Computer</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SMIElectricAcousticIntrument"
-            title="http://purl.org/ontology/smi#SMIElectricAcousticIntrument">SMI Electric Acoustic Instrument</a>
+         <a href="#SMIElectricAcousticIntrument"
+            title="http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument">SMI Electric Acoustic Instrument</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SMIElectricInstrument"
-            title="http://purl.org/ontology/smi#SMIElectricInstrument">SMI Electric Instrument</a>
+         <a href="#SMIElectricInstrument"
+            title="http://purl.org/ontology/iomust/smi#SMIElectricInstrument">SMI Electric Instrument</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SMISoftwareDevice" title="http://purl.org/ontology/smi#SMISoftwareDevice">SMI Software Device</a>
+         <a href="#SMISoftwareDevice"
+            title="http://purl.org/ontology/iomust/smi#SMISoftwareDevice">SMI Software Device</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SMITransform" title="http://purl.org/ontology/smi#SMITransform">SMI Transform</a>
+         <a href="#SMITransform" title="http://purl.org/ontology/iomust/smi#SMITransform">SMI Transform</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument"
-            title="http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument">SMI Virtual Reality Musical Instrument</a>
+         <a href="#SMIVirtualRealityMusicalInstrument"
+            title="http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument">SMI Virtual Reality Musical Instrument</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SoftwareMultitrackProject"
-            title="http://purl.org/ontology/smi#SoftwareMultitrackProject">Software Multitrack Project</a>
+         <a href="#SoftwareMultitrackProject"
+            title="http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject">Software Multitrack Project</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">
+         <a href="#SoundDeliverySystem"
+            title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">
             <span>sound delivery system</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
+         <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#VirtualRealityMusicalInstrument"
-            title="http://purl.org/ontology/smi#VirtualRealityMusicalInstrument">Virtual Reality Musical Instrument</a>
+         <a href="#VirtualRealityMusicalInstrument"
+            title="http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument">Virtual Reality Musical Instrument</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#VisualDeliverySystem"
-            title="http://purl.org/ontology/smi#VisualDeliverySystem">
+         <a href="#VisualDeliverySystem"
+            title="http://purl.org/ontology/iomust/smi#VisualDeliverySystem">
             <span>visual delivery system</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#VisualEngine" title="http://purl.org/ontology/smi#VisualEngine">Visual Engine</a>
+         <a href="#VisualEngine" title="http://purl.org/ontology/iomust/smi#VisualEngine">Visual Engine</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#VST2" title="http://purl.org/ontology/smi#VST2">VST 2</a>
+         <a href="#VST2" title="http://purl.org/ontology/iomust/smi#VST2">VST 2</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#VST3" title="http://purl.org/ontology/smi#VST3">VST 3</a>
+         <a href="#VST3" title="http://purl.org/ontology/iomust/smi#VST3">VST 3</a>
       </li>
    </ul>
-   <div class="entity" id="http://purl.org/ontology/smi#Accelerometer">
+   <div class="entity" id="Accelerometer">
       <h3>accelerometer<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#Accelerometer</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#Accelerometer</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#Potentiometer"
+            <a href="#DistanceSensor"
+               title="http://purl.org/ontology/iomust/smi#DistanceSensor">distance sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">gyroscope</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
+               title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
+               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">distance sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">gyroscope</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-               title="http://purl.org/ontology/smi#InertialMeasurementUnit">inertial measurement unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">magnetometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">pressure sensors</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">ribbon sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#AcousticInstrument">
+   <div class="entity" id="AcousticInstrument">
       <h3>Acoustic Instrument<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#AcousticInstrument</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#AcousticInstrument</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -776,13 +808,13 @@ This section provides details for each class and property defined by Smart Music
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#ADCaudio">
+   <div class="entity" id="ADCaudio">
       <h3>ADC audio<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#ADCaudio</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#ADCaudio</p>
       <div class="comment">
          <span class="markdown">Audio to Digital converter for audio signals</span>
       </div>
@@ -794,18 +826,18 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#ADCsensor" title="http://purl.org/ontology/smi#ADCsensor">ADC sensor</a>
+            <a href="#ADCsensor" title="http://purl.org/ontology/iomust/smi#ADCsensor">ADC sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#ADCsensor">
+   <div class="entity" id="ADCsensor">
       <h3>ADC sensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#ADCsensor</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#ADCsensor</p>
       <div class="comment">
          <span class="markdown">Analog to Digital converter for gesture tracking sensors</span>
       </div>
@@ -817,44 +849,48 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#ADCaudio" title="http://purl.org/ontology/smi#ADCaudio">ADC audio</a>
+            <a href="#ADCaudio" title="http://purl.org/ontology/iomust/smi#ADCaudio">ADC audio</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#AudioInputInterface">
+   <div class="entity" id="AudioInputInterface">
       <h3>audio input interface<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#AudioInputInterface</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#AudioInputInterface</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMIHardwareDevice" title="http://purl.org/ontology/smi#SMIHardwareDevice">s m i hardware device</a>
+            <a href="#SMIHardwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">s m i hardware device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureInterface" title="http://purl.org/ontology/smi#GestureInterface">gesture interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticDeliverySystem"
-               title="http://purl.org/ontology/smi#HapticDeliverySystem">haptic delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SingleBoardComputer" title="http://purl.org/ontology/smi#SingleBoardComputer">Single Board Computer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">sound delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualDeliverySystem"
-               title="http://purl.org/ontology/smi#VisualDeliverySystem">visual delivery system</a>
+            <a href="#GestureInterface"
+               title="http://purl.org/ontology/iomust/smi#GestureInterface">gesture interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#HapticDeliverySystem">haptic delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SingleBoardComputer"
+               title="http://purl.org/ontology/iomust/smi#SingleBoardComputer">Single Board Computer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">sound delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#VisualDeliverySystem">visual delivery system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#AudioTrackingSensor">
+   <div class="entity" id="AudioTrackingSensor">
       <h3>audio tracking sensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#AudioTrackingSensor</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#AudioTrackingSensor</p>
       <div class="comment">
          <span class="markdown">A sensor that detects audio signals</span>
       </div>
@@ -866,19 +902,19 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#Microphone_Transducer"
-               title="http://purl.org/ontology/smi#Microphone_Transducer">microphone transducer</a>
+            <a href="#Microphone_Transducer"
+               title="http://purl.org/ontology/iomust/smi#Microphone_Transducer">microphone transducer</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#DACactuator">
+   <div class="entity" id="DACactuator">
       <h3>d a cactuator<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#DACactuator</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#DACactuator</p>
       <div class="comment">
          <span class="markdown">Digital to Analog converter for haptic signals</span>
       </div>
@@ -890,18 +926,18 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#DACaudio" title="http://purl.org/ontology/smi#DACaudio">d a caudio</a>
+            <a href="#DACaudio" title="http://purl.org/ontology/iomust/smi#DACaudio">d a caudio</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#DACaudio">
+   <div class="entity" id="DACaudio">
       <h3>d a caudio<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#DACaudio</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#DACaudio</p>
       <div class="comment">
          <span class="markdown">Digital to Analog converter for audio signals</span>
       </div>
@@ -913,48 +949,50 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#DACactuator" title="http://purl.org/ontology/smi#DACactuator">d a cactuator</a>
+            <a href="#DACactuator" title="http://purl.org/ontology/iomust/smi#DACactuator">d a cactuator</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#DistanceSensor">
+   <div class="entity" id="DistanceSensor">
       <h3>distance sensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#DistanceSensor</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#DistanceSensor</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#Potentiometer"
+            <a href="#Accelerometer"
+               title="http://purl.org/ontology/iomust/smi#Accelerometer">accelerometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">gyroscope</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
+               title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
+               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">accelerometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">gyroscope</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-               title="http://purl.org/ontology/smi#InertialMeasurementUnit">inertial measurement unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">magnetometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">pressure sensors</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">ribbon sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#ElectricInstrument">
+   <div class="entity" id="ElectricInstrument">
       <h3>Electric Instrument<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#ElectricInstrument</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#ElectricInstrument</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -963,13 +1001,13 @@ This section provides details for each class and property defined by Smart Music
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#ElectroAcousticInstrument">
+   <div class="entity" id="ElectroAcousticInstrument">
       <h3>Electro Acoustic Instrument<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#ElectroAcousticInstrument</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -978,139 +1016,148 @@ This section provides details for each class and property defined by Smart Music
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem">
+   <div class="entity" id="EmbeddedLoudspeakerSystem">
       <h3>embedded loudspeaker system<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">sound delivery system</a>
+            <a href="#SoundDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">sound delivery system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem">
+   <div class="entity" id="EmbeddedVibrationSpeakerSystem">
       <h3>embedded vibration speaker system<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">sound delivery system</a>
+            <a href="#SoundDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">sound delivery system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#GestureInterface">
+   <div class="entity" id="GestureInterface">
       <h3>gesture interface<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#GestureInterface</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#GestureInterface</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMIHardwareDevice" title="http://purl.org/ontology/smi#SMIHardwareDevice">s m i hardware device</a>
+            <a href="#SMIHardwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">s m i hardware device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#AudioInputInterface" title="http://purl.org/ontology/smi#AudioInputInterface">audio input interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticDeliverySystem"
-               title="http://purl.org/ontology/smi#HapticDeliverySystem">haptic delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SingleBoardComputer" title="http://purl.org/ontology/smi#SingleBoardComputer">Single Board Computer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">sound delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualDeliverySystem"
-               title="http://purl.org/ontology/smi#VisualDeliverySystem">visual delivery system</a>
+            <a href="#AudioInputInterface"
+               title="http://purl.org/ontology/iomust/smi#AudioInputInterface">audio input interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#HapticDeliverySystem">haptic delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SingleBoardComputer"
+               title="http://purl.org/ontology/iomust/smi#SingleBoardComputer">Single Board Computer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">sound delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#VisualDeliverySystem">visual delivery system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#GestureSensorHandler">
+   <div class="entity" id="GestureSensorHandler">
       <h3>Gesture Sensor Handler<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#GestureSensorHandler</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#GestureSensorHandler</p>
       <div class="comment">
          <span class="markdown">A piece of software which carries out observations through sensors (like a microphone or a pressure sensor). Typically an SMI sensor observer acts upon the digital values of an ADC (analogue to digital converter).</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMISoftwareDevice" title="http://purl.org/ontology/smi#SMISoftwareDevice">SMI Software Device</a>
+            <a href="#SMISoftwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMISoftwareDevice">SMI Software Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#processes_sensor_signal"
-               title="http://purl.org/ontology/smi#processes_sensor_signal">processes sensor signal</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/ontology/smi#threshold" title="http://purl.org/ontology/smi#threshold">threshold</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/ontology/smi#works_at_sensor_sampling_rate"
-               title="http://purl.org/ontology/smi#works_at_sensor_sampling_rate">works at sensor sampling rate</a>
+            <a href="#processes_sensor_signal"
+               title="http://purl.org/ontology/iomust/smi#processes_sensor_signal">processes sensor signal</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#threshold" title="http://purl.org/ontology/iomust/smi#threshold">threshold</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#works_at_sensor_sampling_rate"
+               title="http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate">works at sensor sampling rate</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#sensor_handler_implementation"
-               title="http://purl.org/ontology/smi#sensor_handler_implementation">sensor handler implementation</a>
+            <a href="#sensor_handler_implementation"
+               title="http://purl.org/ontology/iomust/smi#sensor_handler_implementation">sensor handler implementation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#MappingHandler" title="http://purl.org/ontology/smi#MappingHandler">Mapping Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualEngine" title="http://purl.org/ontology/smi#VisualEngine">Visual Engine</a>
+            <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MappingHandler"
+               title="http://purl.org/ontology/iomust/smi#MappingHandler">Mapping Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualEngine" title="http://purl.org/ontology/iomust/smi#VisualEngine">Visual Engine</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#GestureSensorTransform">
+   <div class="entity" id="GestureSensorTransform">
       <h3>Gesture Sensor Transform<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#GestureSensorTransform</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#GestureSensorTransform</p>
       <div class="comment">
          <span class="markdown">A transformation applied by a SMI Gesture Sensor Handler to the signal observed by a sensor tracking a player's gesture</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMITransform" title="http://purl.org/ontology/smi#SMITransform">SMI Transform</a>
+            <a href="#SMITransform" title="http://purl.org/ontology/iomust/smi#SMITransform">SMI Transform</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#sensor_handler_implementation"
-               title="http://purl.org/ontology/smi#sensor_handler_implementation">sensor handler implementation</a>
+            <a href="#sensor_handler_implementation"
+               title="http://purl.org/ontology/iomust/smi#sensor_handler_implementation">sensor handler implementation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#MappingTrasform" title="http://purl.org/ontology/smi#MappingTrasform">Mapping Transform</a>
+            <a href="#MappingTrasform"
+               title="http://purl.org/ontology/iomust/smi#MappingTrasform">Mapping Transform</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#GestureTrackingSensor">
+   <div class="entity" id="GestureTrackingSensor">
       <h3>gesture tracking sensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#GestureTrackingSensor</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#GestureTrackingSensor</p>
       <div class="comment">
          <span class="markdown">A sensor that detects the performer's gestures</span>
       </div>
@@ -1122,260 +1169,282 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">accelerometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">distance sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">gyroscope</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-               title="http://purl.org/ontology/smi#InertialMeasurementUnit">inertial measurement unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">magnetometer</a>
+            <a href="#Accelerometer"
+               title="http://purl.org/ontology/iomust/smi#Accelerometer">accelerometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DistanceSensor"
+               title="http://purl.org/ontology/iomust/smi#DistanceSensor">distance sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">gyroscope</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
+               title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
+               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">ribbon sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#Gyroscope">
+   <div class="entity" id="Gyroscope">
       <h3>gyroscope<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#Gyroscope</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#Gyroscope</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#Potentiometer"
+            <a href="#Accelerometer"
+               title="http://purl.org/ontology/iomust/smi#Accelerometer">accelerometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DistanceSensor"
+               title="http://purl.org/ontology/iomust/smi#DistanceSensor">distance sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
+               title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
+               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">accelerometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">distance sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-               title="http://purl.org/ontology/smi#InertialMeasurementUnit">inertial measurement unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">magnetometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">pressure sensors</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">ribbon sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#HapticDeliverySystem">
+   <div class="entity" id="HapticDeliverySystem">
       <h3>haptic delivery system<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#HapticDeliverySystem</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#HapticDeliverySystem</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMIHardwareDevice" title="http://purl.org/ontology/smi#SMIHardwareDevice">s m i hardware device</a>
+            <a href="#SMIHardwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">s m i hardware device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#AudioInputInterface" title="http://purl.org/ontology/smi#AudioInputInterface">audio input interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#GestureInterface" title="http://purl.org/ontology/smi#GestureInterface">gesture interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SingleBoardComputer" title="http://purl.org/ontology/smi#SingleBoardComputer">Single Board Computer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">sound delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualDeliverySystem"
-               title="http://purl.org/ontology/smi#VisualDeliverySystem">visual delivery system</a>
+            <a href="#AudioInputInterface"
+               title="http://purl.org/ontology/iomust/smi#AudioInputInterface">audio input interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GestureInterface"
+               title="http://purl.org/ontology/iomust/smi#GestureInterface">gesture interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SingleBoardComputer"
+               title="http://purl.org/ontology/iomust/smi#SingleBoardComputer">Single Board Computer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">sound delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#VisualDeliverySystem">visual delivery system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#HapticEngine">
+   <div class="entity" id="HapticEngine">
       <h3>Haptic Engine<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#HapticEngine</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#HapticEngine</p>
       <div class="comment">
          <span class="markdown">A piece of software that handles haptic processing</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMISoftwareDevice" title="http://purl.org/ontology/smi#SMISoftwareDevice">SMI Software Device</a>
+            <a href="#SMISoftwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMISoftwareDevice">SMI Software Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-               title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#MappingHandler" title="http://purl.org/ontology/smi#MappingHandler">Mapping Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualEngine" title="http://purl.org/ontology/smi#VisualEngine">Visual Engine</a>
+            <a href="#GestureSensorHandler"
+               title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MappingHandler"
+               title="http://purl.org/ontology/iomust/smi#MappingHandler">Mapping Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualEngine" title="http://purl.org/ontology/iomust/smi#VisualEngine">Visual Engine</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#InertialMeasurementUnit">
+   <div class="entity" id="InertialMeasurementUnit">
       <h3>inertial measurement unit<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#InertialMeasurementUnit</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#InertialMeasurementUnit</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#Potentiometer"
+            <a href="#Accelerometer"
+               title="http://purl.org/ontology/iomust/smi#Accelerometer">accelerometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DistanceSensor"
+               title="http://purl.org/ontology/iomust/smi#DistanceSensor">distance sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">gyroscope</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
+               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">accelerometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">distance sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">gyroscope</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">magnetometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">pressure sensors</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">ribbon sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#Magnetometer">
+   <div class="entity" id="Magnetometer">
       <h3>magnetometer<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#Magnetometer</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#Magnetometer</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#Potentiometer"
+            <a href="#Accelerometer"
+               title="http://purl.org/ontology/iomust/smi#Accelerometer">accelerometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DistanceSensor"
+               title="http://purl.org/ontology/iomust/smi#DistanceSensor">distance sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">gyroscope</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
+               title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
+               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">accelerometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">distance sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">gyroscope</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-               title="http://purl.org/ontology/smi#InertialMeasurementUnit">inertial measurement unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">pressure sensors</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">ribbon sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#MappingHandler">
+   <div class="entity" id="MappingHandler">
       <h3>Mapping Handler<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#MappingHandler</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#MappingHandler</p>
       <div class="comment">
          <span class="markdown">A piece of software that handles the mapping functions from sensor values to plugin parameters</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMISoftwareDevice" title="http://purl.org/ontology/smi#SMISoftwareDevice">SMI Software Device</a>
+            <a href="#SMISoftwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMISoftwareDevice">SMI Software Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#mapping_implementation"
-               title="http://purl.org/ontology/smi#mapping_implementation">mapping implementation</a>
+            <a href="#mapping_implementation"
+               title="http://purl.org/ontology/iomust/smi#mapping_implementation">mapping implementation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-               title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualEngine" title="http://purl.org/ontology/smi#VisualEngine">Visual Engine</a>
+            <a href="#GestureSensorHandler"
+               title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualEngine" title="http://purl.org/ontology/iomust/smi#VisualEngine">Visual Engine</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#MappingTrasform">
+   <div class="entity" id="MappingTrasform">
       <h3>Mapping Transform<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#MappingTrasform</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#MappingTrasform</p>
       <div class="comment">
          <span class="markdown">A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMITransform" title="http://purl.org/ontology/smi#SMITransform">SMI Transform</a>
+            <a href="#SMITransform" title="http://purl.org/ontology/iomust/smi#SMITransform">SMI Transform</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#mapping_function_parameter"
-               title="http://purl.org/ontology/smi#mapping_function_parameter">mapping function parameter</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/ontology/smi#mapping_function_type"
-               title="http://purl.org/ontology/smi#mapping_function_type">mapping function type</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/ontology/smi#mapping_implementation"
-               title="http://purl.org/ontology/smi#mapping_implementation">mapping implementation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#maps" title="http://purl.org/ontology/iomust/smimaps">smimaps</a>
+            <a href="#mapping_function_parameter"
+               title="http://purl.org/ontology/iomust/smi#mapping_function_parameter">mapping function parameter</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#mapping_function_type"
+               title="http://purl.org/ontology/iomust/smi#mapping_function_type">mapping function type</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#mapping_implementation"
+               title="http://purl.org/ontology/iomust/smi#mapping_implementation">mapping implementation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#maps" title="http://purl.org/ontology/iomust/smi#maps">maps</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureSensorTransform"
-               title="http://purl.org/ontology/smi#GestureSensorTransform">Gesture Sensor Transform</a>
+            <a href="#GestureSensorTransform"
+               title="http://purl.org/ontology/iomust/smi#GestureSensorTransform">Gesture Sensor Transform</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#Microphone_Transducer">
+   <div class="entity" id="Microphone_Transducer">
       <h3>microphone transducer<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#Microphone_Transducer</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#Microphone_Transducer</p>
       <div class="comment">
          <span class="markdown">The sensor embedded in a microphone</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#AudioTrackingSensor" title="http://purl.org/ontology/smi#AudioTrackingSensor">audio tracking sensor</a>
+            <a href="#AudioTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#AudioTrackingSensor">audio tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#component_mic" title="http://purl.org/ontology/smi#component_mic">component mic</a>
+            <a href="#component_mic"
+               title="http://purl.org/ontology/iomust/smi#component_mic">component mic</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#multichannel">
+   <div class="entity" id="multichannel">
       <h3>multichannel<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#multichannel</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#multichannel</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1409,51 +1478,56 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">accelerometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">distance sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">gyroscope</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-               title="http://purl.org/ontology/smi#InertialMeasurementUnit">inertial measurement unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">magnetometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">pressure sensors</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">ribbon sensor</a>
+            <a href="#Accelerometer"
+               title="http://purl.org/ontology/iomust/smi#Accelerometer">accelerometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DistanceSensor"
+               title="http://purl.org/ontology/iomust/smi#DistanceSensor">distance sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">gyroscope</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
+               title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
+               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#PressureSensors">
+   <div class="entity" id="PressureSensors">
       <h3>pressure sensors<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#PressureSensors</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#PressureSensors</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#Potentiometer"
+            <a href="#Accelerometer"
+               title="http://purl.org/ontology/iomust/smi#Accelerometer">accelerometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DistanceSensor"
+               title="http://purl.org/ontology/iomust/smi#DistanceSensor">distance sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">gyroscope</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
+               title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">accelerometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">distance sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">gyroscope</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-               title="http://purl.org/ontology/smi#InertialMeasurementUnit">inertial measurement unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">magnetometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">ribbon sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1468,33 +1542,36 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#Potentiometer"
+            <a href="#Accelerometer"
+               title="http://purl.org/ontology/iomust/smi#Accelerometer">accelerometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DistanceSensor"
+               title="http://purl.org/ontology/iomust/smi#DistanceSensor">distance sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">gyroscope</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
+               title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">accelerometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">distance sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">gyroscope</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-               title="http://purl.org/ontology/smi#InertialMeasurementUnit">inertial measurement unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">magnetometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">pressure sensors</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#RibbonSensor" title="http://purl.org/ontology/smi#RibbonSensor">ribbon sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
+               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#RE">
+   <div class="entity" id="RE">
       <h3>r e<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#RE</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#RE</p>
       <div class="comment">
          <span class="markdown">Rack Extensions for a plugin API (by Propellerheads)</span>
       </div>
@@ -1506,43 +1583,46 @@ This section provides details for each class and property defined by Smart Music
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#RibbonSensor">
+   <div class="entity" id="RibbonSensor">
       <h3>ribbon sensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#RibbonSensor</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#RibbonSensor</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#Potentiometer"
+            <a href="#Accelerometer"
+               title="http://purl.org/ontology/iomust/smi#Accelerometer">accelerometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DistanceSensor"
+               title="http://purl.org/ontology/iomust/smi#DistanceSensor">distance sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gyroscope" title="http://purl.org/ontology/iomust/smi#Gyroscope">gyroscope</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
+               title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
+               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Accelerometer" title="http://purl.org/ontology/smi#Accelerometer">accelerometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#DistanceSensor" title="http://purl.org/ontology/smi#DistanceSensor">distance sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Gyroscope" title="http://purl.org/ontology/smi#Gyroscope">gyroscope</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#InertialMeasurementUnit"
-               title="http://purl.org/ontology/smi#InertialMeasurementUnit">inertial measurement unit</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#Magnetometer" title="http://purl.org/ontology/smi#Magnetometer">magnetometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#PressureSensors" title="http://purl.org/ontology/smi#PressureSensors">pressure sensors</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SMIHardwareDevice">
+   <div class="entity" id="SMIHardwareDevice">
       <h3>s m i hardware device<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SMIHardwareDevice</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SMIHardwareDevice</p>
       <div class="comment">
          <span class="markdown">Any hardware components of a smart instrument</span>
       </div>
@@ -1555,14 +1635,18 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SingleBoardComputer" title="http://purl.org/ontology/smi#SingleBoardComputer">Single Board Computer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#AudioInputInterface" title="http://purl.org/ontology/smi#AudioInputInterface">audio input interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#GestureInterface" title="http://purl.org/ontology/smi#GestureInterface">gesture interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticDeliverySystem"
-               title="http://purl.org/ontology/smi#HapticDeliverySystem">haptic delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">sound delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualDeliverySystem"
-               title="http://purl.org/ontology/smi#VisualDeliverySystem">visual delivery system</a>
+            <a href="#SingleBoardComputer"
+               title="http://purl.org/ontology/iomust/smi#SingleBoardComputer">Single Board Computer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#AudioInputInterface"
+               title="http://purl.org/ontology/iomust/smi#AudioInputInterface">audio input interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GestureInterface"
+               title="http://purl.org/ontology/iomust/smi#GestureInterface">gesture interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#HapticDeliverySystem">haptic delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">sound delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#VisualDeliverySystem">visual delivery system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1583,20 +1667,21 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#AudioTrackingSensor" title="http://purl.org/ontology/smi#AudioTrackingSensor">audio tracking sensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#GestureTrackingSensor"
-               title="http://purl.org/ontology/smi#GestureTrackingSensor">gesture tracking sensor</a>
+            <a href="#AudioTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#AudioTrackingSensor">audio tracking sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GestureTrackingSensor"
+               title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SingleBoardComputer">
+   <div class="entity" id="SingleBoardComputer">
       <h3>Single Board Computer<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SingleBoardComputer</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SingleBoardComputer</p>
       <div class="comment">
          <span class="markdown">The SMI Single Board Computer is an hardware component which is embedded into a SMI and runs software devices, including the SMI Sound Engine</span>
       </div>
@@ -1604,34 +1689,38 @@ This section provides details for each class and property defined by Smart Music
          <dt>has super-classes</dt>
          <dd>
             <span class="dotted" title="http://www.w3.org/ns/sosa/Platform">platform</span>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SMIHardwareDevice" title="http://purl.org/ontology/smi#SMIHardwareDevice">s m i hardware device</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SMIHardwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">s m i hardware device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#executes" title="http://purl.org/ontology/smi#executes">executes</a>
+            <a href="#executes" title="http://purl.org/ontology/iomust/smi#executes">executes</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#AudioInputInterface" title="http://purl.org/ontology/smi#AudioInputInterface">audio input interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#GestureInterface" title="http://purl.org/ontology/smi#GestureInterface">gesture interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticDeliverySystem"
-               title="http://purl.org/ontology/smi#HapticDeliverySystem">haptic delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">sound delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualDeliverySystem"
-               title="http://purl.org/ontology/smi#VisualDeliverySystem">visual delivery system</a>
+            <a href="#AudioInputInterface"
+               title="http://purl.org/ontology/iomust/smi#AudioInputInterface">audio input interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GestureInterface"
+               title="http://purl.org/ontology/iomust/smi#GestureInterface">gesture interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#HapticDeliverySystem">haptic delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">sound delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#VisualDeliverySystem">visual delivery system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SMIElectricAcousticIntrument">
+   <div class="entity" id="SMIElectricAcousticIntrument">
       <h3>SMI Electric Acoustic Instrument<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SMIElectricAcousticIntrument</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument</p>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -1639,8 +1728,8 @@ This section provides details for each class and property defined by Smart Music
                   title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
             <sup class="type-c" title="class">c</sup> 
             <span class="logic">and</span> 
-            <a href="#http://purl.org/ontology/smi#ElectroAcousticInstrument"
-               title="http://purl.org/ontology/smi#ElectroAcousticInstrument">Electro Acoustic Instrument</a>
+            <a href="#ElectroAcousticInstrument"
+               title="http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument">Electro Acoustic Instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has super-classes</dt>
@@ -1651,13 +1740,13 @@ This section provides details for each class and property defined by Smart Music
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SMIElectricInstrument">
+   <div class="entity" id="SMIElectricInstrument">
       <h3>SMI Electric Instrument<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SMIElectricInstrument</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SMIElectricInstrument</p>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -1665,7 +1754,8 @@ This section provides details for each class and property defined by Smart Music
                   title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
             <sup class="type-c" title="class">c</sup> 
             <span class="logic">and</span> 
-            <a href="#http://purl.org/ontology/smi#ElectricInstrument" title="http://purl.org/ontology/smi#ElectricInstrument">Electric Instrument</a>
+            <a href="#ElectricInstrument"
+               title="http://purl.org/ontology/iomust/smi#ElectricInstrument">Electric Instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has super-classes</dt>
@@ -1676,13 +1766,13 @@ This section provides details for each class and property defined by Smart Music
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SMISoftwareDevice">
+   <div class="entity" id="SMISoftwareDevice">
       <h3>SMI Software Device<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SMISoftwareDevice</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SMISoftwareDevice</p>
       <div class="comment">
          <span class="markdown">Any software component of a smart musical instrument</span>
       </div>
@@ -1695,23 +1785,24 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-               title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#MappingHandler" title="http://purl.org/ontology/smi#MappingHandler">Mapping Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualEngine" title="http://purl.org/ontology/smi#VisualEngine">Visual Engine</a>
+            <a href="#GestureSensorHandler"
+               title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MappingHandler"
+               title="http://purl.org/ontology/iomust/smi#MappingHandler">Mapping Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualEngine" title="http://purl.org/ontology/iomust/smi#VisualEngine">Visual Engine</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SMITransform">
+   <div class="entity" id="SMITransform">
       <h3>SMI Transform<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SMITransform</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SMITransform</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1720,20 +1811,21 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureSensorTransform"
-               title="http://purl.org/ontology/smi#GestureSensorTransform">Gesture Sensor Transform</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#MappingTrasform" title="http://purl.org/ontology/smi#MappingTrasform">Mapping Transform</a>
+            <a href="#GestureSensorTransform"
+               title="http://purl.org/ontology/iomust/smi#GestureSensorTransform">Gesture Sensor Transform</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MappingTrasform"
+               title="http://purl.org/ontology/iomust/smi#MappingTrasform">Mapping Transform</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument">
+   <div class="entity" id="SMIVirtualRealityMusicalInstrument">
       <h3>SMI Virtual Reality Musical Instrument<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument</p>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -1741,8 +1833,8 @@ This section provides details for each class and property defined by Smart Music
                   title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
             <sup class="type-c" title="class">c</sup> 
             <span class="logic">and</span> 
-            <a href="#http://purl.org/ontology/smi#VirtualRealityMusicalInstrument"
-               title="http://purl.org/ontology/smi#VirtualRealityMusicalInstrument">Virtual Reality Musical Instrument</a>
+            <a href="#VirtualRealityMusicalInstrument"
+               title="http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument">Virtual Reality Musical Instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has super-classes</dt>
@@ -1753,13 +1845,13 @@ This section provides details for each class and property defined by Smart Music
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SoftwareMultitrackProject">
+   <div class="entity" id="SoftwareMultitrackProject">
       <h3>Software Multitrack Project<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SoftwareMultitrackProject</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1769,79 +1861,85 @@ This section provides details for each class and property defined by Smart Music
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SoundDeliverySystem">
+   <div class="entity" id="SoundDeliverySystem">
       <h3>sound delivery system<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SoundDeliverySystem</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SoundDeliverySystem</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMIHardwareDevice" title="http://purl.org/ontology/smi#SMIHardwareDevice">s m i hardware device</a>
+            <a href="#SMIHardwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">s m i hardware device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem"
-               title="http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem">embedded loudspeaker system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem"
-               title="http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem">embedded vibration speaker system</a>
+            <a href="#EmbeddedLoudspeakerSystem"
+               title="http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem">embedded loudspeaker system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#EmbeddedVibrationSpeakerSystem"
+               title="http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem">embedded vibration speaker system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#AudioInputInterface" title="http://purl.org/ontology/smi#AudioInputInterface">audio input interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#GestureInterface" title="http://purl.org/ontology/smi#GestureInterface">gesture interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticDeliverySystem"
-               title="http://purl.org/ontology/smi#HapticDeliverySystem">haptic delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SingleBoardComputer" title="http://purl.org/ontology/smi#SingleBoardComputer">Single Board Computer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualDeliverySystem"
-               title="http://purl.org/ontology/smi#VisualDeliverySystem">visual delivery system</a>
+            <a href="#AudioInputInterface"
+               title="http://purl.org/ontology/iomust/smi#AudioInputInterface">audio input interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GestureInterface"
+               title="http://purl.org/ontology/iomust/smi#GestureInterface">gesture interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#HapticDeliverySystem">haptic delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SingleBoardComputer"
+               title="http://purl.org/ontology/iomust/smi#SingleBoardComputer">Single Board Computer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#VisualDeliverySystem">visual delivery system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SoundEngine">
+   <div class="entity" id="SoundEngine">
       <h3>Sound Engine<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SoundEngine</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SoundEngine</p>
       <div class="comment">
          <span class="markdown">A piece of software that handles audio processing</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMISoftwareDevice" title="http://purl.org/ontology/smi#SMISoftwareDevice">SMI Software Device</a>
+            <a href="#SMISoftwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMISoftwareDevice">SMI Software Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMIhosts" title="http://purl.org/ontology/smi#SMIhosts">SMI hosts</a>
+            <a href="#SMIhosts" title="http://purl.org/ontology/iomust/smi#SMIhosts">SMI hosts</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-               title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#MappingHandler" title="http://purl.org/ontology/smi#MappingHandler">Mapping Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#VisualEngine" title="http://purl.org/ontology/smi#VisualEngine">Visual Engine</a>
+            <a href="#GestureSensorHandler"
+               title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MappingHandler"
+               title="http://purl.org/ontology/iomust/smi#MappingHandler">Mapping Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VisualEngine" title="http://purl.org/ontology/iomust/smi#VisualEngine">Visual Engine</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#VirtualRealityMusicalInstrument">
+   <div class="entity" id="VirtualRealityMusicalInstrument">
       <h3>Virtual Reality Musical Instrument<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#VirtualRealityMusicalInstrument</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1850,65 +1948,72 @@ This section provides details for each class and property defined by Smart Music
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#VisualDeliverySystem">
+   <div class="entity" id="VisualDeliverySystem">
       <h3>visual delivery system<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#VisualDeliverySystem</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#VisualDeliverySystem</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMIHardwareDevice" title="http://purl.org/ontology/smi#SMIHardwareDevice">s m i hardware device</a>
+            <a href="#SMIHardwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">s m i hardware device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#AudioInputInterface" title="http://purl.org/ontology/smi#AudioInputInterface">audio input interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#GestureInterface" title="http://purl.org/ontology/smi#GestureInterface">gesture interface</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticDeliverySystem"
-               title="http://purl.org/ontology/smi#HapticDeliverySystem">haptic delivery system</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SingleBoardComputer" title="http://purl.org/ontology/smi#SingleBoardComputer">Single Board Computer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundDeliverySystem" title="http://purl.org/ontology/smi#SoundDeliverySystem">sound delivery system</a>
+            <a href="#AudioInputInterface"
+               title="http://purl.org/ontology/iomust/smi#AudioInputInterface">audio input interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#GestureInterface"
+               title="http://purl.org/ontology/iomust/smi#GestureInterface">gesture interface</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#HapticDeliverySystem">haptic delivery system</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SingleBoardComputer"
+               title="http://purl.org/ontology/iomust/smi#SingleBoardComputer">Single Board Computer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundDeliverySystem"
+               title="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">sound delivery system</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#VisualEngine">
+   <div class="entity" id="VisualEngine">
       <h3>Visual Engine<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#VisualEngine</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#VisualEngine</p>
       <div class="comment">
          <span class="markdown">A piece of software that handles visual processing</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#SMISoftwareDevice" title="http://purl.org/ontology/smi#SMISoftwareDevice">SMI Software Device</a>
+            <a href="#SMISoftwareDevice"
+               title="http://purl.org/ontology/iomust/smi#SMISoftwareDevice">SMI Software Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-               title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#MappingHandler" title="http://purl.org/ontology/smi#MappingHandler">Mapping Handler</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
+            <a href="#GestureSensorHandler"
+               title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#MappingHandler"
+               title="http://purl.org/ontology/iomust/smi#MappingHandler">Mapping Handler</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#VST2">
+   <div class="entity" id="VST2">
       <h3>VST 2<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#VST2</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#VST2</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1917,18 +2022,18 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#VST3" title="http://purl.org/ontology/smi#VST3">VST 3</a>
+            <a href="#VST3" title="http://purl.org/ontology/iomust/smi#VST3">VST 3</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#VST3">
+   <div class="entity" id="VST3">
       <h3>VST 3<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#VST3</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#VST3</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1937,7 +2042,7 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://purl.org/ontology/smi#VST2" title="http://purl.org/ontology/smi#VST2">VST 2</a>
+            <a href="#VST2" title="http://purl.org/ontology/iomust/smi#VST2">VST 2</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1946,17 +2051,19 @@ This section provides details for each class and property defined by Smart Music
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://purl.org/ontology/smi#component_mic" title="http://purl.org/ontology/smi#component_mic">
+         <a href="#component_mic"
+            title="http://purl.org/ontology/iomust/smi#component_mic">
             <span>component mic</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#component_platform" title="http://purl.org/ontology/smi#component_platform">
+         <a href="#component_platform"
+            title="http://purl.org/ontology/iomust/smi#component_platform">
             <span>component platform</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#executes" title="http://purl.org/ontology/smi#executes">executes</a>
+         <a href="#executes" title="http://purl.org/ontology/iomust/smi#executes">executes</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/sosa/hasResult" title="http://www.w3.org/ns/sosa/hasResult">
@@ -1964,7 +2071,8 @@ This section provides details for each class and property defined by Smart Music
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#implementation" title="http://purl.org/ontology/smi#implementation">
+         <a href="#implementation"
+            title="http://purl.org/ontology/iomust/smi#implementation">
             <span>implementation</span>
          </a>
       </li>
@@ -1975,38 +2083,38 @@ This section provides details for each class and property defined by Smart Music
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#mapping_implementation"
-            title="http://purl.org/ontology/smi#mapping_implementation">mapping implementation</a>
+         <a href="#mapping_implementation"
+            title="http://purl.org/ontology/iomust/smi#mapping_implementation">mapping implementation</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#processes_sensor_signal"
-            title="http://purl.org/ontology/smi#processes_sensor_signal">processes sensor signal</a>
+         <a href="#maps" title="http://purl.org/ontology/iomust/smi#maps">
+            <span>maps</span>
+         </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SMIcomponent" title="http://purl.org/ontology/smi#SMIcomponent">
+         <a href="#processes_sensor_signal"
+            title="http://purl.org/ontology/iomust/smi#processes_sensor_signal">processes sensor signal</a>
+      </li>
+      <li>
+         <a href="#SMIcomponent" title="http://purl.org/ontology/iomust/smi#SMIcomponent">
             <span>s m icomponent</span>
          </a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#sensor_handler_implementation"
-            title="http://purl.org/ontology/smi#sensor_handler_implementation">sensor handler implementation</a>
+         <a href="#sensor_handler_implementation"
+            title="http://purl.org/ontology/iomust/smi#sensor_handler_implementation">sensor handler implementation</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#SMIhosts" title="http://purl.org/ontology/smi#SMIhosts">SMI hosts</a>
-      </li>
-      <li>
-         <a href="#maps" title="http://purl.org/ontology/iomust/smimaps">
-            <span>smimaps</span>
-         </a>
+         <a href="#SMIhosts" title="http://purl.org/ontology/iomust/smi#SMIhosts">SMI hosts</a>
       </li>
    </ul>
-   <div class="entity" id="http://purl.org/ontology/smi#component_mic">
+   <div class="entity" id="component_mic">
       <h3>component mic<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#component_mic</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#component_mic</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2016,8 +2124,8 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#Microphone_Transducer"
-                  title="http://purl.org/ontology/smi#Microphone_Transducer">microphone transducer</a>
+               <a href="#Microphone_Transducer"
+                  title="http://purl.org/ontology/iomust/smi#Microphone_Transducer">microphone transducer</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2029,13 +2137,13 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#component_platform">
+   <div class="entity" id="component_platform">
       <h3>component platform<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#component_platform</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#component_platform</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2057,33 +2165,34 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#executes">
+   <div class="entity" id="executes">
       <h3>executes<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#executes</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#executes</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#SingleBoardComputer" title="http://purl.org/ontology/smi#SingleBoardComputer">Single Board Computer</a>
+               <a href="#SingleBoardComputer"
+                  title="http://purl.org/ontology/iomust/smi#SingleBoardComputer">Single Board Computer</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-                  title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+               <a href="#GestureSensorHandler"
+                  title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
+               <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
+               <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://purl.org/ontology/smi#VisualEngine" title="http://purl.org/ontology/smi#VisualEngine">Visual Engine</a>
+               <a href="#VisualEngine" title="http://purl.org/ontology/iomust/smi#VisualEngine">Visual Engine</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2114,23 +2223,23 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#implementation">
+   <div class="entity" id="implementation">
       <h3>implementation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#implementation</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#implementation</p>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
             <dd>
                <a href="#https://w3id.org/aufx/ontology/1.0#implementation"
                   title="https://w3id.org/aufx/ontology/1.0#implementation">implementation</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/ontology/smi#mapping_implementation"
-                  title="http://purl.org/ontology/smi#mapping_implementation">mapping implementation</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/ontology/smi#sensor_handler_implementation"
-                  title="http://purl.org/ontology/smi#sensor_handler_implementation">sensor handler implementation</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#mapping_implementation"
+                  title="http://purl.org/ontology/iomust/smi#mapping_implementation">mapping implementation</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#sensor_handler_implementation"
+                  title="http://purl.org/ontology/iomust/smi#sensor_handler_implementation">sensor handler implementation</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -2158,19 +2267,20 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#implementation" title="http://purl.org/ontology/smi#implementation">implementation</a>
+               <a href="#implementation"
+                  title="http://purl.org/ontology/iomust/smi#implementation">implementation</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#mapping_implementation">
+   <div class="entity" id="mapping_implementation">
       <h3>mapping implementation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#mapping_implementation</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#mapping_implementation</p>
       <div class="comment">
          <span class="markdown">A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin.</span>
       </div>
@@ -2178,29 +2288,55 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#implementation" title="http://purl.org/ontology/smi#implementation">implementation</a>
+               <a href="#implementation"
+                  title="http://purl.org/ontology/iomust/smi#implementation">implementation</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#MappingTrasform" title="http://purl.org/ontology/smi#MappingTrasform">Mapping Transform</a>
+               <a href="#MappingTrasform"
+                  title="http://purl.org/ontology/iomust/smi#MappingTrasform">Mapping Transform</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#MappingHandler" title="http://purl.org/ontology/smi#MappingHandler">Mapping Handler</a>
+               <a href="#MappingHandler"
+                  title="http://purl.org/ontology/iomust/smi#MappingHandler">Mapping Handler</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#processes_sensor_signal">
+   <div class="entity" id="maps">
+      <h3>maps<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#maps</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MappingTrasform"
+                  title="http://purl.org/ontology/iomust/smi#MappingTrasform">Mapping Transform</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/aufx/ontology/1.0#Parameter">parameter</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="processes_sensor_signal">
       <h3>processes sensor signal<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#processes_sensor_signal</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#processes_sensor_signal</p>
       <div class="comment">
          <span class="markdown">Both the SMI Audio Input Handler and the SMI Gesture Sensor Handler process the (simple) results of an Observation</span>
       </div>
@@ -2208,8 +2344,8 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-                  title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+               <a href="#GestureSensorHandler"
+                  title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2220,13 +2356,13 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SMIcomponent">
+   <div class="entity" id="SMIcomponent">
       <h3>s m icomponent<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SMIcomponent</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SMIcomponent</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2236,10 +2372,12 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#SMIHardwareDevice" title="http://purl.org/ontology/smi#SMIHardwareDevice">s m i hardware device</a>
+               <a href="#SMIHardwareDevice"
+                  title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">s m i hardware device</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://purl.org/ontology/smi#SMISoftwareDevice" title="http://purl.org/ontology/smi#SMISoftwareDevice">SMI Software Device</a>
+               <a href="#SMISoftwareDevice"
+                  title="http://purl.org/ontology/iomust/smi#SMISoftwareDevice">SMI Software Device</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2251,13 +2389,13 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#sensor_handler_implementation">
+   <div class="entity" id="sensor_handler_implementation">
       <h3>sensor handler implementation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#sensor_handler_implementation</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#sensor_handler_implementation</p>
       <div class="comment">
          <span class="markdown">Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform</span>
       </div>
@@ -2265,36 +2403,37 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#implementation" title="http://purl.org/ontology/smi#implementation">implementation</a>
+               <a href="#implementation"
+                  title="http://purl.org/ontology/iomust/smi#implementation">implementation</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#GestureSensorTransform"
-                  title="http://purl.org/ontology/smi#GestureSensorTransform">Gesture Sensor Transform</a>
+               <a href="#GestureSensorTransform"
+                  title="http://purl.org/ontology/iomust/smi#GestureSensorTransform">Gesture Sensor Transform</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-                  title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+               <a href="#GestureSensorHandler"
+                  title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#SMIhosts">
+   <div class="entity" id="SMIhosts">
       <h3>SMI hosts<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#SMIhosts</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#SMIhosts</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
+               <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2306,86 +2445,65 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="maps">
-      <h3>smimaps<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/ontology/iomust/smimaps</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://purl.org/ontology/smi#MappingTrasform" title="http://purl.org/ontology/smi#MappingTrasform">Mapping Transform</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="https://w3id.org/aufx/ontology/1.0#Parameter">parameter</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
 </div><div id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://purl.org/ontology/smi#converter_sample_rate"
-            title="http://purl.org/ontology/smi#converter_sample_rate">converter sample rate</a>
+         <a href="#converter_sample_rate"
+            title="http://purl.org/ontology/iomust/smi#converter_sample_rate">converter sample rate</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#cutoff_frequency" title="http://purl.org/ontology/smi#cutoff_frequency">cutoff frequency</a>
+         <a href="#cutoff_frequency"
+            title="http://purl.org/ontology/iomust/smi#cutoff_frequency">cutoff frequency</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#filter_type" title="http://purl.org/ontology/smi#filter_type">filter type</a>
+         <a href="#filter_type" title="http://purl.org/ontology/iomust/smi#filter_type">filter type</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#has_name" title="http://purl.org/ontology/smi#has_name">has name</a>
+         <a href="#has_name" title="http://purl.org/ontology/iomust/smi#has_name">has name</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#mapping_function_parameter"
-            title="http://purl.org/ontology/smi#mapping_function_parameter">mapping function parameter</a>
+         <a href="#mapping_function_parameter"
+            title="http://purl.org/ontology/iomust/smi#mapping_function_parameter">mapping function parameter</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#mapping_function_type"
-            title="http://purl.org/ontology/smi#mapping_function_type">mapping function type</a>
+         <a href="#mapping_function_type"
+            title="http://purl.org/ontology/iomust/smi#mapping_function_type">mapping function type</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#midi_port" title="http://purl.org/ontology/smi#midi_port">midi port</a>
+         <a href="#midi_port" title="http://purl.org/ontology/iomust/smi#midi_port">midi port</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#threshold" title="http://purl.org/ontology/smi#threshold">threshold</a>
+         <a href="#threshold" title="http://purl.org/ontology/iomust/smi#threshold">threshold</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#works_at_audio_sampling_rate"
-            title="http://purl.org/ontology/smi#works_at_audio_sampling_rate">works at audio sampling rate</a>
+         <a href="#works_at_audio_sampling_rate"
+            title="http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate">works at audio sampling rate</a>
       </li>
       <li>
-         <a href="#http://purl.org/ontology/smi#works_at_sensor_sampling_rate"
-            title="http://purl.org/ontology/smi#works_at_sensor_sampling_rate">works at sensor sampling rate</a>
+         <a href="#works_at_sensor_sampling_rate"
+            title="http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate">works at sensor sampling rate</a>
       </li>
    </ul>
-   <div class="entity" id="http://purl.org/ontology/smi#converter_sample_rate">
+   <div class="entity" id="converter_sample_rate">
       <h3>converter sample rate<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#converter_sample_rate</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#converter_sample_rate</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-                  title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+               <a href="#GestureSensorHandler"
+                  title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
+               <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
+               <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <span class="dotted" title="http://purl.org/ontology/studio/device/Converter">converter</span>
@@ -2398,13 +2516,13 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#cutoff_frequency">
+   <div class="entity" id="cutoff_frequency">
       <h3>cutoff frequency<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#cutoff_frequency</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#cutoff_frequency</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2420,13 +2538,13 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#filter_type">
+   <div class="entity" id="filter_type">
       <h3>filter type<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#filter_type</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#filter_type</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2442,13 +2560,13 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#has_name">
+   <div class="entity" id="has_name">
       <h3>has name<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#has_name</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#has_name</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2463,13 +2581,13 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#mapping_function_parameter">
+   <div class="entity" id="mapping_function_parameter">
       <h3>mapping function parameter<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#mapping_function_parameter</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#mapping_function_parameter</p>
       <div class="comment">
          <span class="markdown">A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)</span>
       </div>
@@ -2477,7 +2595,8 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#MappingTrasform" title="http://purl.org/ontology/smi#MappingTrasform">Mapping Transform</a>
+               <a href="#MappingTrasform"
+                  title="http://purl.org/ontology/iomust/smi#MappingTrasform">Mapping Transform</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2487,13 +2606,13 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#mapping_function_type">
+   <div class="entity" id="mapping_function_type">
       <h3>mapping function type<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#mapping_function_type</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#mapping_function_type</p>
       <div class="comment">
          <span class="markdown">A mathematical function that can be e.g., linear, exponential, logarithmic</span>
       </div>
@@ -2501,7 +2620,8 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#MappingTrasform" title="http://purl.org/ontology/smi#MappingTrasform">Mapping Transform</a>
+               <a href="#MappingTrasform"
+                  title="http://purl.org/ontology/iomust/smi#MappingTrasform">Mapping Transform</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2511,13 +2631,13 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#midi_port">
+   <div class="entity" id="midi_port">
       <h3>midi port<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#midi_port</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#midi_port</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2532,19 +2652,19 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#threshold">
+   <div class="entity" id="threshold">
       <h3>threshold<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#threshold</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#threshold</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-                  title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+               <a href="#GestureSensorHandler"
+                  title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2554,21 +2674,21 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#works_at_audio_sampling_rate">
+   <div class="entity" id="works_at_audio_sampling_rate">
       <h3>works at audio sampling rate<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#works_at_audio_sampling_rate</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#HapticEngine" title="http://purl.org/ontology/smi#HapticEngine">Haptic Engine</a>
+               <a href="#HapticEngine" title="http://purl.org/ontology/iomust/smi#HapticEngine">Haptic Engine</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://purl.org/ontology/smi#SoundEngine" title="http://purl.org/ontology/smi#SoundEngine">Sound Engine</a>
+               <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2578,19 +2698,19 @@ This section provides details for each class and property defined by Smart Music
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/ontology/smi#works_at_sensor_sampling_rate">
+   <div class="entity" id="works_at_sensor_sampling_rate">
       <h3>works at sensor sampling rate<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#works_at_sensor_sampling_rate</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://purl.org/ontology/smi#GestureSensorHandler"
-                  title="http://purl.org/ontology/smi#GestureSensorHandler">Gesture Sensor Handler</a>
+               <a href="#GestureSensorHandler"
+                  title="http://purl.org/ontology/iomust/smi#GestureSensorHandler">Gesture Sensor Handler</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2712,18 +2832,18 @@ This section provides details for each class and property defined by Smart Music
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://purl.org/ontology/smi#Decibel" title="http://purl.org/ontology/smi#Decibel">
+         <a href="#Decibel" title="http://purl.org/ontology/iomust/smi#Decibel">
             <span>decibel</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="http://purl.org/ontology/smi#Decibel">
+   <div class="entity" id="Decibel">
       <h3>decibel<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/smi#Decibel</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#Decibel</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2748,17 +2868,7 @@ This section provides details for each class and property defined by Smart Music
   <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-<ul>
-	<li>Luca Turchet, Paolo Bouquet, Andrea Molinari, George Fazekas. The Smart Musical Insturments ontology. Journal of Web Semantics, 2020 (submitted).
-	</li>	
-	<li>L. Turchet. Smart Musical Instruments: vision, design principles, and future directions. IEEE Access, 7, 8944–8963, 2019.
-PDF freely available at: <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8501898">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8501898</a>
-	</li>
-</ul>
-
-
-
-</span>
+Add your references here. It is recommended to have them as a list.</span>
 
 </div>
 <div id="acknowledgements">

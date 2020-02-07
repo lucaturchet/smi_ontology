@@ -52,92 +52,92 @@
 # #################################################################
 # 
 # 
-# http://purl.org/ontology/iomust/smimaps
-<http://purl.org/ontology/iomust/smimaps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/iomust/smimaps> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#MappingTrasform> .
-<http://purl.org/ontology/iomust/smimaps> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/aufx/ontology/1.0#Parameter> .
-<https://w3id.org/aufx/ontology/1.0#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/ontology/smi#SMIcomponent
-<http://purl.org/ontology/smi#SMIcomponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/smi#SMIcomponent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/studio/device/component> .
-<http://purl.org/ontology/smi#SMIcomponent> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+# http://purl.org/ontology/iomust/smi#SMIcomponent
+<http://purl.org/ontology/iomust/smi#SMIcomponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#SMIcomponent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/studio/device/component> .
+<http://purl.org/ontology/iomust/smi#SMIcomponent> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#SMIHardwareDevice> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#SMIHardwareDevice> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#SMISoftwareDevice> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#SMISoftwareDevice> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/ontology/smi#SMIcomponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
+<http://purl.org/ontology/iomust/smi#SMIcomponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
 # 
-# http://purl.org/ontology/smi#SMIhosts
-<http://purl.org/ontology/smi#SMIhosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/smi#SMIhosts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#SoundEngine> .
-<http://purl.org/ontology/smi#SMIhosts> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/studio/multitrack#MultitrackProject> .
-<http://purl.org/ontology/smi#SMIhosts> <http://www.w3.org/2000/01/rdf-schema#label> "SMI hosts"@en .
+# http://purl.org/ontology/iomust/smi#SMIhosts
+<http://purl.org/ontology/iomust/smi#SMIhosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#SMIhosts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#SoundEngine> .
+<http://purl.org/ontology/iomust/smi#SMIhosts> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/studio/multitrack#MultitrackProject> .
+<http://purl.org/ontology/iomust/smi#SMIhosts> <http://www.w3.org/2000/01/rdf-schema#label> "SMI hosts"@en .
 # 
-# http://purl.org/ontology/smi#component_mic
-<http://purl.org/ontology/smi#component_mic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/smi#component_mic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/studio/device/component> .
-<http://purl.org/ontology/smi#component_mic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#Microphone_Transducer> .
-<http://purl.org/ontology/smi#component_mic> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/studio/microphone/Microphone> .
+# http://purl.org/ontology/iomust/smi#component_mic
+<http://purl.org/ontology/iomust/smi#component_mic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#component_mic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/studio/device/component> .
+<http://purl.org/ontology/iomust/smi#component_mic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#Microphone_Transducer> .
+<http://purl.org/ontology/iomust/smi#component_mic> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/studio/microphone/Microphone> .
 # 
-# http://purl.org/ontology/smi#component_platform
-<http://purl.org/ontology/smi#component_platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/studio/device/component> .
-<http://purl.org/ontology/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Platform> .
-<http://purl.org/ontology/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things/Thing> .
+# http://purl.org/ontology/iomust/smi#component_platform
+<http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/studio/device/component> .
+<http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Platform> .
+<http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/iot/ontologies/2019/5/internet_of_things/Thing> .
 # 
-# http://purl.org/ontology/smi#executes
-<http://purl.org/ontology/smi#executes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/smi#executes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#SingleBoardComputer> .
-<http://purl.org/ontology/smi#executes> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+# http://purl.org/ontology/iomust/smi#executes
+<http://purl.org/ontology/iomust/smi#executes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#executes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#SingleBoardComputer> .
+<http://purl.org/ontology/iomust/smi#executes> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#GestureSensorHandler> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#GestureSensorHandler> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#HapticEngine> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#HapticEngine> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#SoundEngine> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#SoundEngine> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#VisualEngine> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#VisualEngine> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/ontology/smi#executes> <http://www.w3.org/2000/01/rdf-schema#label> "executes" .
+<http://purl.org/ontology/iomust/smi#executes> <http://www.w3.org/2000/01/rdf-schema#label> "executes" .
 # 
-# http://purl.org/ontology/smi#implementation
-<http://purl.org/ontology/smi#implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/smi#implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/studio/main/Transform> .
-<http://purl.org/ontology/smi#implementation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> .
+# http://purl.org/ontology/iomust/smi#implementation
+<http://purl.org/ontology/iomust/smi#implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/studio/main/Transform> .
+<http://purl.org/ontology/iomust/smi#implementation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> .
 <https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://purl.org/ontology/smi#mapping_implementation
-<http://purl.org/ontology/smi#mapping_implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/smi#implementation> .
-<http://purl.org/ontology/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#MappingTrasform> .
-<http://purl.org/ontology/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/smi#MappingHandler> .
-<http://purl.org/ontology/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." .
-<http://purl.org/ontology/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#label> "mapping implementation" .
+# http://purl.org/ontology/iomust/smi#mapping_implementation
+<http://purl.org/ontology/iomust/smi#mapping_implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/iomust/smi#implementation> .
+<http://purl.org/ontology/iomust/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#MappingTrasform> .
+<http://purl.org/ontology/iomust/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/iomust/smi#MappingHandler> .
+<http://purl.org/ontology/iomust/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." .
+<http://purl.org/ontology/iomust/smi#mapping_implementation> <http://www.w3.org/2000/01/rdf-schema#label> "mapping implementation" .
 # 
-# http://purl.org/ontology/smi#processes_sensor_signal
-<http://purl.org/ontology/smi#processes_sensor_signal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/smi#processes_sensor_signal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#GestureSensorHandler> .
-<http://purl.org/ontology/smi#processes_sensor_signal> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/mo/Signal> .
-<http://purl.org/ontology/smi#processes_sensor_signal> <http://www.w3.org/2000/01/rdf-schema#comment> "Both the SMI Audio Input Handler and the SMI Gesture Sensor Handler process the (simple) results of an Observation" .
-<http://purl.org/ontology/smi#processes_sensor_signal> <http://www.w3.org/2000/01/rdf-schema#label> "processes sensor signal"@en .
+# http://purl.org/ontology/iomust/smi#maps
+<http://purl.org/ontology/iomust/smi#maps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#maps> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#MappingTrasform> .
+<http://purl.org/ontology/iomust/smi#maps> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/aufx/ontology/1.0#Parameter> .
+<https://w3id.org/aufx/ontology/1.0#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://purl.org/ontology/smi#sensor_handler_implementation
-<http://purl.org/ontology/smi#sensor_handler_implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/ontology/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/smi#implementation> .
-<http://purl.org/ontology/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#GestureSensorTransform> .
-<http://purl.org/ontology/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/smi#GestureSensorHandler> .
-<http://purl.org/ontology/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform" .
-<http://purl.org/ontology/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#label> "sensor handler implementation"@en .
+# http://purl.org/ontology/iomust/smi#processes_sensor_signal
+<http://purl.org/ontology/iomust/smi#processes_sensor_signal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#processes_sensor_signal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#GestureSensorHandler> .
+<http://purl.org/ontology/iomust/smi#processes_sensor_signal> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/mo/Signal> .
+<http://purl.org/ontology/iomust/smi#processes_sensor_signal> <http://www.w3.org/2000/01/rdf-schema#comment> "Both the SMI Audio Input Handler and the SMI Gesture Sensor Handler process the (simple) results of an Observation" .
+<http://purl.org/ontology/iomust/smi#processes_sensor_signal> <http://www.w3.org/2000/01/rdf-schema#label> "processes sensor signal"@en .
+# 
+# http://purl.org/ontology/iomust/smi#sensor_handler_implementation
+<http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/iomust/smi#implementation> .
+<http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#GestureSensorTransform> .
+<http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/iomust/smi#GestureSensorHandler> .
+<http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform" .
+<http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#label> "sensor handler implementation"@en .
 # 
 # http://purl.org/ontology/studio/device/component
 <http://purl.org/ontology/studio/device/component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -150,7 +150,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/aufx/ontology/1.0#implementation
 <https://w3id.org/aufx/ontology/1.0#implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/aufx/ontology/1.0#implementation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/smi#implementation> .
+<https://w3id.org/aufx/ontology/1.0#implementation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/iomust/smi#implementation> .
 # 
 # 
 # 
@@ -161,89 +161,89 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # #################################################################
 # 
 # 
-# http://purl.org/ontology/smi#converter_sample_rate
-<http://purl.org/ontology/smi#converter_sample_rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#converter_sample_rate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+# http://purl.org/ontology/iomust/smi#converter_sample_rate
+<http://purl.org/ontology/iomust/smi#converter_sample_rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#converter_sample_rate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#GestureSensorHandler> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#GestureSensorHandler> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#HapticEngine> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#HapticEngine> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#SoundEngine> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#SoundEngine> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/studio/device/Converter> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/ontology/smi#converter_sample_rate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://purl.org/ontology/smi#converter_sample_rate> <http://www.w3.org/2000/01/rdf-schema#label> "converter sample rate" .
+<http://purl.org/ontology/iomust/smi#converter_sample_rate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://purl.org/ontology/iomust/smi#converter_sample_rate> <http://www.w3.org/2000/01/rdf-schema#label> "converter sample rate" .
 # 
-# http://purl.org/ontology/smi#cutoff_frequency
-<http://purl.org/ontology/smi#cutoff_frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#cutoff_frequency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/studio/sigproc/LowPassFilter> .
-<http://purl.org/ontology/smi#cutoff_frequency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://purl.org/ontology/smi#cutoff_frequency> <http://www.w3.org/2000/01/rdf-schema#label> "cutoff frequency" .
+# http://purl.org/ontology/iomust/smi#cutoff_frequency
+<http://purl.org/ontology/iomust/smi#cutoff_frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#cutoff_frequency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/studio/sigproc/LowPassFilter> .
+<http://purl.org/ontology/iomust/smi#cutoff_frequency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://purl.org/ontology/iomust/smi#cutoff_frequency> <http://www.w3.org/2000/01/rdf-schema#label> "cutoff frequency" .
 # 
-# http://purl.org/ontology/smi#filter_type
-<http://purl.org/ontology/smi#filter_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#filter_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/studio/sigproc/LowPassFilter> .
-<http://purl.org/ontology/smi#filter_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://purl.org/ontology/smi#filter_type> <http://www.w3.org/2000/01/rdf-schema#label> "filter type" .
+# http://purl.org/ontology/iomust/smi#filter_type
+<http://purl.org/ontology/iomust/smi#filter_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#filter_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/studio/sigproc/LowPassFilter> .
+<http://purl.org/ontology/iomust/smi#filter_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/iomust/smi#filter_type> <http://www.w3.org/2000/01/rdf-schema#label> "filter type" .
 # 
-# http://purl.org/ontology/smi#has_name
-<http://purl.org/ontology/smi#has_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#has_name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/aufx/ontology/1.0#PlugIn> .
-<http://purl.org/ontology/smi#has_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://purl.org/ontology/smi#has_name> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
+# http://purl.org/ontology/iomust/smi#has_name
+<http://purl.org/ontology/iomust/smi#has_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#has_name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/aufx/ontology/1.0#PlugIn> .
+<http://purl.org/ontology/iomust/smi#has_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/ontology/iomust/smi#has_name> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
 # 
-# http://purl.org/ontology/smi#mapping_function_parameter
-<http://purl.org/ontology/smi#mapping_function_parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#mapping_function_parameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#MappingTrasform> .
-<http://purl.org/ontology/smi#mapping_function_parameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://purl.org/ontology/smi#mapping_function_parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)" .
-<http://purl.org/ontology/smi#mapping_function_parameter> <http://www.w3.org/2000/01/rdf-schema#label> "mapping function parameter" .
+# http://purl.org/ontology/iomust/smi#mapping_function_parameter
+<http://purl.org/ontology/iomust/smi#mapping_function_parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#mapping_function_parameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#MappingTrasform> .
+<http://purl.org/ontology/iomust/smi#mapping_function_parameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://purl.org/ontology/iomust/smi#mapping_function_parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)" .
+<http://purl.org/ontology/iomust/smi#mapping_function_parameter> <http://www.w3.org/2000/01/rdf-schema#label> "mapping function parameter" .
 # 
-# http://purl.org/ontology/smi#mapping_function_type
-<http://purl.org/ontology/smi#mapping_function_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#mapping_function_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#MappingTrasform> .
-<http://purl.org/ontology/smi#mapping_function_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://purl.org/ontology/smi#mapping_function_type> <http://www.w3.org/2000/01/rdf-schema#comment> "A mathematical function that can be e.g., linear, exponential, logarithmic" .
-<http://purl.org/ontology/smi#mapping_function_type> <http://www.w3.org/2000/01/rdf-schema#label> "mapping function type" .
+# http://purl.org/ontology/iomust/smi#mapping_function_type
+<http://purl.org/ontology/iomust/smi#mapping_function_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#mapping_function_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#MappingTrasform> .
+<http://purl.org/ontology/iomust/smi#mapping_function_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/iomust/smi#mapping_function_type> <http://www.w3.org/2000/01/rdf-schema#comment> "A mathematical function that can be e.g., linear, exponential, logarithmic" .
+<http://purl.org/ontology/iomust/smi#mapping_function_type> <http://www.w3.org/2000/01/rdf-schema#label> "mapping function type" .
 # 
-# http://purl.org/ontology/smi#midi_port
-<http://purl.org/ontology/smi#midi_port> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#midi_port> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/mo/Signal> .
-<http://purl.org/ontology/smi#midi_port> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://purl.org/ontology/smi#midi_port> <http://www.w3.org/2000/01/rdf-schema#label> "midi port" .
+# http://purl.org/ontology/iomust/smi#midi_port
+<http://purl.org/ontology/iomust/smi#midi_port> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#midi_port> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/mo/Signal> .
+<http://purl.org/ontology/iomust/smi#midi_port> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/ontology/iomust/smi#midi_port> <http://www.w3.org/2000/01/rdf-schema#label> "midi port" .
 # 
-# http://purl.org/ontology/smi#threshold
-<http://purl.org/ontology/smi#threshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#threshold> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#GestureSensorHandler> .
-<http://purl.org/ontology/smi#threshold> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://purl.org/ontology/smi#threshold> <http://www.w3.org/2000/01/rdf-schema#label> "threshold" .
+# http://purl.org/ontology/iomust/smi#threshold
+<http://purl.org/ontology/iomust/smi#threshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#threshold> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#GestureSensorHandler> .
+<http://purl.org/ontology/iomust/smi#threshold> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://purl.org/ontology/iomust/smi#threshold> <http://www.w3.org/2000/01/rdf-schema#label> "threshold" .
 # 
-# http://purl.org/ontology/smi#works_at_audio_sampling_rate
-<http://purl.org/ontology/smi#works_at_audio_sampling_rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#works_at_audio_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid14 .
+# http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate
+<http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#HapticEngine> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#HapticEngine> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#SoundEngine> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#SoundEngine> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/ontology/smi#works_at_audio_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://purl.org/ontology/smi#works_at_audio_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#label> "works at audio sampling rate"@en .
+<http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#label> "works at audio sampling rate"@en .
 # 
-# http://purl.org/ontology/smi#works_at_sensor_sampling_rate
-<http://purl.org/ontology/smi#works_at_sensor_sampling_rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/smi#works_at_sensor_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/smi#GestureSensorHandler> .
-<http://purl.org/ontology/smi#works_at_sensor_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://purl.org/ontology/smi#works_at_sensor_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#label> "works at sensor sampling rate"@en .
+# http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate
+<http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#GestureSensorHandler> .
+<http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate> <http://www.w3.org/2000/01/rdf-schema#label> "works at sensor sampling rate"@en .
 # 
 # 
 # 
@@ -260,267 +260,267 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://purl.org/ontology/iomust/internet_of_things/SmartInstrument
 <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://purl.org/ontology/iomust/smi#ADCaudio
+<http://purl.org/ontology/iomust/smi#ADCaudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#ADCaudio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/sigproc/ADC> .
+<http://purl.org/ontology/iomust/smi#ADCaudio> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/iomust/smi#ADCsensor> .
+<http://purl.org/ontology/iomust/smi#ADCaudio> <http://www.w3.org/2000/01/rdf-schema#comment> "Audio to Digital converter for audio signals" .
+<http://purl.org/ontology/iomust/smi#ADCaudio> <http://www.w3.org/2000/01/rdf-schema#label> "ADC audio" .
+# 
+# http://purl.org/ontology/iomust/smi#ADCsensor
+<http://purl.org/ontology/iomust/smi#ADCsensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#ADCsensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/sigproc/ADC> .
+<http://purl.org/ontology/iomust/smi#ADCsensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Analog to Digital converter for gesture tracking sensors" .
+<http://purl.org/ontology/iomust/smi#ADCsensor> <http://www.w3.org/2000/01/rdf-schema#label> "ADC sensor" .
+# 
+# http://purl.org/ontology/iomust/smi#Accelerometer
+<http://purl.org/ontology/iomust/smi#Accelerometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#Accelerometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+# 
+# http://purl.org/ontology/iomust/smi#AcousticInstrument
+<http://purl.org/ontology/iomust/smi#AcousticInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#AcousticInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/mo/Instrument> .
+<http://purl.org/ontology/iomust/smi#AcousticInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Acoustic Instrument" .
+# 
+# http://purl.org/ontology/iomust/smi#AudioInputInterface
+<http://purl.org/ontology/iomust/smi#AudioInputInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#AudioInputInterface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMIHardwareDevice> .
+# 
+# http://purl.org/ontology/iomust/smi#AudioTrackingSensor
+<http://purl.org/ontology/iomust/smi#AudioTrackingSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#AudioTrackingSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://purl.org/ontology/iomust/smi#AudioTrackingSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that detects audio signals" .
+# 
+# http://purl.org/ontology/iomust/smi#DACactuator
+<http://purl.org/ontology/iomust/smi#DACactuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#DACactuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/sigproc/DAC> .
+<http://purl.org/ontology/iomust/smi#DACactuator> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/iomust/smi#DACaudio> .
+<http://purl.org/ontology/iomust/smi#DACactuator> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital to Analog converter for haptic signals" .
+# 
+# http://purl.org/ontology/iomust/smi#DACaudio
+<http://purl.org/ontology/iomust/smi#DACaudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#DACaudio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/sigproc/DAC> .
+<http://purl.org/ontology/iomust/smi#DACaudio> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital to Analog converter for audio signals" .
+# 
+# http://purl.org/ontology/iomust/smi#DistanceSensor
+<http://purl.org/ontology/iomust/smi#DistanceSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#DistanceSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+# 
+# http://purl.org/ontology/iomust/smi#ElectricInstrument
+<http://purl.org/ontology/iomust/smi#ElectricInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#ElectricInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/mo/Instrument> .
+<http://purl.org/ontology/iomust/smi#ElectricInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Instrument" .
+# 
+# http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument
+<http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/mo/Instrument> .
+<http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Electro Acoustic Instrument" .
+# 
+# http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem
+<http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SoundDeliverySystem> .
+# 
+# http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem
+<http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SoundDeliverySystem> .
+# 
+# http://purl.org/ontology/iomust/smi#GestureInterface
+<http://purl.org/ontology/iomust/smi#GestureInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#GestureInterface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMIHardwareDevice> .
+# 
+# http://purl.org/ontology/iomust/smi#GestureSensorHandler
+<http://purl.org/ontology/iomust/smi#GestureSensorHandler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#GestureSensorHandler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMISoftwareDevice> .
+<http://purl.org/ontology/iomust/smi#GestureSensorHandler> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software which carries out observations through sensors (like a microphone or a pressure sensor). Typically an SMI sensor observer acts upon the digital values of an ADC (analogue to digital converter)."@en .
+<http://purl.org/ontology/iomust/smi#GestureSensorHandler> <http://www.w3.org/2000/01/rdf-schema#label> "Gesture Sensor Handler" .
+# 
+# http://purl.org/ontology/iomust/smi#GestureSensorTransform
+<http://purl.org/ontology/iomust/smi#GestureSensorTransform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#GestureSensorTransform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMITransform> .
+<http://purl.org/ontology/iomust/smi#GestureSensorTransform> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/iomust/smi#MappingTrasform> .
+<http://purl.org/ontology/iomust/smi#GestureSensorTransform> <http://www.w3.org/2000/01/rdf-schema#comment> "A transformation applied by a SMI Gesture Sensor Handler to the signal observed by a sensor tracking a player's gesture"@en .
+<http://purl.org/ontology/iomust/smi#GestureSensorTransform> <http://www.w3.org/2000/01/rdf-schema#label> "Gesture Sensor Transform"@en .
+# 
+# http://purl.org/ontology/iomust/smi#GestureTrackingSensor
+<http://purl.org/ontology/iomust/smi#GestureTrackingSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#GestureTrackingSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://purl.org/ontology/iomust/smi#GestureTrackingSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that detects the performer's gestures" .
+# 
+# http://purl.org/ontology/iomust/smi#Gyroscope
+<http://purl.org/ontology/iomust/smi#Gyroscope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#Gyroscope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+# 
+# http://purl.org/ontology/iomust/smi#HapticDeliverySystem
+<http://purl.org/ontology/iomust/smi#HapticDeliverySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#HapticDeliverySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMIHardwareDevice> .
+# 
+# http://purl.org/ontology/iomust/smi#HapticEngine
+<http://purl.org/ontology/iomust/smi#HapticEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#HapticEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMISoftwareDevice> .
+<http://purl.org/ontology/iomust/smi#HapticEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software that handles haptic processing" .
+<http://purl.org/ontology/iomust/smi#HapticEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Haptic Engine" .
+# 
+# http://purl.org/ontology/iomust/smi#InertialMeasurementUnit
+<http://purl.org/ontology/iomust/smi#InertialMeasurementUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#InertialMeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+# 
+# http://purl.org/ontology/iomust/smi#Magnetometer
+<http://purl.org/ontology/iomust/smi#Magnetometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#Magnetometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+# 
+# http://purl.org/ontology/iomust/smi#MappingHandler
+<http://purl.org/ontology/iomust/smi#MappingHandler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#MappingHandler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMISoftwareDevice> .
+<http://purl.org/ontology/iomust/smi#MappingHandler> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software that handles the mapping functions from sensor values to plugin parameters" .
+<http://purl.org/ontology/iomust/smi#MappingHandler> <http://www.w3.org/2000/01/rdf-schema#label> "Mapping Handler" .
+# 
+# http://purl.org/ontology/iomust/smi#MappingTrasform
+<http://purl.org/ontology/iomust/smi#MappingTrasform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#MappingTrasform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMITransform> .
+<http://purl.org/ontology/iomust/smi#MappingTrasform> <http://www.w3.org/2000/01/rdf-schema#comment> "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." .
+<http://purl.org/ontology/iomust/smi#MappingTrasform> <http://www.w3.org/2000/01/rdf-schema#label> "Mapping Transform"@en .
+# 
+# http://purl.org/ontology/iomust/smi#Microphone_Transducer
+<http://purl.org/ontology/iomust/smi#Microphone_Transducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#Microphone_Transducer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#AudioTrackingSensor> .
+<http://purl.org/ontology/iomust/smi#Microphone_Transducer> <http://www.w3.org/2000/01/rdf-schema#comment> "The sensor embedded in a microphone" .
+# 
 # http://purl.org/ontology/iomust/smi#Potentiometer
 <http://purl.org/ontology/iomust/smi#Potentiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/iomust/smi#Potentiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#GestureTrackingSensor> .
+<http://purl.org/ontology/iomust/smi#Potentiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+# 
+# http://purl.org/ontology/iomust/smi#PressureSensors
+<http://purl.org/ontology/iomust/smi#PressureSensors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#PressureSensors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
 # 
 # http://purl.org/ontology/iomust/smi#PushButton
 <http://purl.org/ontology/iomust/smi#PushButton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/iomust/smi#PushButton> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#GestureTrackingSensor> .
+<http://purl.org/ontology/iomust/smi#PushButton> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+# 
+# http://purl.org/ontology/iomust/smi#RE
+<http://purl.org/ontology/iomust/smi#RE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#RE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/aufx/ontology/1.0#PlugInAPI> .
+<http://purl.org/ontology/iomust/smi#RE> <http://www.w3.org/2000/01/rdf-schema#comment> "Rack Extensions for a plugin API (by Propellerheads)"@en .
+# 
+# http://purl.org/ontology/iomust/smi#RibbonSensor
+<http://purl.org/ontology/iomust/smi#RibbonSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#RibbonSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+# 
+# http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument
+<http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
+<http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Electric Acoustic Instrument" .
+# 
+# http://purl.org/ontology/iomust/smi#SMIElectricInstrument
+<http://purl.org/ontology/iomust/smi#SMIElectricInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SMIElectricInstrument> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#ElectricInstrument> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SMIElectricInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
+<http://purl.org/ontology/iomust/smi#SMIElectricInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Electric Instrument" .
+# 
+# http://purl.org/ontology/iomust/smi#SMIHardwareDevice
+<http://purl.org/ontology/iomust/smi#SMIHardwareDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SMIHardwareDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/device/HardwareDevice> .
+<http://purl.org/ontology/iomust/smi#SMIHardwareDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Any hardware components of a smart instrument" .
+# 
+# http://purl.org/ontology/iomust/smi#SMISoftwareDevice
+<http://purl.org/ontology/iomust/smi#SMISoftwareDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SMISoftwareDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/device/SoftwareDevice> .
+<http://purl.org/ontology/iomust/smi#SMISoftwareDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Any software component of a smart musical instrument"@en .
+<http://purl.org/ontology/iomust/smi#SMISoftwareDevice> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Software Device" .
+# 
+# http://purl.org/ontology/iomust/smi#SMITransform
+<http://purl.org/ontology/iomust/smi#SMITransform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SMITransform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/main/Transform> .
+<http://purl.org/ontology/iomust/smi#SMITransform> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Transform"@en .
+# 
+# http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument
+<http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
+<http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Virtual Reality Musical Instrument" .
+# 
+# http://purl.org/ontology/iomust/smi#SingleBoardComputer
+<http://purl.org/ontology/iomust/smi#SingleBoardComputer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SingleBoardComputer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMIHardwareDevice> .
+<http://purl.org/ontology/iomust/smi#SingleBoardComputer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
+<http://purl.org/ontology/iomust/smi#SingleBoardComputer> <http://www.w3.org/2000/01/rdf-schema#comment> "The SMI Single Board Computer is an hardware component which is embedded into a SMI and runs software devices, including the SMI Sound Engine" .
+<http://purl.org/ontology/iomust/smi#SingleBoardComputer> <http://www.w3.org/2000/01/rdf-schema#label> "Single Board Computer" .
+# 
+# http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject
+<http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/device/SoftwareDevice> .
+<http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject> <http://www.w3.org/2000/01/rdf-schema#label> "Software Multitrack Project"@en .
+# 
+# http://purl.org/ontology/iomust/smi#SoundDeliverySystem
+<http://purl.org/ontology/iomust/smi#SoundDeliverySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SoundDeliverySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMIHardwareDevice> .
+# 
+# http://purl.org/ontology/iomust/smi#SoundEngine
+<http://purl.org/ontology/iomust/smi#SoundEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#SoundEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMISoftwareDevice> .
+<http://purl.org/ontology/iomust/smi#SoundEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software that handles audio processing" .
+<http://purl.org/ontology/iomust/smi#SoundEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Sound Engine" .
+# 
+# http://purl.org/ontology/iomust/smi#VST2
+<http://purl.org/ontology/iomust/smi#VST2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#VST2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/aufx/ontology/1.0#VST> .
+<http://purl.org/ontology/iomust/smi#VST2> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/iomust/smi#VST3> .
+<http://purl.org/ontology/iomust/smi#VST2> <http://www.w3.org/2000/01/rdf-schema#label> "VST 2"@en .
+# 
+# http://purl.org/ontology/iomust/smi#VST3
+<http://purl.org/ontology/iomust/smi#VST3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#VST3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/aufx/ontology/1.0#VST> .
+<http://purl.org/ontology/iomust/smi#VST3> <http://www.w3.org/2000/01/rdf-schema#label> "VST 3"@en .
+# 
+# http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument
+<http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/mo/Instrument> .
+<http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Virtual Reality Musical Instrument" .
+# 
+# http://purl.org/ontology/iomust/smi#VisualDeliverySystem
+<http://purl.org/ontology/iomust/smi#VisualDeliverySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#VisualDeliverySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMIHardwareDevice> .
+# 
+# http://purl.org/ontology/iomust/smi#VisualEngine
+<http://purl.org/ontology/iomust/smi#VisualEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#VisualEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#SMISoftwareDevice> .
+<http://purl.org/ontology/iomust/smi#VisualEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software that handles visual processing" .
+<http://purl.org/ontology/iomust/smi#VisualEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Visual Engine" .
+# 
+# http://purl.org/ontology/iomust/smi#multichannel
+<http://purl.org/ontology/iomust/smi#multichannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#multichannel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smiChannel> .
 # 
 # http://purl.org/ontology/mo/Instrument
 <http://purl.org/ontology/mo/Instrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/ontology/mo/Signal
 <http://purl.org/ontology/mo/Signal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://purl.org/ontology/smi#ADCaudio
-<http://purl.org/ontology/smi#ADCaudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#ADCaudio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/sigproc/ADC> .
-<http://purl.org/ontology/smi#ADCaudio> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/smi#ADCsensor> .
-<http://purl.org/ontology/smi#ADCaudio> <http://www.w3.org/2000/01/rdf-schema#comment> "Audio to Digital converter for audio signals" .
-<http://purl.org/ontology/smi#ADCaudio> <http://www.w3.org/2000/01/rdf-schema#label> "ADC audio" .
-# 
-# http://purl.org/ontology/smi#ADCsensor
-<http://purl.org/ontology/smi#ADCsensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#ADCsensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/sigproc/ADC> .
-<http://purl.org/ontology/smi#ADCsensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Analog to Digital converter for gesture tracking sensors" .
-<http://purl.org/ontology/smi#ADCsensor> <http://www.w3.org/2000/01/rdf-schema#label> "ADC sensor" .
-# 
-# http://purl.org/ontology/smi#Accelerometer
-<http://purl.org/ontology/smi#Accelerometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#Accelerometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#GestureTrackingSensor> .
-# 
-# http://purl.org/ontology/smi#AcousticInstrument
-<http://purl.org/ontology/smi#AcousticInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#AcousticInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/mo/Instrument> .
-<http://purl.org/ontology/smi#AcousticInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Acoustic Instrument" .
-# 
-# http://purl.org/ontology/smi#AudioInputInterface
-<http://purl.org/ontology/smi#AudioInputInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#AudioInputInterface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMIHardwareDevice> .
-# 
-# http://purl.org/ontology/smi#AudioTrackingSensor
-<http://purl.org/ontology/smi#AudioTrackingSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#AudioTrackingSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<http://purl.org/ontology/smi#AudioTrackingSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that detects audio signals" .
-# 
-# http://purl.org/ontology/smi#DACactuator
-<http://purl.org/ontology/smi#DACactuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#DACactuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/sigproc/DAC> .
-<http://purl.org/ontology/smi#DACactuator> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/smi#DACaudio> .
-<http://purl.org/ontology/smi#DACactuator> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital to Analog converter for haptic signals" .
-# 
-# http://purl.org/ontology/smi#DACaudio
-<http://purl.org/ontology/smi#DACaudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#DACaudio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/sigproc/DAC> .
-<http://purl.org/ontology/smi#DACaudio> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital to Analog converter for audio signals" .
-# 
-# http://purl.org/ontology/smi#DistanceSensor
-<http://purl.org/ontology/smi#DistanceSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#DistanceSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#GestureTrackingSensor> .
-# 
-# http://purl.org/ontology/smi#ElectricInstrument
-<http://purl.org/ontology/smi#ElectricInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#ElectricInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/mo/Instrument> .
-<http://purl.org/ontology/smi#ElectricInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Instrument" .
-# 
-# http://purl.org/ontology/smi#ElectroAcousticInstrument
-<http://purl.org/ontology/smi#ElectroAcousticInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#ElectroAcousticInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/mo/Instrument> .
-<http://purl.org/ontology/smi#ElectroAcousticInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Electro Acoustic Instrument" .
-# 
-# http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem
-<http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#EmbeddedLoudspeakerSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SoundDeliverySystem> .
-# 
-# http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem
-<http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#EmbeddedVibrationSpeakerSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SoundDeliverySystem> .
-# 
-# http://purl.org/ontology/smi#GestureInterface
-<http://purl.org/ontology/smi#GestureInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#GestureInterface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMIHardwareDevice> .
-# 
-# http://purl.org/ontology/smi#GestureSensorHandler
-<http://purl.org/ontology/smi#GestureSensorHandler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#GestureSensorHandler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMISoftwareDevice> .
-<http://purl.org/ontology/smi#GestureSensorHandler> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software which carries out observations through sensors (like a microphone or a pressure sensor). Typically an SMI sensor observer acts upon the digital values of an ADC (analogue to digital converter)."@en .
-<http://purl.org/ontology/smi#GestureSensorHandler> <http://www.w3.org/2000/01/rdf-schema#label> "Gesture Sensor Handler" .
-# 
-# http://purl.org/ontology/smi#GestureSensorTransform
-<http://purl.org/ontology/smi#GestureSensorTransform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#GestureSensorTransform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMITransform> .
-<http://purl.org/ontology/smi#GestureSensorTransform> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/smi#MappingTrasform> .
-<http://purl.org/ontology/smi#GestureSensorTransform> <http://www.w3.org/2000/01/rdf-schema#comment> "A transformation applied by a SMI Gesture Sensor Handler to the signal observed by a sensor tracking a player's gesture"@en .
-<http://purl.org/ontology/smi#GestureSensorTransform> <http://www.w3.org/2000/01/rdf-schema#label> "Gesture Sensor Transform"@en .
-# 
-# http://purl.org/ontology/smi#GestureTrackingSensor
-<http://purl.org/ontology/smi#GestureTrackingSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#GestureTrackingSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
-<http://purl.org/ontology/smi#GestureTrackingSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that detects the performer's gestures" .
-# 
-# http://purl.org/ontology/smi#Gyroscope
-<http://purl.org/ontology/smi#Gyroscope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#Gyroscope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#GestureTrackingSensor> .
-# 
-# http://purl.org/ontology/smi#HapticDeliverySystem
-<http://purl.org/ontology/smi#HapticDeliverySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#HapticDeliverySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMIHardwareDevice> .
-# 
-# http://purl.org/ontology/smi#HapticEngine
-<http://purl.org/ontology/smi#HapticEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#HapticEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMISoftwareDevice> .
-<http://purl.org/ontology/smi#HapticEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software that handles haptic processing" .
-<http://purl.org/ontology/smi#HapticEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Haptic Engine" .
-# 
-# http://purl.org/ontology/smi#InertialMeasurementUnit
-<http://purl.org/ontology/smi#InertialMeasurementUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#InertialMeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#GestureTrackingSensor> .
-# 
-# http://purl.org/ontology/smi#Magnetometer
-<http://purl.org/ontology/smi#Magnetometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#Magnetometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#GestureTrackingSensor> .
-# 
-# http://purl.org/ontology/smi#MappingHandler
-<http://purl.org/ontology/smi#MappingHandler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#MappingHandler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMISoftwareDevice> .
-<http://purl.org/ontology/smi#MappingHandler> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software that handles the mapping functions from sensor values to plugin parameters" .
-<http://purl.org/ontology/smi#MappingHandler> <http://www.w3.org/2000/01/rdf-schema#label> "Mapping Handler" .
-# 
-# http://purl.org/ontology/smi#MappingTrasform
-<http://purl.org/ontology/smi#MappingTrasform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#MappingTrasform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMITransform> .
-<http://purl.org/ontology/smi#MappingTrasform> <http://www.w3.org/2000/01/rdf-schema#comment> "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." .
-<http://purl.org/ontology/smi#MappingTrasform> <http://www.w3.org/2000/01/rdf-schema#label> "Mapping Transform"@en .
-# 
-# http://purl.org/ontology/smi#Microphone_Transducer
-<http://purl.org/ontology/smi#Microphone_Transducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#Microphone_Transducer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#AudioTrackingSensor> .
-<http://purl.org/ontology/smi#Microphone_Transducer> <http://www.w3.org/2000/01/rdf-schema#comment> "The sensor embedded in a microphone" .
-# 
-# http://purl.org/ontology/smi#PressureSensors
-<http://purl.org/ontology/smi#PressureSensors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#PressureSensors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#GestureTrackingSensor> .
-# 
-# http://purl.org/ontology/smi#RE
-<http://purl.org/ontology/smi#RE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#RE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/aufx/ontology/1.0#PlugInAPI> .
-<http://purl.org/ontology/smi#RE> <http://www.w3.org/2000/01/rdf-schema#comment> "Rack Extensions for a plugin API (by Propellerheads)"@en .
-# 
-# http://purl.org/ontology/smi#RibbonSensor
-<http://purl.org/ontology/smi#RibbonSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#RibbonSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#GestureTrackingSensor> .
-# 
-# http://purl.org/ontology/smi#SMIElectricAcousticIntrument
-<http://purl.org/ontology/smi#SMIElectricAcousticIntrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SMIElectricAcousticIntrument> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
-_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#ElectroAcousticInstrument> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SMIElectricAcousticIntrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
-<http://purl.org/ontology/smi#SMIElectricAcousticIntrument> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Electric Acoustic Instrument" .
-# 
-# http://purl.org/ontology/smi#SMIElectricInstrument
-<http://purl.org/ontology/smi#SMIElectricInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SMIElectricInstrument> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#ElectricInstrument> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SMIElectricInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
-<http://purl.org/ontology/smi#SMIElectricInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Electric Instrument" .
-# 
-# http://purl.org/ontology/smi#SMIHardwareDevice
-<http://purl.org/ontology/smi#SMIHardwareDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SMIHardwareDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/device/HardwareDevice> .
-<http://purl.org/ontology/smi#SMIHardwareDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Any hardware components of a smart instrument" .
-# 
-# http://purl.org/ontology/smi#SMISoftwareDevice
-<http://purl.org/ontology/smi#SMISoftwareDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SMISoftwareDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/device/SoftwareDevice> .
-<http://purl.org/ontology/smi#SMISoftwareDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Any software component of a smart musical instrument"@en .
-<http://purl.org/ontology/smi#SMISoftwareDevice> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Software Device" .
-# 
-# http://purl.org/ontology/smi#SMITransform
-<http://purl.org/ontology/smi#SMITransform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SMITransform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/main/Transform> .
-<http://purl.org/ontology/smi#SMITransform> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Transform"@en .
-# 
-# http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument
-<http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#VirtualRealityMusicalInstrument> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
-<http://purl.org/ontology/smi#SMIVirtualRealityMusicalInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "SMI Virtual Reality Musical Instrument" .
-# 
-# http://purl.org/ontology/smi#SingleBoardComputer
-<http://purl.org/ontology/smi#SingleBoardComputer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SingleBoardComputer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMIHardwareDevice> .
-<http://purl.org/ontology/smi#SingleBoardComputer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Platform> .
-<http://purl.org/ontology/smi#SingleBoardComputer> <http://www.w3.org/2000/01/rdf-schema#comment> "The SMI Single Board Computer is an hardware component which is embedded into a SMI and runs software devices, including the SMI Sound Engine" .
-<http://purl.org/ontology/smi#SingleBoardComputer> <http://www.w3.org/2000/01/rdf-schema#label> "Single Board Computer" .
-# 
-# http://purl.org/ontology/smi#SoftwareMultitrackProject
-<http://purl.org/ontology/smi#SoftwareMultitrackProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SoftwareMultitrackProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/device/SoftwareDevice> .
-<http://purl.org/ontology/smi#SoftwareMultitrackProject> <http://www.w3.org/2000/01/rdf-schema#label> "Software Multitrack Project"@en .
-# 
-# http://purl.org/ontology/smi#SoundDeliverySystem
-<http://purl.org/ontology/smi#SoundDeliverySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SoundDeliverySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMIHardwareDevice> .
-# 
-# http://purl.org/ontology/smi#SoundEngine
-<http://purl.org/ontology/smi#SoundEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#SoundEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMISoftwareDevice> .
-<http://purl.org/ontology/smi#SoundEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software that handles audio processing" .
-<http://purl.org/ontology/smi#SoundEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Sound Engine" .
-# 
-# http://purl.org/ontology/smi#VST2
-<http://purl.org/ontology/smi#VST2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#VST2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/aufx/ontology/1.0#VST> .
-<http://purl.org/ontology/smi#VST2> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/smi#VST3> .
-<http://purl.org/ontology/smi#VST2> <http://www.w3.org/2000/01/rdf-schema#label> "VST 2"@en .
-# 
-# http://purl.org/ontology/smi#VST3
-<http://purl.org/ontology/smi#VST3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#VST3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/aufx/ontology/1.0#VST> .
-<http://purl.org/ontology/smi#VST3> <http://www.w3.org/2000/01/rdf-schema#label> "VST 3"@en .
-# 
-# http://purl.org/ontology/smi#VirtualRealityMusicalInstrument
-<http://purl.org/ontology/smi#VirtualRealityMusicalInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#VirtualRealityMusicalInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/mo/Instrument> .
-<http://purl.org/ontology/smi#VirtualRealityMusicalInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Virtual Reality Musical Instrument" .
-# 
-# http://purl.org/ontology/smi#VisualDeliverySystem
-<http://purl.org/ontology/smi#VisualDeliverySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#VisualDeliverySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMIHardwareDevice> .
-# 
-# http://purl.org/ontology/smi#VisualEngine
-<http://purl.org/ontology/smi#VisualEngine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#VisualEngine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/smi#SMISoftwareDevice> .
-<http://purl.org/ontology/smi#VisualEngine> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of software that handles visual processing" .
-<http://purl.org/ontology/smi#VisualEngine> <http://www.w3.org/2000/01/rdf-schema#label> "Visual Engine" .
-# 
-# http://purl.org/ontology/smi#multichannel
-<http://purl.org/ontology/smi#multichannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/smi#multichannel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smiChannel> .
 # 
 # http://purl.org/ontology/studio/device/Converter
 <http://purl.org/ontology/studio/device/Converter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -593,9 +593,9 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-# http://purl.org/ontology/smi#Decibel
-<http://purl.org/ontology/smi#Decibel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/ontology/smi#Decibel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#Unit> .
+# http://purl.org/ontology/iomust/smi#Decibel
+<http://purl.org/ontology/iomust/smi#Decibel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/iomust/smi#Decibel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#Unit> .
 # 
 # 
 # 
@@ -620,70 +620,70 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid26 <http://www.w3.org/2002/07/owl#members> _:genid35 .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#Potentiometer> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#Accelerometer> .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#PushButton> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#DistanceSensor> .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#Accelerometer> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#Gyroscope> .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#DistanceSensor> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#InertialMeasurementUnit> .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#Gyroscope> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#Magnetometer> .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#InertialMeasurementUnit> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#Potentiometer> .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#Magnetometer> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#PressureSensors> .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#PressureSensors> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#PushButton> .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#RibbonSensor> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#RibbonSensor> .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid36 <http://www.w3.org/2002/07/owl#members> _:genid42 .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#AudioInputInterface> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#AudioInputInterface> .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#GestureInterface> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#GestureInterface> .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#HapticDeliverySystem> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#HapticDeliverySystem> .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#SingleBoardComputer> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#SingleBoardComputer> .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#SoundDeliverySystem> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#SoundDeliverySystem> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#VisualDeliverySystem> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#VisualDeliverySystem> .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 _:genid43 <http://www.w3.org/2002/07/owl#members> _:genid48 .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#GestureSensorHandler> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#GestureSensorHandler> .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#HapticEngine> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#HapticEngine> .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#MappingHandler> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#MappingHandler> .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#SoundEngine> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#SoundEngine> .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/smi#VisualEngine> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#VisualEngine> .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
