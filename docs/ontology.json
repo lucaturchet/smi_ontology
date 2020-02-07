@@ -147,11 +147,49 @@
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/internet_of_things/Thing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Andrea Molinari"
+  }, {
+    "@value" : "Gyorgy Fazekas"
+  }, {
+    "@value" : "Paolo Bouquet"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Luca Turchet"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@id" : "https://www.gnu.org/licenses/gpl.html"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-02-06T10:00:00"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Smart Musical Insturments (SMI) ontology"
+  } ],
+  "http://web.resource.org/cc/license" : [ {
+    "@id" : "https://www.gnu.org/licenses/gpl.html"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi/0.1"
+  } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#ADCaudio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -881,65 +919,6 @@
   "@id" : "http://purl.org/ontology/studio/microphone/Microphone",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://purl.org/ontology/studio/mixer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@value" : "Andrea Molinari"
-  }, {
-    "@value" : "Gyorgy Fazekas"
-  }, {
-    "@value" : "Paolo Bouquet"
-  } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Luca Turchet"
-  } ],
-  "http://purl.org/dc/elements/1.1/rights" : [ {
-    "@id" : "https://www.gnu.org/licenses/gpl.html"
-  } ],
-  "http://purl.org/dc/terms/abstract" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2020-02-06T10:00:00"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "Smart Musical Insturments (SMI) ontology"
-  } ],
-  "http://web.resource.org/cc/license" : [ {
-    "@id" : "https://www.gnu.org/licenses/gpl.html"
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "file:///home/moustaki/work/workspace/motools/af/rdf/audio_features.n3"
-  }, {
-    "@id" : "http://purl.org/ontology/iomust/internet_of_things/0.1"
-  }, {
-    "@id" : "http://purl.org/ontology/mo/"
-  }, {
-    "@id" : "http://purl.org/ontology/spd/sigproc/"
-  }, {
-    "@id" : "http://purl.org/ontology/studio/"
-  }, {
-    "@id" : "http://purl.org/ontology/studio/connectivity"
-  }, {
-    "@id" : "http://purl.org/ontology/studio/device"
-  }, {
-    "@id" : "http://purl.org/ontology/studio/microphone"
-  }, {
-    "@id" : "http://purl.org/ontology/studio/mixer"
-  }, {
-    "@id" : "http://purl.org/ontology/studio/multitrack#"
-  }, {
-    "@id" : "http://purl.org/vocab/bio/0.1/"
-  }, {
-    "@id" : "http://www.w3.org/ns/sosa/"
-  }, {
-    "@id" : "https://w3id.org/aufx/ontology/1.0#"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi/0.1"
-  } ]
-}, {
   "@id" : "http://purl.org/ontology/studio/multitrack#AudioTrack",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An audio track can also contain plugins that generate sound in real time (for example synthesizers) or that process sounds incoming from microphones (for example, audio effects that alter the sound)."
@@ -993,10 +972,16 @@
     "@id" : "http://purl.org/ontology/mo/Signal"
   } ]
 }, {
+  "@id" : "https://w3id.org/aufx/ontology/1.0#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://w3id.org/aufx/ontology/1.0#PlugIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/aufx/ontology/1.0#PlugInAPI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/aufx/ontology/1.0#SoftwareImplementation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/aufx/ontology/1.0#VST",

@@ -1,27 +1,14 @@
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <file:///home/moustaki/work/workspace/motools/af/rdf/audio_features.n3> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/iomust/internet_of_things/0.1> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/mo/> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/spd/sigproc/> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/studio/> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/studio/connectivity> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/studio/device> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/studio/microphone> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/studio/mixer> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/studio/multitrack#> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/vocab/bio/0.1/> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/aufx/ontology/1.0#> .
-<http://purl.org/ontology/studio/mixer> <http://purl.org/dc/elements/1.1/contributor> "Andrea Molinari" .
-<http://purl.org/ontology/studio/mixer> <http://purl.org/dc/elements/1.1/contributor> "Gyorgy Fazekas" .
-<http://purl.org/ontology/studio/mixer> <http://purl.org/dc/elements/1.1/contributor> "Paolo Bouquet" .
-<http://purl.org/ontology/studio/mixer> <http://purl.org/dc/elements/1.1/creator> "Luca Turchet" .
-<http://purl.org/ontology/studio/mixer> <http://purl.org/dc/elements/1.1/rights> <https://www.gnu.org/licenses/gpl.html> .
-<http://purl.org/ontology/studio/mixer> <http://purl.org/dc/terms/abstract> <http://purl.org/ontology/iomust/smi> .
-<http://purl.org/ontology/studio/mixer> <http://purl.org/dc/terms/created> "2020-02-06T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://purl.org/ontology/studio/mixer> <http://purl.org/dc/terms/title> "Smart Musical Insturments (SMI) ontology" .
-<http://purl.org/ontology/studio/mixer> <http://web.resource.org/cc/license> <https://www.gnu.org/licenses/gpl.html> .
-<http://purl.org/ontology/studio/mixer> <http://www.w3.org/2002/07/owl#versionInfo> <http://purl.org/ontology/iomust/smi/0.1> .
+<http://purl.org/ontology/iomust/smi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/elements/1.1/contributor> "Andrea Molinari" .
+<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/elements/1.1/contributor> "Gyorgy Fazekas" .
+<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/elements/1.1/contributor> "Paolo Bouquet" .
+<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/elements/1.1/creator> "Luca Turchet" .
+<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/elements/1.1/rights> <https://www.gnu.org/licenses/gpl.html> .
+<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/terms/abstract> <http://purl.org/ontology/iomust/smi> .
+<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/terms/created> "2020-02-06T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/terms/title> "Smart Musical Insturments (SMI) ontology" .
+<http://purl.org/ontology/iomust/smi> <http://web.resource.org/cc/license> <https://www.gnu.org/licenses/gpl.html> .
+<http://purl.org/ontology/iomust/smi> <http://www.w3.org/2002/07/owl#versionInfo> <http://purl.org/ontology/iomust/smi/0.1> .
 # 
 # 
 # #################################################################
@@ -42,6 +29,12 @@
 # 
 # http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://schema.org/rangeIncludes
 <http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -114,6 +107,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://purl.org/ontology/iomust/smi#implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/iomust/smi#implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/studio/main/Transform> .
 <http://purl.org/ontology/iomust/smi#implementation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> .
+<https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/ontology/iomust/smi#mapping_implementation
 <http://purl.org/ontology/iomust/smi#mapping_implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -127,6 +121,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://purl.org/ontology/iomust/smi#maps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/iomust/smi#maps> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#MappingTrasform> .
 <http://purl.org/ontology/iomust/smi#maps> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/aufx/ontology/1.0#Parameter> .
+<https://w3id.org/aufx/ontology/1.0#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/ontology/iomust/smi#processes_sensor_signal
 <http://purl.org/ontology/iomust/smi#processes_sensor_signal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -575,11 +570,15 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/device/HardwareDevice> .
 # 
+# https://w3id.org/aufx/ontology/1.0#Parameter
+# 
 # https://w3id.org/aufx/ontology/1.0#PlugIn
 <https://w3id.org/aufx/ontology/1.0#PlugIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/aufx/ontology/1.0#PlugInAPI
 <https://w3id.org/aufx/ontology/1.0#PlugInAPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/aufx/ontology/1.0#SoftwareImplementation
 # 
 # https://w3id.org/aufx/ontology/1.0#VST
 <https://w3id.org/aufx/ontology/1.0#VST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
