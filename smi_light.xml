@@ -43,7 +43,7 @@
      xmlns:prov-links-20130430="http://www.w3.org/ns/prov-links-20130430#"
      xmlns:note-prov-aq-20130430="http://www.w3.org/TR/2013/NOTE-prov-aq-20130430/"
      xmlns:prov-o-inverses-20130430="http://www.w3.org/ns/prov-o-inverses-20130430#">
-    <owl:Ontology rdf:about="http://purl.org/ontology/iomust/smi/">
+    <owl:Ontology rdf:about="http://purl.org/ontology/iomust/smi">
         <owl:versionIRI rdf:resource="http://purl.org/ontology/iomust/smi/0.1"/>
         <dc:contributor>Andrea Molinari</dc:contributor>
         <dc:contributor>Gyorgy Fazekas</dc:contributor>
@@ -87,9 +87,9 @@
     
 
 
-    <!-- http://purl.org/ontology/iomust/smi/maps -->
+    <!-- http://purl.org/ontology/iomust/smimaps -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi/maps">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smimaps">
         <rdfs:domain rdf:resource="http://purl.org/ontology/smi#MappingTrasform"/>
         <rdfs:range rdf:resource="https://w3id.org/aufx/ontology/1.0#Parameter"/>
     </owl:ObjectProperty>
@@ -370,6 +370,12 @@
     
 
 
+    <!-- http://purl.org/ontology/iomust/smiChannel -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/iomust/smiChannel"/>
+    
+
+
     <!-- http://purl.org/ontology/iomust/internet_of_things/SmartInstrument -->
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
@@ -389,12 +395,6 @@
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#PushButton">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/smi#GestureTrackingSensor"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi/Channel -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/iomust/smi/Channel"/>
     
 
 
@@ -826,7 +826,7 @@
     <!-- http://purl.org/ontology/smi#multichannel -->
 
     <owl:Class rdf:about="http://purl.org/ontology/smi#multichannel">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/smi/Channel"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/smiChannel"/>
     </owl:Class>
     
 
