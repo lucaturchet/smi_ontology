@@ -182,7 +182,7 @@
     "@value" : "2020-02-06T10:00:00"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@value" : "Smart Musical Insturments (SMI) ontology"
+    "@value" : "Smart Musical Instruments Ontology"
   } ],
   "http://web.resource.org/cc/license" : [ {
     "@id" : "https://www.gnu.org/licenses/gpl.html"

@@ -6,7 +6,7 @@
 <http://purl.org/ontology/iomust/smi> <http://purl.org/dc/elements/1.1/rights> <https://www.gnu.org/licenses/gpl.html> .
 <http://purl.org/ontology/iomust/smi> <http://purl.org/dc/terms/abstract> <http://purl.org/ontology/iomust/smi> .
 <http://purl.org/ontology/iomust/smi> <http://purl.org/dc/terms/created> "2020-02-06T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/terms/title> "Smart Musical Insturments (SMI) ontology" .
+<http://purl.org/ontology/iomust/smi> <http://purl.org/dc/terms/title> "Smart Musical Instruments Ontology" .
 <http://purl.org/ontology/iomust/smi> <http://web.resource.org/cc/license> <https://www.gnu.org/licenses/gpl.html> .
 <http://purl.org/ontology/iomust/smi> <http://www.w3.org/2002/07/owl#versionInfo> <http://purl.org/ontology/iomust/smi/0.1> .
 # 
