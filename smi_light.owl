@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/ontology/iomust/smi"
-     xml:base="http://purl.org/ontology/iomust/smi#"
+     xml:base="http://purl.org/ontology/iomust/smi"
      xmlns:cc="http://web.resource.org/cc/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:mo="http://purl.org/ontology/mo/"
@@ -54,7 +54,7 @@
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-06T10:00:00</terms:created>
         <terms:title>Smart Musical Instruments Ontology</terms:title>
         <cc:license rdf:resource="https://www.gnu.org/licenses/gpl.html"/>
-        <owl:versionInfo rdf:resource="http://purl.org/ontology/iomust/smi/0.1"/>
+        <owl:versionInfo rdf:resource="http://purl.org/ontology/iomust/smi"/>
     </owl:Ontology>
     
 
@@ -70,9 +70,39 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
     <!-- http://purl.org/dc/terms/abstract -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -950,6 +980,12 @@
     
 
 
+    <!-- https://w3id.org/aufx/ontology/1.0#Parameter -->
+
+    <owl:Class rdf:about="https://w3id.org/aufx/ontology/1.0#Parameter"/>
+    
+
+
     <!-- https://w3id.org/aufx/ontology/1.0#PlugIn -->
 
     <owl:Class rdf:about="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
@@ -959,6 +995,12 @@
     <!-- https://w3id.org/aufx/ontology/1.0#PlugInAPI -->
 
     <owl:Class rdf:about="https://w3id.org/aufx/ontology/1.0#PlugInAPI"/>
+    
+
+
+    <!-- https://w3id.org/aufx/ontology/1.0#SoftwareImplementation -->
+
+    <owl:Class rdf:about="https://w3id.org/aufx/ontology/1.0#SoftwareImplementation"/>
     
 
 

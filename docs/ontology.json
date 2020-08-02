@@ -65,7 +65,7 @@
     }, {
       "@id" : "http://purl.org/ontology/iomust/smi#Potentiometer"
     }, {
-      "@id" : "http://purl.org/ontology/iomust/smi#PressureSensors"
+      "@id" : "http://purl.org/ontology/iomust/smi#PressureSensor"
     }, {
       "@id" : "http://purl.org/ontology/iomust/smi#PushButton"
     }, {
@@ -187,8 +187,11 @@
   "http://web.resource.org/cc/license" : [ {
     "@id" : "https://www.gnu.org/licenses/gpl.html"
   } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi/0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#ADCaudio",
@@ -429,7 +432,7 @@
     "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#PressureSensors",
+  "@id" : "http://purl.org/ontology/iomust/smi#PressureSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
@@ -657,10 +660,10 @@
   "@id" : "http://purl.org/ontology/iomust/smi#component_platform",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/Platform"
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/Thing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/iomust/internet_of_things/Thing"
+    "@id" : "http://www.w3.org/ns/sosa/Platform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/ontology/studio/device/component"
@@ -714,18 +717,6 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#has_name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/aufx/ontology/1.0#PlugIn"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has name"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
   "@id" : "http://purl.org/ontology/iomust/smi#implementation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -733,6 +724,19 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/aufx/ontology/1.0#SoftwareImplementation"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#mapping_function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This predicate associates a sensor tracking a gesture to a Mapping Transform, i.e., the mapping function from sensor signal to a plugin feedback parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#mapping_function_parameter",
@@ -810,6 +814,19 @@
     "@id" : "http://purl.org/ontology/iomust/smiChannel"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#name_plugin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/aufx/ontology/1.0#PlugIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name_plugin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#processes_sensor_signal",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -829,7 +846,8 @@
   "@id" : "http://purl.org/ontology/iomust/smi#sensor_handler_implementation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform"
+    "@language" : "en",
+    "@value" : "This object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorTransform"

@@ -67,7 +67,7 @@
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-06T10:00:00</terms:created>
         <terms:title>Smart Musical Instruments Ontology</terms:title>
         <cc:license rdf:resource="https://www.gnu.org/licenses/gpl.html"/>
-        <owl:versionInfo rdf:resource="http://purl.org/ontology/iomust/smi/0.1"/>
+        <owl:versionInfo rdf:resource="http://purl.org/ontology/iomust/smi"/>
     </owl:Ontology>
     
 

@@ -1,4 +1,5 @@
 <http://purl.org/ontology/iomust/smi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/ontology/iomust/smi> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/ontology/iomust/smi/0.1> .
 <http://purl.org/ontology/iomust/smi> <http://purl.org/dc/elements/1.1/contributor> "Andrea Molinari" .
 <http://purl.org/ontology/iomust/smi> <http://purl.org/dc/elements/1.1/contributor> "Gyorgy Fazekas" .
 <http://purl.org/ontology/iomust/smi> <http://purl.org/dc/elements/1.1/contributor> "Paolo Bouquet" .
@@ -8,7 +9,7 @@
 <http://purl.org/ontology/iomust/smi> <http://purl.org/dc/terms/created> "2020-02-06T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://purl.org/ontology/iomust/smi> <http://purl.org/dc/terms/title> "Smart Musical Instruments Ontology" .
 <http://purl.org/ontology/iomust/smi> <http://web.resource.org/cc/license> <https://www.gnu.org/licenses/gpl.html> .
-<http://purl.org/ontology/iomust/smi> <http://www.w3.org/2002/07/owl#versionInfo> <http://purl.org/ontology/iomust/smi/0.1> .
+<http://purl.org/ontology/iomust/smi> <http://www.w3.org/2002/07/owl#versionInfo> <http://purl.org/ontology/iomust/smi> .
 # 
 # 
 # #################################################################
@@ -80,8 +81,8 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # http://purl.org/ontology/iomust/smi#component_platform
 <http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/studio/device/component> .
-<http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Platform> .
-<http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/iomust/internet_of_things/Thing> .
+<http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/internet_of_things/Thing> .
+<http://purl.org/ontology/iomust/smi#component_platform> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Platform> .
 # 
 # http://purl.org/ontology/iomust/smi#executes
 <http://purl.org/ontology/iomust/smi#executes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -107,7 +108,12 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://purl.org/ontology/iomust/smi#implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/iomust/smi#implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/studio/main/Transform> .
 <http://purl.org/ontology/iomust/smi#implementation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> .
-<https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/iomust/smi#mapping_function
+<http://purl.org/ontology/iomust/smi#mapping_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/iomust/smi#mapping_function> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+<http://purl.org/ontology/iomust/smi#mapping_function> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/iomust/smi#MappingTrasform> .
+<http://purl.org/ontology/iomust/smi#mapping_function> <http://www.w3.org/2000/01/rdf-schema#comment> "This predicate associates a sensor tracking a gesture to a Mapping Transform, i.e., the mapping function from sensor signal to a plugin feedback parameter"@en .
 # 
 # http://purl.org/ontology/iomust/smi#mapping_implementation
 <http://purl.org/ontology/iomust/smi#mapping_implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -121,7 +127,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://purl.org/ontology/iomust/smi#maps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/iomust/smi#maps> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#MappingTrasform> .
 <http://purl.org/ontology/iomust/smi#maps> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/aufx/ontology/1.0#Parameter> .
-<https://w3id.org/aufx/ontology/1.0#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/ontology/iomust/smi#processes_sensor_signal
 <http://purl.org/ontology/iomust/smi#processes_sensor_signal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -135,7 +140,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/iomust/smi#implementation> .
 <http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#GestureSensorTransform> .
 <http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/iomust/smi#GestureSensorHandler> .
-<http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform" .
+<http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "This object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform"@en .
 <http://purl.org/ontology/iomust/smi#sensor_handler_implementation> <http://www.w3.org/2000/01/rdf-schema#label> "sensor handler implementation"@en .
 # 
 # http://purl.org/ontology/studio/device/component
@@ -192,12 +197,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://purl.org/ontology/iomust/smi#filter_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://purl.org/ontology/iomust/smi#filter_type> <http://www.w3.org/2000/01/rdf-schema#label> "filter type" .
 # 
-# http://purl.org/ontology/iomust/smi#has_name
-<http://purl.org/ontology/iomust/smi#has_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/ontology/iomust/smi#has_name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/aufx/ontology/1.0#PlugIn> .
-<http://purl.org/ontology/iomust/smi#has_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://purl.org/ontology/iomust/smi#has_name> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
-# 
 # http://purl.org/ontology/iomust/smi#mapping_function_parameter
 <http://purl.org/ontology/iomust/smi#mapping_function_parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/ontology/iomust/smi#mapping_function_parameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/iomust/smi#MappingTrasform> .
@@ -217,6 +216,12 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://purl.org/ontology/iomust/smi#midi_port> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/mo/Signal> .
 <http://purl.org/ontology/iomust/smi#midi_port> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://purl.org/ontology/iomust/smi#midi_port> <http://www.w3.org/2000/01/rdf-schema#label> "midi port" .
+# 
+# http://purl.org/ontology/iomust/smi#name_plugin
+<http://purl.org/ontology/iomust/smi#name_plugin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/iomust/smi#name_plugin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/aufx/ontology/1.0#PlugIn> .
+<http://purl.org/ontology/iomust/smi#name_plugin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/ontology/iomust/smi#name_plugin> <http://www.w3.org/2000/01/rdf-schema#label> "name_plugin"@en .
 # 
 # http://purl.org/ontology/iomust/smi#threshold
 <http://purl.org/ontology/iomust/smi#threshold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -391,9 +396,9 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://purl.org/ontology/iomust/smi#Potentiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/ontology/iomust/smi#Potentiometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
 # 
-# http://purl.org/ontology/iomust/smi#PressureSensors
-<http://purl.org/ontology/iomust/smi#PressureSensors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/ontology/iomust/smi#PressureSensors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
+# http://purl.org/ontology/iomust/smi#PressureSensor
+<http://purl.org/ontology/iomust/smi#PressureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/iomust/smi#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/iomust/smi#GestureTrackingSensor> .
 # 
 # http://purl.org/ontology/iomust/smi#PushButton
 <http://purl.org/ontology/iomust/smi#PushButton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -571,6 +576,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/studio/device/HardwareDevice> .
 # 
 # https://w3id.org/aufx/ontology/1.0#Parameter
+<https://w3id.org/aufx/ontology/1.0#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/aufx/ontology/1.0#PlugIn
 <https://w3id.org/aufx/ontology/1.0#PlugIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -579,6 +585,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/aufx/ontology/1.0#PlugInAPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/aufx/ontology/1.0#SoftwareImplementation
+<https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/aufx/ontology/1.0#VST
 <https://w3id.org/aufx/ontology/1.0#VST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -637,7 +644,7 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#Potentiometer> .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#PressureSensors> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#PressureSensor> .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#PushButton> .
@@ -685,4 +692,4 @@ _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/iomust/smi#VisualEngine> .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

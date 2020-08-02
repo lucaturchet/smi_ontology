@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://purl.org/ontology/iomust/smi","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://purl.org/ontology/iomust/smi","name":"Smart Musical Instruments Ontology", "headline":"Document describing the ontology http://purl.org/ontology/iomust/smi", "datePublished":"2020-02-06T10:00:00", "license":"https://www.gnu.org/licenses/gpl.html", "author":[{"@type":"Person","name":"Luca Turchet"}], "contributor":[{"@type":"Person","name":"Andrea Molinari"},{"@type":"Person","name":"Gyorgy Fazekas"},{"@type":"Person","name":"Paolo Bouquet"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://purl.org/ontology/iomust/smi","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://purl.org/ontology/iomust/smi","name":"Smart Musical Instruments Ontology", "headline":"Document describing the ontology http://purl.org/ontology/iomust/smi", "datePublished":"2020-02-06T10:00:00", "license":"https://www.gnu.org/licenses/gpl.html", "author":[{"@type":"Person","name":"Luca Turchet"}], "contributor":[{"@type":"Person","name":"Andrea Molinari"},{"@type":"Person","name":"Gyorgy Fazekas"},{"@type":"Person","name":"Paolo Bouquet"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -42,7 +42,9 @@ function loadTOC(){
 	  t+='</ul>';
 	  $("#toc").html(t); 
 }
- $.fn.ignore = function(sel){
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  }; 
    </script> 
@@ -57,6 +59,8 @@ function loadTOC(){
 
 
 <dl>
+<dt>Latest version:</dt>
+<dd><a href="http://purl.org/ontology/iomust/smi">http://purl.org/ontology/iomust/smi</a></dd>
 <dt>Authors:</dt>
 <dd>Luca Turchet</dd>
 
@@ -66,11 +70,8 @@ function loadTOC(){
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://www.gnu.org/licenses/gpl.html" target="_blank"><img src="https://img.shields.io/badge/License-https://www.gnu.org/licenses/gpl.html-blue.svg" alt="https://www.gnu.org/licenses/gpl.html" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Luca Turchet, Paolo Bouquet, Andrea Molinari, George Fazekas. The Smart Musical Instruments Ontology. Journal of Web Semantics, 2020 (submitted)</dd>
+<dd>Luca Turchet, Paolo Bouquet, Andrea Molinari, George Fazekas. The Smart Musical Instruments Ontology. Journal of Web Semantics, 2020 (submitted). Retrieved from: http://purl.org/ontology/iomust/smi</dd>
 </dl>
-
-
-
 
 </div>
 <div class="status">
@@ -81,20 +82,17 @@ function loadTOC(){
 There was no previous comprehensive data model for the SMIs domain, however the new ontology relates to existing ontologies, including the SOSA Ontology for the representation of sensors and actuators, the Audio Effects Ontology dealing with the description of digital audio effects, and the IoMusT Ontology for the representation Musical Things and IoMusT ecosystems. This paper documents the design of the ontology and its evaluation with respect to specific requirements gathered from an extensive literature review, which was based on scenarios involving SMIs stakeholders, such as performers and studio producers.</div>
 <div id="toc"></div> 
 
-
-
-
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This ontology has the following namespaces.
+This ontology has the following namespaces.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<tr><td><b>smi</b></td><td>&lt;http://purl.org/ontology/iomust/smi&gt;</td></tr>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://purl.org/ontology/iomust/smi&gt;</td></tr>
 <tr><td><b>cc</b></td><td>&lt;http://web.resource.org/cc&gt;</td></tr>
 <tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
 <tr><td><b>qudt</b></td><td>&lt;http://qudt.org/schema/qudt&gt;</td></tr>
@@ -271,9 +269,9 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#PressureSensors"
-         title="http://purl.org/ontology/iomust/smi#PressureSensors">
-         <span>pressure sensors</span>
+      <a href="#PressureSensor"
+         title="http://purl.org/ontology/iomust/smi#PressureSensor">
+         <span>pressure sensor</span>
       </a>
    </li>
    <li>
@@ -391,6 +389,12 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#mapping_function"
+         title="http://purl.org/ontology/iomust/smi#mapping_function">
+         <span>mapping function</span>
+      </a>
+   </li>
+   <li>
       <a href="#mapping_implementation"
          title="http://purl.org/ontology/iomust/smi#mapping_implementation">mapping implementation</a>
    </li>
@@ -428,9 +432,6 @@ This ontology has the following classes and properties.</span>
       <a href="#filter_type" title="http://purl.org/ontology/iomust/smi#filter_type">filter type</a>
    </li>
    <li>
-      <a href="#has_name" title="http://purl.org/ontology/iomust/smi#has_name">has name</a>
-   </li>
-   <li>
       <a href="#mapping_function_parameter"
          title="http://purl.org/ontology/iomust/smi#mapping_function_parameter">mapping function parameter</a>
    </li>
@@ -440,6 +441,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#midi_port" title="http://purl.org/ontology/iomust/smi#midi_port">midi port</a>
+   </li>
+   <li>
+      <a href="#name_plugin" title="http://purl.org/ontology/iomust/smi#name_plugin">name_plugin</a>
    </li>
    <li>
       <a href="#threshold" title="http://purl.org/ontology/iomust/smi#threshold">threshold</a>
@@ -660,9 +664,9 @@ This section provides details for each class and property defined by Smart Music
          </a>
       </li>
       <li>
-         <a href="#PressureSensors"
-            title="http://purl.org/ontology/iomust/smi#PressureSensors">
-            <span>pressure sensors</span>
+         <a href="#PressureSensor"
+            title="http://purl.org/ontology/iomust/smi#PressureSensor">
+            <span>pressure sensor</span>
          </a>
       </li>
       <li>
@@ -771,8 +775,8 @@ This section provides details for each class and property defined by Smart Music
             <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
-               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="http://purl.org/ontology/iomust/smi#PressureSensor">pressure sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
@@ -789,7 +793,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/mo/Instrument">instrument</span>
+            <a href="http://purl.org/ontology/mo/Instrument"
+               target="_blank"
+               title="http://purl.org/ontology/mo/Instrument">instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -804,8 +810,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/studio/device/HardwareDevice">hardware device</span>
+            <a href="http://purl.org/ontology/studio/device/HardwareDevice"
+               target="_blank"
+               title="http://purl.org/ontology/studio/device/HardwareDevice">hardware device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -823,7 +830,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/studio/sigproc/ADC">a d c</span>
+            <a href="http://purl.org/ontology/studio/sigproc/ADC"
+               target="_blank"
+               title="http://purl.org/ontology/studio/sigproc/ADC">a d c</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -846,7 +855,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/studio/sigproc/ADC">a d c</span>
+            <a href="http://purl.org/ontology/studio/sigproc/ADC"
+               target="_blank"
+               title="http://purl.org/ontology/studio/sigproc/ADC">a d c</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -923,7 +934,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/studio/sigproc/DAC">d a c</span>
+            <a href="http://purl.org/ontology/studio/sigproc/DAC"
+               target="_blank"
+               title="http://purl.org/ontology/studio/sigproc/DAC">d a c</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -946,7 +959,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/studio/sigproc/DAC">d a c</span>
+            <a href="http://purl.org/ontology/studio/sigproc/DAC"
+               target="_blank"
+               title="http://purl.org/ontology/studio/sigproc/DAC">d a c</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -980,8 +995,8 @@ This section provides details for each class and property defined by Smart Music
             <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
-               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="http://purl.org/ontology/iomust/smi#PressureSensor">pressure sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
@@ -998,7 +1013,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/mo/Instrument">instrument</span>
+            <a href="http://purl.org/ontology/mo/Instrument"
+               target="_blank"
+               title="http://purl.org/ontology/mo/Instrument">instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1013,7 +1030,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/mo/Instrument">instrument</span>
+            <a href="http://purl.org/ontology/mo/Instrument"
+               target="_blank"
+               title="http://purl.org/ontology/mo/Instrument">instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1181,11 +1200,17 @@ This section provides details for each class and property defined by Smart Music
             <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
-               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="http://purl.org/ontology/iomust/smi#PressureSensor">pressure sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#mapping_function"
+               title="http://purl.org/ontology/iomust/smi#mapping_function">mapping function</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1214,8 +1239,8 @@ This section provides details for each class and property defined by Smart Music
             <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
-               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="http://purl.org/ontology/iomust/smi#PressureSensor">pressure sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
@@ -1305,8 +1330,8 @@ This section provides details for each class and property defined by Smart Music
             <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
-               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="http://purl.org/ontology/iomust/smi#PressureSensor">pressure sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
@@ -1338,8 +1363,8 @@ This section provides details for each class and property defined by Smart Music
                title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
-               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="http://purl.org/ontology/iomust/smi#PressureSensor">pressure sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
@@ -1407,6 +1432,12 @@ This section provides details for each class and property defined by Smart Music
             <sup class="type-op" title="object property">op</sup>, <a href="#maps" title="http://purl.org/ontology/iomust/smi#maps">maps</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#mapping_function"
+               title="http://purl.org/ontology/iomust/smi#mapping_function">mapping function</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is disjoint with</dt>
          <dd>
             <a href="#GestureSensorTransform"
@@ -1450,7 +1481,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/iomust/smiChannel">smi channel</span>
+            <a href="http://purl.org/ontology/iomust/smiChannel"
+               target="_blank"
+               title="http://purl.org/ontology/iomust/smiChannel">smi channel</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1465,7 +1498,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/aufx/ontology/1.0#PlugIn">plug in</span>
+            <a href="https://w3id.org/aufx/ontology/1.0#PlugIn"
+               target="_blank"
+               title="https://w3id.org/aufx/ontology/1.0#PlugIn">plug in</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1494,21 +1529,21 @@ This section provides details for each class and property defined by Smart Music
             <sup class="type-c" title="class">c</sup>, <a href="#InertialMeasurementUnit"
                title="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit">inertial measurement unit</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
-               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="http://purl.org/ontology/iomust/smi#PressureSensor">pressure sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="PressureSensors">
-      <h3>pressure sensors<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="PressureSensor">
+      <h3>pressure sensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#PressureSensors</p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#PressureSensor</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -1560,8 +1595,8 @@ This section provides details for each class and property defined by Smart Music
             <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
-               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="http://purl.org/ontology/iomust/smi#PressureSensor">pressure sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RibbonSensor" title="http://purl.org/ontology/iomust/smi#RibbonSensor">ribbon sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -1580,7 +1615,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/aufx/ontology/1.0#PlugInAPI">plug in a p i</span>
+            <a href="https://w3id.org/aufx/ontology/1.0#PlugInAPI"
+               target="_blank"
+               title="https://w3id.org/aufx/ontology/1.0#PlugInAPI">plug in a p i</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1611,8 +1648,8 @@ This section provides details for each class and property defined by Smart Music
             <sup class="type-c" title="class">c</sup>, <a href="#Magnetometer" title="http://purl.org/ontology/iomust/smi#Magnetometer">magnetometer</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Potentiometer"
                title="http://purl.org/ontology/iomust/smi#Potentiometer">potentiometer</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensors"
-               title="http://purl.org/ontology/iomust/smi#PressureSensors">pressure sensors</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressureSensor"
+               title="http://purl.org/ontology/iomust/smi#PressureSensor">pressure sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PushButton" title="http://purl.org/ontology/iomust/smi#PushButton">push button</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -1631,8 +1668,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/studio/device/HardwareDevice">hardware device</span>
+            <a href="http://purl.org/ontology/studio/device/HardwareDevice"
+               target="_blank"
+               title="http://purl.org/ontology/studio/device/HardwareDevice">hardware device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1663,8 +1701,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/studio/device/HardwareDevice">hardware device</span>
+            <a href="http://purl.org/ontology/studio/device/HardwareDevice"
+               target="_blank"
+               title="http://purl.org/ontology/studio/device/HardwareDevice">hardware device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1690,7 +1729,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/ns/sosa/Platform">platform</span>
+            <a href="http://www.w3.org/ns/sosa/Platform"
+               target="_blank"
+               title="http://www.w3.org/ns/sosa/Platform">platform</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SMIHardwareDevice"
                title="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">s m i hardware device</a>
             <sup class="type-c" title="class">c</sup>
@@ -1726,8 +1767,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
+            <a href="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+               target="_blank"
+               title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</a>
             <sup class="type-c" title="class">c</sup> 
             <span class="logic">and</span> 
             <a href="#ElectroAcousticInstrument"
@@ -1736,8 +1778,9 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
+            <a href="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+               target="_blank"
+               title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1752,8 +1795,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
+            <a href="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+               target="_blank"
+               title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</a>
             <sup class="type-c" title="class">c</sup> 
             <span class="logic">and</span> 
             <a href="#ElectricInstrument"
@@ -1762,8 +1806,9 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
+            <a href="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+               target="_blank"
+               title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1781,8 +1826,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/studio/device/SoftwareDevice">software device</span>
+            <a href="http://purl.org/ontology/studio/device/SoftwareDevice"
+               target="_blank"
+               title="http://purl.org/ontology/studio/device/SoftwareDevice">software device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1808,7 +1854,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/studio/main/Transform">transform</span>
+            <a href="http://purl.org/ontology/studio/main/Transform"
+               target="_blank"
+               title="http://purl.org/ontology/studio/main/Transform">transform</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1831,8 +1879,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
+            <a href="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+               target="_blank"
+               title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</a>
             <sup class="type-c" title="class">c</sup> 
             <span class="logic">and</span> 
             <a href="#VirtualRealityMusicalInstrument"
@@ -1841,8 +1890,9 @@ This section provides details for each class and property defined by Smart Music
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
+            <a href="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+               target="_blank"
+               title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1857,8 +1907,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://purl.org/ontology/studio/device/SoftwareDevice">software device</span>
+            <a href="http://purl.org/ontology/studio/device/SoftwareDevice"
+               target="_blank"
+               title="http://purl.org/ontology/studio/device/SoftwareDevice">software device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1945,7 +1996,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://purl.org/ontology/mo/Instrument">instrument</span>
+            <a href="http://purl.org/ontology/mo/Instrument"
+               target="_blank"
+               title="http://purl.org/ontology/mo/Instrument">instrument</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2019,7 +2072,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/aufx/ontology/1.0#VST">v s t</span>
+            <a href="https://w3id.org/aufx/ontology/1.0#VST"
+               target="_blank"
+               title="https://w3id.org/aufx/ontology/1.0#VST">v s t</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -2039,7 +2094,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/aufx/ontology/1.0#VST">v s t</span>
+            <a href="https://w3id.org/aufx/ontology/1.0#VST"
+               target="_blank"
+               title="https://w3id.org/aufx/ontology/1.0#VST">v s t</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -2085,6 +2142,12 @@ This section provides details for each class and property defined by Smart Music
          </a>
       </li>
       <li>
+         <a href="#mapping_function"
+            title="http://purl.org/ontology/iomust/smi#mapping_function">
+            <span>mapping function</span>
+         </a>
+      </li>
+      <li>
          <a href="#mapping_implementation"
             title="http://purl.org/ontology/iomust/smi#mapping_implementation">mapping implementation</a>
       </li>
@@ -2121,7 +2184,9 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/ontology/studio/device/component">component</span>
+               <a href="http://purl.org/ontology/studio/device/component"
+                  target="_blank"
+                  title="http://purl.org/ontology/studio/device/component">component</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -2132,8 +2197,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://purl.org/ontology/studio/microphone/Microphone">microphone</span>
+               <a href="http://purl.org/ontology/studio/microphone/Microphone"
+                  target="_blank"
+                  title="http://purl.org/ontology/studio/microphone/Microphone">microphone</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2150,18 +2216,23 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/ontology/studio/device/component">component</span>
+               <a href="http://purl.org/ontology/studio/device/component"
+                  target="_blank"
+                  title="http://purl.org/ontology/studio/device/component">component</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/ns/sosa/Platform">platform</span>
+               <a href="http://purl.org/ontology/iomust/internet_of_things/Thing"
+                  target="_blank"
+                  title="http://purl.org/ontology/iomust/internet_of_things/Thing">thing</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://purl.org/ontology/iomust/internet_of_things/Thing">thing</span>
+               <a href="http://www.w3.org/ns/sosa/Platform"
+                  target="_blank"
+                  title="http://www.w3.org/ns/sosa/Platform">platform</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2214,12 +2285,16 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/ontology/mo/Signal">signal</span>
+               <a href="http://purl.org/ontology/mo/Signal"
+                  target="_blank"
+                  title="http://purl.org/ontology/mo/Signal">signal</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>range includes</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/ontology/mo/Signal">signal</span>
+               <a href="http://purl.org/ontology/mo/Signal"
+                  target="_blank"
+                  title="http://purl.org/ontology/mo/Signal">signal</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2246,13 +2321,16 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/ontology/studio/main/Transform">transform</span>
+               <a href="http://purl.org/ontology/studio/main/Transform"
+                  target="_blank"
+                  title="http://purl.org/ontology/studio/main/Transform">transform</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="https://w3id.org/aufx/ontology/1.0#SoftwareImplementation">software implementation</span>
+               <a href="https://w3id.org/aufx/ontology/1.0#SoftwareImplementation"
+                  target="_blank"
+                  title="https://w3id.org/aufx/ontology/1.0#SoftwareImplementation">software implementation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2272,6 +2350,33 @@ This section provides details for each class and property defined by Smart Music
                <a href="#implementation"
                   title="http://purl.org/ontology/iomust/smi#implementation">implementation</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="mapping_function">
+      <h3>mapping function<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#mapping_function</p>
+      <div class="comment">
+         <span class="markdown">This predicate associates a sensor tracking a gesture to a Mapping Transform, i.e., the mapping function from sensor signal to a plugin feedback parameter</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GestureTrackingSensor"
+                  title="http://purl.org/ontology/iomust/smi#GestureTrackingSensor">gesture tracking sensor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MappingTrasform"
+                  title="http://purl.org/ontology/iomust/smi#MappingTrasform">Mapping Transform</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2326,7 +2431,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/aufx/ontology/1.0#Parameter">parameter</span>
+               <a href="https://w3id.org/aufx/ontology/1.0#Parameter"
+                  target="_blank"
+                  title="https://w3id.org/aufx/ontology/1.0#Parameter">parameter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2352,7 +2459,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/ontology/mo/Signal">signal</span>
+               <a href="http://purl.org/ontology/mo/Signal"
+                  target="_blank"
+                  title="http://purl.org/ontology/mo/Signal">signal</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2369,7 +2478,9 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/ontology/studio/device/component">component</span>
+               <a href="http://purl.org/ontology/studio/device/component"
+                  target="_blank"
+                  title="http://purl.org/ontology/studio/device/component">component</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -2384,8 +2495,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</span>
+               <a href="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+                  target="_blank"
+                  title="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument">smart instrument</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2399,7 +2511,7 @@ This section provides details for each class and property defined by Smart Music
       <p>
          <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#sensor_handler_implementation</p>
       <div class="comment">
-         <span class="markdown">Thus object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform</span>
+         <span class="markdown">This object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform</span>
       </div>
       <div class="description">
          <dl>
@@ -2440,8 +2552,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://purl.org/ontology/studio/multitrack#MultitrackProject">multitrack project</span>
+               <a href="http://purl.org/ontology/studio/multitrack#MultitrackProject"
+                  target="_blank"
+                  title="http://purl.org/ontology/studio/multitrack#MultitrackProject">multitrack project</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2462,9 +2575,6 @@ This section provides details for each class and property defined by Smart Music
          <a href="#filter_type" title="http://purl.org/ontology/iomust/smi#filter_type">filter type</a>
       </li>
       <li>
-         <a href="#has_name" title="http://purl.org/ontology/iomust/smi#has_name">has name</a>
-      </li>
-      <li>
          <a href="#mapping_function_parameter"
             title="http://purl.org/ontology/iomust/smi#mapping_function_parameter">mapping function parameter</a>
       </li>
@@ -2474,6 +2584,9 @@ This section provides details for each class and property defined by Smart Music
       </li>
       <li>
          <a href="#midi_port" title="http://purl.org/ontology/iomust/smi#midi_port">midi port</a>
+      </li>
+      <li>
+         <a href="#name_plugin" title="http://purl.org/ontology/iomust/smi#name_plugin">name_plugin</a>
       </li>
       <li>
          <a href="#threshold" title="http://purl.org/ontology/iomust/smi#threshold">threshold</a>
@@ -2508,12 +2621,16 @@ This section provides details for each class and property defined by Smart Music
                <a href="#SoundEngine" title="http://purl.org/ontology/iomust/smi#SoundEngine">Sound Engine</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <span class="dotted" title="http://purl.org/ontology/studio/device/Converter">converter</span>
+               <a href="http://purl.org/ontology/studio/device/Converter"
+                  target="_blank"
+                  title="http://purl.org/ontology/studio/device/Converter">converter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -2529,13 +2646,16 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://purl.org/ontology/studio/sigproc/LowPassFilter">low pass filter</span>
+               <a href="http://purl.org/ontology/studio/sigproc/LowPassFilter"
+                  target="_blank"
+                  title="http://purl.org/ontology/studio/sigproc/LowPassFilter">low pass filter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -2551,34 +2671,16 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://purl.org/ontology/studio/sigproc/LowPassFilter">low pass filter</span>
+               <a href="http://purl.org/ontology/studio/sigproc/LowPassFilter"
+                  target="_blank"
+                  title="http://purl.org/ontology/studio/sigproc/LowPassFilter">low pass filter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="has_name">
-      <h3>has name<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#has_name</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted" title="https://w3id.org/aufx/ontology/1.0#PlugIn">plug in</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -2603,7 +2705,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -2628,7 +2732,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -2644,12 +2750,41 @@ This section provides details for each class and property defined by Smart Music
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/ontology/mo/Signal">signal</span>
+               <a href="http://purl.org/ontology/mo/Signal"
+                  target="_blank"
+                  title="http://purl.org/ontology/mo/Signal">signal</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name_plugin">
+      <h3>name_plugin<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/ontology/iomust/smi#name_plugin</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.org/aufx/ontology/1.0#PlugIn"
+                  target="_blank"
+                  title="https://w3id.org/aufx/ontology/1.0#PlugIn">plug in</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
             </dd>
          </dl>
       </div>
@@ -2671,7 +2806,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -2695,7 +2832,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -2717,7 +2856,9 @@ This section provides details for each class and property defined by Smart Music
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
             </dd>
          </dl>
       </div>
@@ -2849,7 +2990,9 @@ This section provides details for each class and property defined by Smart Music
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <span class="dotted" title="http://qudt.org/schema/qudt#Unit">unit</span>
+            <a href="http://qudt.org/schema/qudt#Unit"
+               target="_blank"
+               title="http://qudt.org/schema/qudt#Unit">unit</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2866,11 +3009,10 @@ This section provides details for each class and property defined by Smart Music
 </div>
     
 
-
 <!--REFERENCES SECTION-->
   <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
+<span class="markdown"></span>
 <ul>
 	<li>Luca Turchet, Paolo Bouquet, Andrea Molinari, George Fazekas. The Smart Musical Instruments Ontology. Journal of Web Semantics, 2020 (submitted).
 	</li>	
@@ -2881,8 +3023,8 @@ PDF freely available at: <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp
 
 
 </div>
-<div id="acknowledgements">
-<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
 The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
 </div>
