@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/ontology/iomust/smi"
-     xml:base="http://purl.org/ontology/iomust/smi#"
+     xml:base="http://purl.org/ontology/iomust/smi"
      xmlns:cc="http://web.resource.org/cc/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:mo="http://purl.org/ontology/mo/"
@@ -43,7 +43,7 @@
      xmlns:prov-links-20130430="http://www.w3.org/ns/prov-links-20130430#"
      xmlns:note-prov-aq-20130430="http://www.w3.org/TR/2013/NOTE-prov-aq-20130430/"
      xmlns:prov-o-inverses-20130430="http://www.w3.org/ns/prov-o-inverses-20130430#">
-    <owl:Ontology rdf:about="http://purl.org/ontology/iomust/smi">
+    <owl:Ontology rdf:about="http://purl.org/ontology/iomust/smi#">
         <owl:versionIRI rdf:resource="http://purl.org/ontology/iomust/smi/0.1"/>
         <owl:imports rdf:resource="http://purl.org/ontology/af/"/>
         <owl:imports rdf:resource="http://purl.org/ontology/iomust/internet_of_things/0.1"/>
@@ -143,7 +143,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#component_mic">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/studio/device/component"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/iomust/smi#Microphone_Transducer"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/studio/microphone/Microphone"/>
     </owl:ObjectProperty>
     
@@ -254,6 +253,17 @@
         <schema:rangeIncludes rdf:resource="http://purl.org/ontology/mo/Signal"/>
         <rdfs:comment>We added Signal as a possible result of the SOSA &quot;hasResult&quot; object property. This is done to align the SOSA with the MusicOntology: this way we link the result of an Observation produced by a sensor to a Signal.</rdfs:comment>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hosts -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hosts">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/studio/device/Converter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </rdf:Description>
     
 
 
@@ -465,6 +475,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#AudioInputInterface">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/smi#SMIHardwareDevice"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
     </owl:Class>
     
 
@@ -589,6 +600,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#HapticDeliverySystem">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/smi#SMIHardwareDevice"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
     </owl:Class>
     
 
@@ -635,15 +647,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/smi#SMITransform"/>
         <rdfs:comment>A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin.</rdfs:comment>
         <rdfs:label xml:lang="en">Mapping Transform</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#Microphone_Transducer -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#Microphone_Transducer">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/smi#AudioTrackingSensor"/>
-        <rdfs:comment>The sensor embedded in a microphone</rdfs:comment>
     </owl:Class>
     
 
@@ -727,6 +730,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#SMIHardwareDevice">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/studio/device/HardwareDevice"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
         <rdfs:comment>Any hardware components of a smart instrument</rdfs:comment>
     </owl:Class>
     
@@ -792,6 +796,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#SoundDeliverySystem">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/smi#SMIHardwareDevice"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
     </owl:Class>
     
 
@@ -838,6 +843,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#VisualDeliverySystem">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/smi#SMIHardwareDevice"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
     </owl:Class>
     
 
@@ -908,6 +914,12 @@
     <!-- http://purl.org/ontology/studio/microphone/Microphone -->
 
     <owl:Class rdf:about="http://purl.org/ontology/studio/microphone/Microphone"/>
+    
+
+
+    <!-- http://purl.org/ontology/studio/microphone/PizoelectricMicrophone -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/studio/microphone/PizoelectricMicrophone"/>
     
 
 
@@ -996,6 +1008,58 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#Decibel">
         <rdf:type rdf:resource="http://qudt.org/schema/qudt#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitar -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitar">
+        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developed by Elk (former MIND Music Labs)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensus Smart Guitar</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://elk.audio/sensus-smart-guitar/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarAudioInputInterface -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarAudioInputInterface">
+        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#AudioInputInterface"/>
+        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPiezo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarGestureInterface -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarGestureInterface">
+        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#GestureInterface"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPiezo -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPiezo">
+        <rdf:type rdf:resource="http://purl.org/ontology/studio/microphone/PizoelectricMicrophone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarSingleBoardComputer -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSingleBoardComputer">
+        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#SingleBoardComputer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundDeliverySystem -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundDeliverySystem">
+        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#SoundDeliverySystem"/>
     </owl:NamedIndividual>
     
 
