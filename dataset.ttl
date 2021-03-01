@@ -1,0 +1,79 @@
+@prefix ex: <http://www.example.audio/ex> . 
+@prefix smi: <http://purl.org/ontology/iomust/smi#> . 
+@prefix iomust: <http://purl.org/ontology/iomust/internet_of_things/> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix studio: <http://purl.org/ontology/studio/> . 
+@prefix mixer: <http://purl.org/ontology/studio/mixer/> . 
+@prefix device: <http://purl.org/ontology/studio/device/> . 
+@prefix sigproc: <http://purl.org/ontology/spd/sigproc/> . 
+@prefix fx: <https://w3id.org/aufx/ontology/1.0#> . 
+@prefix microphone: <http://purl.org/ontology/studio/microphone/> . 
+@prefix multitrack: <http://purl.org/ontology/studio/multitrack#> . 
+@prefix connectivity: <http://purl.org/ontology/studio/connectivity#> . 
+@prefix mo: <http://purl.org/ontology/mo/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+
+#@prefix so: <http://purl.org/ontology/symbolic-music/> .
+#@prefix sm: <http://topbraid.org/sparqlmotion#> .
+#@prefix st: <http://ns.inria.fr/sparql-template/> .
+
+
+ex:sensusSmartGuitar                                    rdf:type                                        smi:SmartElectroacousticGuitar ;
+                                                        rdfs:label                                      "Sensus Smart Guitar" ;
+                                                        smi:smi_component                               ex:sensusSmartGuitarSoundEngine ,
+                                                                                                        ex:sensusSmartGuitarSoundDeliverySystem , 
+                                                                                                        ex:sensusSmartGuitarSingleBoardComputer , 
+                                                                                                        ex:sensusSmartGuitarAudioInputInterface , 
+                                                                                                        ex:sensusSmartGuitarGestureInterface ;
+                                                        smi:smi_service                                 ex:sensusSmartGuitarSpotifyService ;
+                                                        smi:smi_application                             ex:sensusSmartGuitarSpotifyApplication .
+
+ ex:sensusSmartGuitarSoundEngine                        ex:sensusSmartGuitarSpotifyApplication          smi:SoundEngine ;
+                                                        device:smi_component                            ex:sensusSmartGuitarSoftwareMixer , 
+                                                                                                        ex:sensusSmartGuitarSoftwareMultitrackProject .
+
+ex:sensusSmartGuitarSoundDeliverySystem                 rdf:type                                        smi:SoundDeliverySystem ;
+                                                        sosa:hosts                                      ex:sensusSmartGuitarVibrationSpeaker1 ,
+                                                                                                        ex:sensusSmartGuitarVibrationSpeaker2 .
+
+ex:sensusSmartGuitarSingleBoardComputer                 rdf:type                                        smi:SingleBoardComputer .
+
+ex:sensusSmartGuitarAudioInputInterface                 rdf:type                                        smi:AudioInputInterface ,
+                                                        sosa:hosts                                      ex:sensusSmartGuitarPiezo .          
+
+ex:sensusSmartGuitarGestureInterface                    rdf:type                                        smi:GestureInterface ;
+                                                        sosa:hosts                                      ex:sensusSmartGuitarPressureSensor1 ,
+                                                                                                        ex:sensusSmartGuitarPressureSensor2 ,
+                                                                                                        ex:sensusSmartGuitarPressureSensor3 ,
+                                                                                                        ex:sensusSmartGuitarPressureSensor4 ,
+                                                                                                        ex:sensusSmartGuitarPressureSensor5 ,
+
+
+ex:sensusSmartGuitarSoftwareMixer                       rdf:type    
+
+
+ex:sensusSmartGuitarSoftwareMultitrackProject           rdf:type 
+
+
+
+ex:sensusSmartGuitarSpotifyService                      rdf:type 
+
+
+
+ex:sensusSmartGuitarSpotifyApplication                  rdf:type 
+
+
+
+ex:sensusSmartGuitarVibrationSpeaker1                   rdf:type 
+
+ex:sensusSmartGuitarVibrationSpeaker2                   rdf:type
+
+ex:sensusSmartGuitarPiezo                               rdf:type                        microphone:PiezoelectricMicrophone .
+
+
+
+

@@ -246,7 +246,7 @@
     <!-- http://purl.org/ontology/iomust/smi#smi_application -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#smi_application">
-        <rdfs:domain rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/iomust/smi#SMIApplication"/>
         <rdfs:comment>Relates a smart musica instrument to an application</rdfs:comment>
     </owl:ObjectProperty>
@@ -258,7 +258,7 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#smi_component">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/studio/device/component"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/iomust/smi#smi_component_of"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -284,7 +284,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
         <rdfs:comment>Inverse property of smi_component</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -294,7 +294,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#smi_service">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/studio/device/service"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/iomust/smi#SMIService"/>
         <rdfs:comment>Relates a smart musica instrument to a service it provides</rdfs:comment>
     </owl:ObjectProperty>
@@ -485,9 +485,9 @@
     
 
 
-    <!-- http://purl.org/ontology/iomust/internet_of_things/SmartInstrument -->
+    <!-- http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument -->
 
-    <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+    <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
     
 
 
@@ -1019,12 +1019,12 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
                     <rdf:Description rdf:about="http://purl.org/ontology/iomust/smi#ElectricInstrument"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
         <rdfs:label>SMI Electric Instrument</rdfs:label>
     </owl:Class>
     
@@ -1036,12 +1036,12 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
                     <rdf:Description rdf:about="http://purl.org/ontology/iomust/smi#ElectroacousticInstrument"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
         <rdfs:label>SMI Electroacoustic Instrument</rdfs:label>
     </owl:Class>
     
@@ -1092,12 +1092,12 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
                     <rdf:Description rdf:about="http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
         <rdfs:label>SMI Virtual Reality Musical Instrument</rdfs:label>
     </owl:Class>
     
@@ -1269,7 +1269,7 @@
     <!-- http://purl.org/ontology/iomust/smi#SmartGuitar -->
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#SmartGuitar">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
     </owl:Class>
     
 
@@ -1277,7 +1277,7 @@
     <!-- http://purl.org/ontology/iomust/smi#SmartPiano -->
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#SmartPiano">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
     </owl:Class>
     
 
@@ -1285,7 +1285,7 @@
     <!-- http://purl.org/ontology/iomust/smi#SmartSaxophone -->
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#SmartSaxophone">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
     </owl:Class>
     
 
@@ -1293,7 +1293,7 @@
     <!-- http://purl.org/ontology/iomust/smi#SmartViolin -->
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/smi#SmartViolin">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
     </owl:Class>
     
 
