@@ -210,9 +210,9 @@
     
 
 
-    <!-- http://purl.org/ontology/iomust/smi#pluginType -->
+    <!-- http://purl.org/ontology/iomust/smi#plugin_type -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#pluginType">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#plugin_type">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
         <rdfs:comment>Associates an audio plugin to a plugin category (e.g., audio effect, synthesizer, sampler, drum machine)</rdfs:comment>
@@ -1667,7 +1667,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#PluginDelay1">
         <rdf:type rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
-        <smi:pluginType rdf:resource="http://purl.org/ontology/iomust/smi#DelayType1"/>
+        <smi:plugin_type rdf:resource="http://purl.org/ontology/iomust/smi#DelayType1"/>
     </owl:NamedIndividual>
     
 
@@ -1676,7 +1676,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#PluginSynthesizer1">
         <rdf:type rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
-        <smi:pluginType rdf:resource="http://purl.org/ontology/iomust/smi#SynthesizerType1"/>
+        <smi:plugin_type rdf:resource="http://purl.org/ontology/iomust/smi#SynthesizerType1"/>
     </owl:NamedIndividual>
     
 
@@ -1685,7 +1685,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#RetrologueSynth">
         <rdf:type rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
-        <smi:pluginType rdf:resource="http://purl.org/ontology/iomust/smi#SynthesizerType1"/>
+        <smi:plugin_type rdf:resource="http://purl.org/ontology/iomust/smi#SynthesizerType1"/>
         <ontology:has_parameter rdf:resource="http://purl.org/ontology/iomust/smi#RetrologueSynthCutoff"/>
         <rdfs:label>RetrologueSynth</rdfs:label>
     </owl:NamedIndividual>

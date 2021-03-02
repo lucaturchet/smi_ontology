@@ -50,6 +50,17 @@ smi:SmartViolin                                                     rdfs:subClas
 
 smi:SmartSaxophone                                                  rdfs:subClassOf                                 iomust:SmartInstrument .
 
+smi:VibrationSpeaker                                                rdfs:subClassOf                                 smi:AudioActuator .
+
+smi:Loudspeaker                                                     rdfs:subClassOf                                 smi:AudioActuator .
+
+smi:VibrationMotor                                                  rdfs:subClassOf                                 smi:HapticActuator .
+
+smi:Screen                                                          rdfs:subClassOf                                 smi:VisualActuator .
+
+smi:Touchscreen                                                     rdfs:subClassOf                                 smi:VisualActuator .
+
+
 
 #########################################################################################################################################################
 # Individuals           
@@ -65,8 +76,8 @@ ex:sensusSmartGuitar                                                rdf:type    
                                                                     smi:smi_service                                 ex:sensusSmartGuitarSpotifyService ;
                                                                     smi:smi_application                             ex:sensusSmartGuitarSpotifyApplication .
 
- ex:sensusSmartGuitarSoundEngine                                    ex:sensusSmartGuitarSpotifyApplication          smi:SoundEngine ;
-                                                                    device:smi_component                            ex:sensusSmartGuitarSoftwareMixer , 
+ ex:sensusSmartGuitarSoundEngine                                    rdf:type                                        smi:SoundEngine ;
+                                                                    device:component                                ex:sensusSmartGuitarSoftwareMixer , 
                                                                                                                     ex:sensusSmartGuitarSoftwareMultitrackProject .
 
 ex:sensusSmartGuitarSoundDeliverySystem                             rdf:type                                        smi:SoundDeliverySystem ;
@@ -92,7 +103,7 @@ ex:sensusSmartGuitarGestureInterface                                rdf:type    
                                                                                                                     ex:sensusSmartGuitarPushButton3 .
 
 ex:sensusSmartGuitarSoftwareMixer                                   rdf:type                                        mixer:SoftwareMixer ;
-                                                                    mixer:Channel                                   ex:sensusSmartGuitarChannelSynthesizersCh1 ,
+                                                                    studio:channel                                   ex:sensusSmartGuitarChannelSynthesizersCh1 ,
                                                                                                                     ex:sensusSmartGuitarChannelSynthesizersCh2 ,
                                                                                                                     ex:sensusSmartGuitarChannelSamplersCh1 ,
                                                                                                                     ex:sensusSmartGuitarChannelSamplersCh2 ,
@@ -120,13 +131,7 @@ ex:sensusSmartGuitarVibrationSpeaker2                               rdf:type    
 ex:sensusSmartGuitarPiezo                                           rdf:type                                        microphone:PiezoelectricMicrophone .
 
 ex:sensusSmartGuitarPressureSensor1                                 rdf:type                                        smi:PressureSensor ;
-                                                                    smi:mapping_function                            ex:sensusSmartGuitarMappingPressureSensor1toRetrologueSynthCutoff .
-
-ex:sensusSmartGuitarMappingPressureSensor1toRetrologueSynthCutoff   rdf:type                                        smi:MappingTransform ;
-                                                                    smi:maps                                        ex:RetrologueSynthCutoff .
-
-ex:RetrologueSynthCutoff                                            rdf:type                                        fx:NumericParameter ;
-                                                                    rdfs:label                                      "Cutoff" .                                       
+                                                                    smi:mapping_function                            ex:sensusSmartGuitarMappingPressureSensor1toRetrologueSynthCutoff .                                   
 
 ex:sensusSmartGuitarPressureSensor2                                 rdf:type                                        smi:PressureSensor .
 
@@ -150,7 +155,8 @@ ex:sensusSmartGuitarPushButton3                                     rdf:type    
 
 ex:sensusSmartGuitarChannelSynthesizersCh1                          rdf:type                                        mixer:SteroChannel .
 
-ex:sensusSmartGuitarChannelSynthesizersCh2                          rdf:type                                        mixer:SteroChannel . 
+ex:sensusSmartGuitarChannelSynthesizersCh2                          rdf:type                                        mixer:SteroChannel ;
+                                                                    smi:hosts_plugin                                ex:RetrologueSynth .
 
 ex:sensusSmartGuitarChannelSamplersCh1                              rdf:type                                        mixer:SteroChannel . 
 
@@ -188,4 +194,16 @@ ex:sensusSmartGuitarMIDIScore1                                      rdf:type    
 ex:sensusSmartGuitarMIDIScore2                                      rdf:type                                        smi:MIDIScore ;
                                                                     rdfs:label                                      "score2.mid" .                                                                                                   
 
+ex:RetrologueSynth                                                  rdf:type                                        fx:PlugIn ;
+                                                                    smi:plugin_type                                 ex:VirtualAnalogSynthType ;
+                                                                    fx:has_parameter                                ex:RetrologueSynthCutoff .
 
+ex:sensusSmartGuitarMappingPressureSensor1toRetrologueSynthCutoff   rdf:type                                        smi:MappingTransform ;
+                                                                    smi:maps                                        ex:RetrologueSynthCutoff ;
+                                                                    smi:mapping_function_type                       "exponential" ;
+                                                                    smi:mapping_function_parameter                  1.1 .
+
+ex:RetrologueSynthCutoff                                            rdf:type                                        fx:NumericParameter ;
+                                                                    rdfs:label                                      "Cutoff" .    
+
+ex:VirtualAnalogSynthType                                           rdf:type                                        smi:Synthesizer .                                                                   
