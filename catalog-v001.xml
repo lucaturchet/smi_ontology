@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/NET/c4dm/timeline.owl" uri="http://purl.org/NET/c4dm/timeline.owl#"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/ontology/iomust/internet_of_things/0.1" uri="http://purl.org/ontology/iomust/internet_of_things"/>
     <uri id="User Entered Import Resolution" name="file:/Users/gfazekas/dev/mo-tools/motools/mopy/musicontology.rdfs" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/ontologies_George/mo/musicontology.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.org/ontology/studio/mixer" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/ontologies_George/studio/audiomixer/rdf/audiomixer.owl"/>
@@ -13,8 +14,8 @@
     <uri id="User Entered Import Resolution" name="http://purl.org/stuff/rev" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/ontologies_George/rev/review.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.org/ontology/similarity/" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/ontologies_George/sim/musim.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1614697779753" name="duplicate:http://purl.org/ontology/iomust/smi" uri="smi_light.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614697779753" name="duplicate:http://purl.org/ontology/iomust/smi" uri="smi.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614697779753" name="shadowed:http://purl.org/ontology/iomust/smi" uri="docs/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1614704693608" name="duplicate:http://purl.org/ontology/iomust/smi" uri="smi_light.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614704693608" name="duplicate:http://purl.org/ontology/iomust/smi" uri="smi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614704693608" name="shadowed:http://purl.org/ontology/iomust/smi" uri="docs/ontology.xml"/>
     </group>
 </catalog>
