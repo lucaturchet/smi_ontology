@@ -151,6 +151,17 @@
     
 
 
+    <!-- http://purl.org/ontology/iomust/smi#hosts_plugin -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#hosts_plugin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/iomust/smi#in_channel"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/studio/mixer/Channel"/>
+        <rdfs:range rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/ontology/iomust/smi#implementation -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#implementation">
@@ -160,21 +171,10 @@
     
 
 
-    <!-- http://purl.org/ontology/iomust/smi#inChannel -->
+    <!-- http://purl.org/ontology/iomust/smi#in_channel -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#inChannel">
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#in_channel">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://purl.org/ontology/iomust/smi#insert"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#insert -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#insert">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/studio/mixer/Channel"/>
-        <rdfs:range rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
     </owl:ObjectProperty>
     
 
@@ -485,15 +485,15 @@
     
 
 
-    <!-- http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
-    
-
-
     <!-- http://purl.org/ontology/iomust/internet_of_things/Thing -->
 
     <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/Thing"/>
+    
+
+
+    <!-- http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"/>
     
 
 
@@ -1754,7 +1754,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelAudioFxCh1">
         <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-        <smi:insert rdf:resource="http://purl.org/ontology/iomust/smi#PluginDelay1"/>
+        <smi:hosts_plugin rdf:resource="http://purl.org/ontology/iomust/smi#PluginDelay1"/>
     </owl:NamedIndividual>
     
 
@@ -1839,7 +1839,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSynthesizersCh1">
         <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-        <smi:insert rdf:resource="http://purl.org/ontology/iomust/smi#PluginSynthesizer1"/>
+        <smi:hosts_plugin rdf:resource="http://purl.org/ontology/iomust/smi#PluginSynthesizer1"/>
     </owl:NamedIndividual>
     
 
@@ -1848,7 +1848,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSynthesizersCh2">
         <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-        <smi:insert rdf:resource="http://purl.org/ontology/iomust/smi#RetrologueSynth"/>
+        <smi:hosts_plugin rdf:resource="http://purl.org/ontology/iomust/smi#RetrologueSynth"/>
     </owl:NamedIndividual>
     
 
