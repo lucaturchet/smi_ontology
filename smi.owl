@@ -58,6 +58,7 @@
         <owl:imports rdf:resource="http://purl.org/ontology/studio/multitrack#"/>
         <owl:imports rdf:resource="http://purl.org/vocab/bio/0.1/"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <owl:imports rdf:resource="https://w3id.org/afo/onto/1.1#"/>
         <owl:imports rdf:resource="https://w3id.org/aufx/ontology/1.0#"/>
         <dc:contributor>Andrea Molinari</dc:contributor>
         <dc:contributor>Gyorgy Fazekas</dc:contributor>
@@ -110,16 +111,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#MIDIScore -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#MIDIScore">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/studio/multitrack#MidiTrack"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/iomust/smi#MIDIScore"/>
-    </owl:ObjectProperty>
     
 
 
@@ -176,6 +167,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#in_channel">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/studio/mixer/Channel"/>
     </owl:ObjectProperty>
     
 
@@ -211,11 +204,22 @@
     
 
 
+    <!-- http://purl.org/ontology/iomust/smi#midi_score -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#midi_score">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/studio/multitrack#MidiTrack"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/iomust/smi#MIDIScore"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/ontology/iomust/smi#plugin_type -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/iomust/smi#plugin_type">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/studio/device/Device"/>
         <rdfs:comment>Associates an audio plugin to a plugin category (e.g., audio effect, synthesizer, sampler, drum machine)</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -1559,14 +1563,6 @@
     
 
 
-    <!-- http://purl.org/ontology/studio/multitrack#AudioTrack -->
-
-    <rdf:Description rdf:about="http://purl.org/ontology/studio/multitrack#AudioTrack">
-        <rdfs:comment>An audio track can also contain plugins that generate sound in real time (for example synthesizers) or that process sounds incoming from microphones (for example, audio effects that alter the sound).</rdfs:comment>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.org/ontology/studio/multitrack#MultitrackProject -->
 
     <owl:Class rdf:about="http://purl.org/ontology/studio/multitrack#MultitrackProject"/>
@@ -1640,441 +1636,14 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Individuals
+    // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#Decibel -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#Decibel">
-        <rdf:type rdf:resource="http://qudt.org/schema/qudt#Unit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#DelayType1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#DelayType1">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/sigproc/Delay"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#PluginDelay1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#PluginDelay1">
-        <rdf:type rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
-        <smi:plugin_type rdf:resource="http://purl.org/ontology/iomust/smi#DelayType1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#PluginSynthesizer1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#PluginSynthesizer1">
-        <rdf:type rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
-        <smi:plugin_type rdf:resource="http://purl.org/ontology/iomust/smi#SynthesizerType1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#RetrologueSynth -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#RetrologueSynth">
-        <rdf:type rdf:resource="https://w3id.org/aufx/ontology/1.0#PlugIn"/>
-        <smi:plugin_type rdf:resource="http://purl.org/ontology/iomust/smi#SynthesizerType1"/>
-        <ontology:has_parameter rdf:resource="http://purl.org/ontology/iomust/smi#RetrologueSynthCutoff"/>
-        <rdfs:label>RetrologueSynth</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#RetrologueSynthCutoff -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#RetrologueSynthCutoff">
-        <rdf:type rdf:resource="https://w3id.org/aufx/ontology/1.0#NumericParameter"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#SynthesizerType1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#SynthesizerType1">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#Synthesizer"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitar -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitar">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar"/>
-        <smi:smi_component rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarAudioInputInterface"/>
-        <smi:smi_component rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarGestureInterface"/>
-        <smi:smi_component rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSingleBoardComputer"/>
-        <smi:smi_component rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundDeliverySystem"/>
-        <smi:smi_component rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundEngine"/>
-        <smi:smi_service rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSpotifyService"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developed by Elk (former MIND Music Labs)</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensus Smart Guitar</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://elk.audio/sensus-smart-guitar/</rdfs:seeAlso>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarAudioInputInterface -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarAudioInputInterface">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#AudioInputInterface"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPiezo"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarBackingTrack1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarBackingTrack1">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/multitrack#AudioClip"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarBackingTrack2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarBackingTrack2">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/multitrack#AudioClip"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelAudioFxCh1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelAudioFxCh1">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-        <smi:hosts_plugin rdf:resource="http://purl.org/ontology/iomust/smi#PluginDelay1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelAudioFxCh2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelAudioFxCh2">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelBackingTracksCh1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelBackingTracksCh1">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/multitrack#AudioTrack"/>
-        <multitrack:clip rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarBackingTrack1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelBackingTracksCh2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelBackingTracksCh2">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/multitrack#AudioTrack"/>
-        <multitrack:clip rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarBackingTrack2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelDrumMachinesCh1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelDrumMachinesCh1">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelDrumMachinesCh2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelDrumMachinesCh2">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelMIDITracksCh1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelMIDITracksCh1">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/multitrack#MidiTrack"/>
-        <smi:MIDIScore rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarMIDIScore1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelMIDITracksCh2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelMIDITracksCh2">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/multitrack#MidiTrack"/>
-        <smi:MIDIScore rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarMIDIScore2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSamplersCh1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSamplersCh1">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSamplersCh2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSamplersCh2">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSynthesizersCh1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSynthesizersCh1">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-        <smi:hosts_plugin rdf:resource="http://purl.org/ontology/iomust/smi#PluginSynthesizer1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSynthesizersCh2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSynthesizersCh2">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/StereoChannel"/>
-        <smi:hosts_plugin rdf:resource="http://purl.org/ontology/iomust/smi#RetrologueSynth"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarGestureInterface -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarGestureInterface">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#GestureInterface"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarIMU"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor1"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor2"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor3"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor4"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor5"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPushButton1"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPushButton2"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPushButton3"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarRibbonSensor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarGestureSensorHandler -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarGestureSensorHandler">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#GestureSensorHandler"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarIMU -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarIMU">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#InertialMeasurementUnit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarMIDIScore1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarMIDIScore1">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#MIDIScore"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarMIDIScore2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarMIDIScore2">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#MIDIScore"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarMappingPressureSensor1toRetrologueSynthCutoff -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarMappingPressureSensor1toRetrologueSynthCutoff">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#MappingTransform"/>
-        <smi:maps rdf:resource="http://purl.org/ontology/iomust/smi#RetrologueSynthCutoff"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPiezo -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPiezo">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/microphone/PizoelectricMicrophone"/>
-        <sosa:isHostedBy rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarAudioInputInterface"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor1">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#PressureSensor"/>
-        <smi:mapping_function rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarMappingPressureSensor1toRetrologueSynthCutoff"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor2">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#PressureSensor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor3 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor3">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#PressureSensor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor4 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor4">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#PressureSensor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor5 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPressureSensor5">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#PressureSensor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPushButton1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPushButton1">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#PushButton"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPushButton2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPushButton2">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#PushButton"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarPushButton3 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarPushButton3">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#PushButton"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarRibbonSensor -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarRibbonSensor">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#RibbonSensor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarSingleBoardComputer -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSingleBoardComputer">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#SingleBoardComputer"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoftwareMixer -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoftwareMixer">
-        <rdf:type rdf:resource="http://purl.org/ontology/studio/mixer/SoftwareMixer"/>
-        <studio:channel rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelAudioFxCh1"/>
-        <studio:channel rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelAudioFxCh2"/>
-        <studio:channel rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelDrumMachinesCh1"/>
-        <studio:channel rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelDrumMachinesCh2"/>
-        <studio:channel rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSamplersCh1"/>
-        <studio:channel rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSamplersCh2"/>
-        <studio:channel rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSynthesizersCh1"/>
-        <studio:channel rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelSynthesizersCh2"/>
-        <device:component_of rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundEngine"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoftwareMultitrackProject -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoftwareMultitrackProject">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject"/>
-        <device:component_of rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundEngine"/>
-        <multitrack:track rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelBackingTracksCh1"/>
-        <multitrack:track rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelBackingTracksCh2"/>
-        <multitrack:track rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelMIDITracksCh1"/>
-        <multitrack:track rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarChannelMIDITracksCh2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundDeliverySystem -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundDeliverySystem">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#SoundDeliverySystem"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarVibrationSpeaker1"/>
-        <sosa:hosts rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarVibrationSpeaker2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundEngine -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoundEngine">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#SoundEngine"/>
-        <device:component rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoftwareMixer"/>
-        <device:component rdf:resource="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSoftwareMultitrackProject"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarSpotifyService -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarSpotifyService">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#SMIService"/>
-        <smi:smi_service_purpose>play together with Spotify artists</smi:smi_service_purpose>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarVibrationSpeaker1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarVibrationSpeaker1">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#VibrationSpeaker"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/iomust/smi#sensusSmartGuitarVibrationSpeaker2 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/iomust/smi#sensusSmartGuitarVibrationSpeaker2">
-        <rdf:type rdf:resource="http://purl.org/ontology/iomust/smi#VibrationSpeaker"/>
-    </owl:NamedIndividual>
+    <rdf:Description rdf:about="http://purl.org/ontology/studio/multitrack#AudioTrack">
+        <rdfs:comment>An audio track can also contain plugins that generate sound in real time (for example synthesizers) or that process sounds incoming from microphones (for example, audio effects that alter the sound).</rdfs:comment>
+    </rdf:Description>
     
 
 

@@ -14,8 +14,9 @@
     <uri id="User Entered Import Resolution" name="http://purl.org/stuff/rev" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/ontologies_George/rev/review.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.org/ontology/similarity/" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/ontologies_George/sim/musim.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1614704693608" name="duplicate:http://purl.org/ontology/iomust/smi" uri="smi_light.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614704693608" name="duplicate:http://purl.org/ontology/iomust/smi" uri="smi.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1614704693608" name="shadowed:http://purl.org/ontology/iomust/smi" uri="docs/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1614723049945" name="duplicate:http://purl.org/ontology/iomust/smi" uri="smi_with_individuals.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614723049945" name="duplicate:http://purl.org/ontology/iomust/smi" uri="smi_light.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614723049945" name="duplicate:http://purl.org/ontology/iomust/smi" uri="smi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1614723049945" name="shadowed:http://purl.org/ontology/iomust/smi" uri="docs/ontology.xml"/>
     </group>
 </catalog>

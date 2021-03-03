@@ -72,7 +72,8 @@ smi:Touchscreen                                                     rdfs:subClas
 # Individuals           
 #########################################################################################################################################################
 
-ex:sensusSmartGuitar                                                rdf:type                                        smi:SmartGuitar , 
+ex:sensusSmartGuitar                                                rdf:type                                        iomust:SmartInstrument ,
+                                                                                                                    smi:SmartGuitar , 
                                                                                                                     smi:SmartElectroacousticGuitar ;
                                                                     rdfs:label                                      "Sensus Smart Guitar" ;
                                                                     smi:smi_component                               ex:sensusSmartGuitarSoundEngine ,
@@ -82,8 +83,12 @@ ex:sensusSmartGuitar                                                rdf:type    
                                                                                                                     ex:sensusSmartGuitarGestureInterface ;
                                                                     smi:smi_service                                 ex:sensusSmartGuitarSpotifyService ;
                                                                     smi:smi_application                             ex:sensusSmartGuitarSpotifyApplication ;
+                                                                    iot:isInvolvedIn                                ex:ConcertAtSlush2016 ;
                                                                     iomust:hasConnectionWith                        ex:SlushStageScreen ,
-                                                                                                                    ex:SlushStageSmokeMachine .
+                                                                                                                    ex:SlushStageSmokeMachine ,
+                                                                                                                    ex:Smartphone1 ,
+                                                                                                                    ex:Smartphone2 ,
+                                                                                                                    ex:Smartphone3 .
 
  ex:sensusSmartGuitarSoundEngine                                    rdf:type                                        smi:SoundEngine ;
                                                                     device:component                                ex:sensusSmartGuitarSoftwareMixer , 
@@ -116,14 +121,14 @@ ex:sensusSmartGuitarSoftwareMixer                                   rdf:type    
                                                                                                                     ex:sensusSmartGuitarChannelSynthesizersCh2 ,
                                                                                                                     ex:sensusSmartGuitarChannelSamplersCh1 ,
                                                                                                                     ex:sensusSmartGuitarChannelSamplersCh2 ,
-                                                                                                                    ex:sensusSmartGuitarChannelDrumMachinesCh1 ,
-                                                                                                                    ex:sensusSmartGuitarChannelDrumMachinesCh2 ,
                                                                                                                     ex:sensusSmartGuitarChannelAudioFxCh1 ,
                                                                                                                     ex:sensusSmartGuitarChannelAudioFxCh2 .
 
 ex:sensusSmartGuitarSoftwareMultitrackProject                       rdf:type                                        smi:SoftwareMultitrackProject ;
                                                                     multitrack:track                                ex:sensusSmartGuitarChannelBackingTrack1 ,
                                                                                                                     ex:sensusSmartGuitarChannelBackingTrack2 ,
+                                                                                                                    ex:sensusSmartGuitarChannelDrumMachinesCh1 ,
+                                                                                                                    ex:sensusSmartGuitarChannelDrumMachinesCh2 ,
                                                                                                                     ex:sensusSmartGuitarChannelMIDITracks1 ,
                                                                                                                     ex:sensusSmartGuitarChannelMIDITracks2 .
 
@@ -171,10 +176,6 @@ ex:sensusSmartGuitarChannelSamplersCh1                              rdf:type    
 
 ex:sensusSmartGuitarChannelSamplersCh2                              rdf:type                                        mixer:SteroChannel . 
 
-ex:sensusSmartGuitarChannelDrumMachinesCh1                          rdf:type                                        mixer:SteroChannel . 
-
-ex:sensusSmartGuitarChannelDrumMachinesCh2                          rdf:type                                        mixer:SteroChannel . 
-
 ex:sensusSmartGuitarChannelAudioFxCh1                               rdf:type                                        mixer:SteroChannel . 
 
 ex:sensusSmartGuitarChannelAudioFxCh2                               rdf:type                                        mixer:SteroChannel . 
@@ -184,6 +185,12 @@ ex:sensusSmartGuitarChannelBackingTrack1                            rdf:type    
 
 ex:sensusSmartGuitarChannelBackingTrack2                            rdf:type                                        multitrack:AudioTrack ;
                                                                     multitrack:clip                                 ex:sensusSmartGuitarChannelBackingTrack2 .
+
+ex:sensusSmartGuitarChannelDrumMachinesCh1                          rdf:type                                        multitrack:MidiTrack ;
+                                                                    smi:midi_score                                  ex:sensusSmartGuitarDrumMachineMIDIScore1 .
+
+ex:sensusSmartGuitarChannelDrumMachinesCh2                          rdf:type                                        multitrack:MidiTrack ;
+                                                                    smi:midi_score                                  ex:sensusSmartGuitarDrumMachineMIDIScore2 .
 
 ex:sensusSmartGuitarChannelMIDITracks1                              rdf:type                                        multitrack:MidiTrack ;
                                                                     smi:midi_score                                  ex:sensusSmartGuitarMIDIScore1 .
@@ -197,10 +204,16 @@ ex:sensusSmartGuitarChannelBackingTrack1                            rdf:type    
 ex:sensusSmartGuitarChannelBackingTrack2                            rdf:type                                        multitrack:AudioClip ;
                                                                     rdfs:label                                      "rock_2_backingtrack.wav" .
 
-ex:sensusSmartGuitarMIDIScore1                                      rdf:type                                        smi:midi_score ;
+ex:sensusSmartGuitarDrumMachineMIDIScore1                           rdf:type                                        smi:MIDIScore ;
+                                                                    rdfs:label                                      "Drum_machine_score1.mid" .   
+
+ex:sensusSmartGuitarDrumMachineMIDIScore2                           rdf:type                                        smi:MIDIScore ;
+                                                                    rdfs:label                                      "Drum_machine_score2.mid" .   
+
+ex:sensusSmartGuitarMIDIScore1                                      rdf:type                                        smi:MIDIScore ;
                                                                     rdfs:label                                      "score1.mid" .   
 
-ex:sensusSmartGuitarMIDIScore2                                      rdf:type                                        smi:midi_score ;
+ex:sensusSmartGuitarMIDIScore2                                      rdf:type                                        smi:MIDIScore ;
                                                                     rdfs:label                                      "score2.mid" .                                                                                                   
 
 ex:RetrologueSynth                                                  rdf:type                                        fx:PlugIn ;
@@ -226,8 +239,18 @@ ex:SlushStageSmokeMachine                                           rdf:type    
                                                                                                                     iomust:StageSmokeMachine ;
                                                                     iot:isInvolvedIn                                ex:ConcertAtSlush2016 .
 
-ex:ConcertAtSlush2016                                               iot:produces                                    ex:SlushEvent1 .
+ex:ConcertAtSlush2016                                               rdf:type                                        iomust:MusicalThingApplication ;
+                                                                    iot:produces                                    ex:SlushEvent1 .
 
 ex:SlushEvent1                                                      event:time                                      ex:time1 .
 
 ex:time1                                                            timeline:starts                                 "43:00 min" .
+
+ex:Smartphone1                                                      rdf:type                                        iomust:Smartphone ;
+                                                                    iot:isInvolvedIn                                ex:ConcertAtSlush2016 .
+
+ex:Smartphone2                                                      rdf:type                                        iomust:Smartphone ;
+                                                                    iot:isInvolvedIn                                ex:ConcertAtSlush2016 .
+
+ex:Smartphone3                                                      rdf:type                                        iomust:Smartphone ;
+                                                                    iot:isInvolvedIn                                ex:ConcertAtSlush2016 .                                                                    
