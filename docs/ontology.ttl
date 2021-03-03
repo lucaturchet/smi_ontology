@@ -4,20 +4,20 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/ontology/iomust/smi> .
+@base <http://purl.org/ontology/iomust/smi#> .
 
-<http://purl.org/ontology/iomust/smi> rdf:type owl:Ontology ;
-                                       owl:versionIRI <http://purl.org/ontology/iomust/smi/0.1> ;
-                                       <http://purl.org/dc/elements/1.1/contributor> "Andrea Molinari" ,
-                                                                                     "Gyorgy Fazekas" ,
-                                                                                     "Paolo Bouquet" ;
-                                       <http://purl.org/dc/elements/1.1/creator> "Luca Turchet" ;
-                                       <http://purl.org/dc/elements/1.1/rights> <https://www.gnu.org/licenses/gpl.html> ;
-                                       <http://purl.org/dc/terms/abstract> <http://purl.org/ontology/iomust/smi> ;
-                                       <http://purl.org/dc/terms/created> "2020-02-06T10:00:00"^^xsd:dateTime ;
-                                       <http://purl.org/dc/terms/title> "Smart Musical Instruments Ontology" ;
-                                       <http://web.resource.org/cc/license> <https://www.gnu.org/licenses/gpl.html> ;
-                                       owl:versionInfo <http://purl.org/ontology/iomust/smi> .
+<http://purl.org/ontology/iomust/smi#> rdf:type owl:Ontology ;
+                                        owl:versionIRI <http://purl.org/ontology/iomust/smi/0.1> ;
+                                        <http://purl.org/dc/elements/1.1/contributor> "Andrea Molinari" ,
+                                                                                      "Gyorgy Fazekas" ,
+                                                                                      "Paolo Bouquet" ;
+                                        <http://purl.org/dc/elements/1.1/creator> "Luca Turchet" ;
+                                        <http://purl.org/dc/elements/1.1/rights> <https://www.gnu.org/licenses/gpl.html> ;
+                                        <http://purl.org/dc/terms/abstract> <http://purl.org/ontology/iomust/smi> ;
+                                        <http://purl.org/dc/terms/created> "2020-02-06T10:00:00"^^xsd:dateTime ;
+                                        <http://purl.org/dc/terms/title> "Smart Musical Instruments Ontology" ;
+                                        <http://web.resource.org/cc/license> <https://www.gnu.org/licenses/gpl.html> ;
+                                        owl:versionInfo <http://purl.org/ontology/iomust/smi> .
 
 #################################################################
 #    Annotation properties
@@ -59,36 +59,11 @@
 #    Object Properties
 #################################################################
 
-###  http://purl.org/ontology/iomust/smi#SMIcomponent
-:SMIcomponent rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
-              rdfs:domain [ rdf:type owl:Class ;
-                            owl:unionOf ( :SMIHardwareDevice
-                                          :SMISoftwareDevice
-                                        )
-                          ] ;
-              rdfs:range <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> .
-
-
 ###  http://purl.org/ontology/iomust/smi#SMIhosts
 :SMIhosts rdf:type owl:ObjectProperty ;
           rdfs:domain :SoundEngine ;
           rdfs:range <http://purl.org/ontology/studio/multitrack#MultitrackProject> ;
           rdfs:label "SMI hosts"@en .
-
-
-###  http://purl.org/ontology/iomust/smi#component_mic
-:component_mic rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
-               rdfs:domain :Microphone_Transducer ;
-               rdfs:range <http://purl.org/ontology/studio/microphone/Microphone> .
-
-
-###  http://purl.org/ontology/iomust/smi#component_platform
-:component_platform rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
-                    rdfs:domain <http://purl.org/ontology/iomust/internet_of_things/Thing> ;
-                    rdfs:range <http://www.w3.org/ns/sosa/Platform> .
 
 
 ###  http://purl.org/ontology/iomust/smi#executes
@@ -104,23 +79,38 @@
           rdfs:label "executes" .
 
 
+###  http://purl.org/ontology/iomust/smi#hosts_plugin
+:hosts_plugin rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf :in_channel ;
+              rdfs:domain <http://purl.org/ontology/studio/mixer/Channel> ;
+              rdfs:range <https://w3id.org/aufx/ontology/1.0#PlugIn> .
+
+
 ###  http://purl.org/ontology/iomust/smi#implementation
 :implementation rdf:type owl:ObjectProperty ;
                 rdfs:domain <http://purl.org/ontology/studio/main/Transform> ;
                 rdfs:range <https://w3id.org/aufx/ontology/1.0#SoftwareImplementation> .
 
 
+###  http://purl.org/ontology/iomust/smi#in_channel
+:in_channel rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain <https://w3id.org/aufx/ontology/1.0#PlugIn> ;
+            rdfs:range <http://purl.org/ontology/studio/mixer/Channel> .
+
+
 ###  http://purl.org/ontology/iomust/smi#mapping_function
 :mapping_function rdf:type owl:ObjectProperty ;
                   rdfs:domain :GestureTrackingSensor ;
-                  rdfs:range :MappingTrasform ;
+                  rdfs:range :MappingTransform ;
                   rdfs:comment "This predicate associates a sensor tracking a gesture to a Mapping Transform, i.e., the mapping function from sensor signal to a plugin feedback parameter"@en .
 
 
 ###  http://purl.org/ontology/iomust/smi#mapping_implementation
 :mapping_implementation rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :implementation ;
-                        rdfs:domain :MappingTrasform ;
+                        rdfs:domain :MappingTransform ;
                         rdfs:range :MappingHandler ;
                         rdfs:comment "A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." ;
                         rdfs:label "mapping implementation" .
@@ -128,8 +118,23 @@
 
 ###  http://purl.org/ontology/iomust/smi#maps
 :maps rdf:type owl:ObjectProperty ;
-      rdfs:domain :MappingTrasform ;
+      rdfs:domain :MappingTransform ;
       rdfs:range <https://w3id.org/aufx/ontology/1.0#Parameter> .
+
+
+###  http://purl.org/ontology/iomust/smi#midi_score
+:midi_score rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain <http://purl.org/ontology/studio/multitrack#MidiTrack> ;
+            rdfs:range :MIDIScore .
+
+
+###  http://purl.org/ontology/iomust/smi#plugin_type
+:plugin_type rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain <https://w3id.org/aufx/ontology/1.0#PlugIn> ;
+             rdfs:range <http://purl.org/ontology/studio/device/Device> ;
+             rdfs:comment "Associates an audio plugin to a plugin category (e.g., audio effect, synthesizer, sampler, drum machine)" .
 
 
 ###  http://purl.org/ontology/iomust/smi#processes_sensor_signal
@@ -149,8 +154,56 @@
                                rdfs:label "sensor handler implementation"@en .
 
 
+###  http://purl.org/ontology/iomust/smi#smi_application
+:smi_application rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> ;
+                 rdfs:range :SMIApplication ;
+                 rdfs:comment "Relates a smart musica instrument to an application" .
+
+
+###  http://purl.org/ontology/iomust/smi#smi_component
+:smi_component rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component> ;
+               owl:inverseOf :smi_component_of ;
+               rdfs:domain <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( :SMIHardwareDevice
+                                          :SMISoftwareDevice
+                                        )
+                          ] ;
+               rdfs:comment "Associates a software or hardware device to a smart musical instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#smi_component_of
+:smi_component_of rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://purl.org/ontology/studio/device/component_of> ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :SMIHardwareDevice
+                                              :SMISoftwareDevice
+                                            )
+                              ] ;
+                  rdfs:range <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> ;
+                  rdfs:comment "Inverse property of smi_component" .
+
+
+###  http://purl.org/ontology/iomust/smi#smi_service
+:smi_service rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.org/ontology/studio/device/service> ;
+             rdfs:domain <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> ;
+             rdfs:range :SMIService ;
+             rdfs:comment "Relates a smart musica instrument to a service it provides" .
+
+
 ###  http://purl.org/ontology/studio/device/component
 <http://purl.org/ontology/studio/device/component> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/ontology/studio/device/component_of
+<http://purl.org/ontology/studio/device/component_of> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/ontology/studio/device/service
+<http://purl.org/ontology/studio/device/service> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.w3.org/ns/sosa/hasResult
@@ -198,7 +251,7 @@
 
 ###  http://purl.org/ontology/iomust/smi#mapping_function_parameter
 :mapping_function_parameter rdf:type owl:DatatypeProperty ;
-                            rdfs:domain :MappingTrasform ;
+                            rdfs:domain :MappingTransform ;
                             rdfs:range xsd:float ;
                             rdfs:comment "A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)" ;
                             rdfs:label "mapping function parameter" .
@@ -206,7 +259,7 @@
 
 ###  http://purl.org/ontology/iomust/smi#mapping_function_type
 :mapping_function_type rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :MappingTrasform ;
+                       rdfs:domain :MappingTransform ;
                        rdfs:range xsd:string ;
                        rdfs:comment "A mathematical function that can be e.g., linear, exponential, logarithmic" ;
                        rdfs:label "mapping function type" .
@@ -224,6 +277,20 @@
              rdfs:domain <https://w3id.org/aufx/ontology/1.0#PlugIn> ;
              rdfs:range rdfs:Literal ;
              rdfs:label "name_plugin"@en .
+
+
+###  http://purl.org/ontology/iomust/smi#smi_application_purpose
+:smi_application_purpose rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:domain :SMIApplication ;
+                         rdfs:range xsd:string .
+
+
+###  http://purl.org/ontology/iomust/smi#smi_service_purpose
+:smi_service_purpose rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :SMIService ;
+                     rdfs:range xsd:string .
 
 
 ###  http://purl.org/ontology/iomust/smi#threshold
@@ -255,16 +322,16 @@
 #    Classes
 #################################################################
 
-###  http://purl.org/ontology/iomust/smiChannel
-<http://purl.org/ontology/iomust/smiChannel> rdf:type owl:Class .
-
-
-###  http://purl.org/ontology/iomust/internet_of_things/SmartInstrument
-<http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> rdf:type owl:Class .
+###  http://purl.org/NET/c4dm/event.owl#Event
+<http://purl.org/NET/c4dm/event.owl#Event> rdf:type owl:Class .
 
 
 ###  http://purl.org/ontology/iomust/internet_of_things/Thing
 <http://purl.org/ontology/iomust/internet_of_things/Thing> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument
+<http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> rdf:type owl:Class .
 
 
 ###  http://purl.org/ontology/iomust/smi#ADCaudio
@@ -287,15 +354,61 @@
                rdfs:subClassOf :GestureTrackingSensor .
 
 
+###  http://purl.org/ontology/iomust/smi#AcousticGuitar
+:AcousticGuitar rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :AcousticInstrument
+                                                           :Guitar
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :AcousticInstrument .
+
+
 ###  http://purl.org/ontology/iomust/smi#AcousticInstrument
 :AcousticInstrument rdf:type owl:Class ;
                     rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
                     rdfs:label "Acoustic Instrument" .
 
 
+###  http://purl.org/ontology/iomust/smi#AcousticPiano
+:AcousticPiano rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :AcousticInstrument
+                                                          :Piano
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :AcousticInstrument .
+
+
+###  http://purl.org/ontology/iomust/smi#AcousticSaxophone
+:AcousticSaxophone rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :AcousticInstrument
+                                                              :Saxophone
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :AcousticInstrument .
+
+
+###  http://purl.org/ontology/iomust/smi#AcousticViolin
+:AcousticViolin rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :AcousticInstrument
+                                                           :Violin
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Violin .
+
+
+###  http://purl.org/ontology/iomust/smi#AudioActuator
+:AudioActuator rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/sosa/Actuator> .
+
+
 ###  http://purl.org/ontology/iomust/smi#AudioInputInterface
 :AudioInputInterface rdf:type owl:Class ;
-                     rdfs:subClassOf :SMIHardwareDevice .
+                     rdfs:subClassOf :SMIHardwareDevice ,
+                                     <http://www.w3.org/ns/sosa/Platform> .
 
 
 ###  http://purl.org/ontology/iomust/smi#AudioTrackingSensor
@@ -322,16 +435,101 @@
                 rdfs:subClassOf :GestureTrackingSensor .
 
 
+###  http://purl.org/ontology/iomust/smi#DrumMachine
+:DrumMachine rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/ontology/studio/device/Device> .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectricGuitar
+:ElectricGuitar rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ElectricInstrument
+                                                           :Guitar
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ElectricInstrument .
+
+
 ###  http://purl.org/ontology/iomust/smi#ElectricInstrument
 :ElectricInstrument rdf:type owl:Class ;
                     rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
                     rdfs:label "Electric Instrument" .
 
 
-###  http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument
-:ElectroAcousticInstrument rdf:type owl:Class ;
+###  http://purl.org/ontology/iomust/smi#ElectricPiano
+:ElectricPiano rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :ElectricInstrument
+                                                          :Piano
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :ElectricInstrument .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectricSaxophone
+:ElectricSaxophone rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :ElectricInstrument
+                                                              :Saxophone
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :ElectricInstrument .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectricViolin
+:ElectricViolin rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ElectricInstrument
+                                                           :Violin
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Violin .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectroacousticGuitar
+:ElectroacousticGuitar rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :ElectroacousticInstrument
+                                                                  :Guitar
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf :ElectroacousticInstrument .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectroacousticInstrument
+:ElectroacousticInstrument rdf:type owl:Class ;
                            rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
-                           rdfs:label "Electro Acoustic Instrument" .
+                           rdfs:label "Electroacoustic Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectroacousticPiano
+:ElectroacousticPiano rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :ElectroacousticInstrument
+                                                                 :Piano
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :ElectroacousticInstrument .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectroacousticSaxophone
+:ElectroacousticSaxophone rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :ElectroacousticInstrument
+                                                                     :Saxophone
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :ElectroacousticInstrument .
+
+
+###  http://purl.org/ontology/iomust/smi#ElectroacousticViolin
+:ElectroacousticViolin rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :ElectroacousticInstrument
+                                                                  :Violin
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf :Violin .
 
 
 ###  http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem
@@ -359,7 +557,7 @@
 ###  http://purl.org/ontology/iomust/smi#GestureSensorTransform
 :GestureSensorTransform rdf:type owl:Class ;
                         rdfs:subClassOf :SMITransform ;
-                        owl:disjointWith :MappingTrasform ;
+                        owl:disjointWith :MappingTransform ;
                         rdfs:comment "A transformation applied by a SMI Gesture Sensor Handler to the signal observed by a sensor tracking a player's gesture"@en ;
                         rdfs:label "Gesture Sensor Transform"@en .
 
@@ -370,14 +568,25 @@
                        rdfs:comment "A sensor that detects the performer's gestures" .
 
 
+###  http://purl.org/ontology/iomust/smi#Guitar
+:Guitar rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> .
+
+
 ###  http://purl.org/ontology/iomust/smi#Gyroscope
 :Gyroscope rdf:type owl:Class ;
            rdfs:subClassOf :GestureTrackingSensor .
 
 
+###  http://purl.org/ontology/iomust/smi#HapticActuator
+:HapticActuator rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/Actuator> .
+
+
 ###  http://purl.org/ontology/iomust/smi#HapticDeliverySystem
 :HapticDeliverySystem rdf:type owl:Class ;
-                      rdfs:subClassOf :SMIHardwareDevice .
+                      rdfs:subClassOf :SMIHardwareDevice ,
+                                      <http://www.w3.org/ns/sosa/Platform> .
 
 
 ###  http://purl.org/ontology/iomust/smi#HapticEngine
@@ -392,6 +601,16 @@
                          rdfs:subClassOf :GestureTrackingSensor .
 
 
+###  http://purl.org/ontology/iomust/smi#Loudspeaker
+:Loudspeaker rdf:type owl:Class ;
+             rdfs:subClassOf :AudioActuator .
+
+
+###  http://purl.org/ontology/iomust/smi#MIDIScore
+:MIDIScore rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> .
+
+
 ###  http://purl.org/ontology/iomust/smi#Magnetometer
 :Magnetometer rdf:type owl:Class ;
               rdfs:subClassOf :GestureTrackingSensor .
@@ -404,17 +623,16 @@
                 rdfs:label "Mapping Handler" .
 
 
-###  http://purl.org/ontology/iomust/smi#MappingTrasform
-:MappingTrasform rdf:type owl:Class ;
-                 rdfs:subClassOf :SMITransform ;
-                 rdfs:comment "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." ;
-                 rdfs:label "Mapping Transform"@en .
+###  http://purl.org/ontology/iomust/smi#MappingTransform
+:MappingTransform rdf:type owl:Class ;
+                  rdfs:subClassOf :SMITransform ;
+                  rdfs:comment "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin." ;
+                  rdfs:label "Mapping Transform"@en .
 
 
-###  http://purl.org/ontology/iomust/smi#Microphone_Transducer
-:Microphone_Transducer rdf:type owl:Class ;
-                       rdfs:subClassOf :AudioTrackingSensor ;
-                       rdfs:comment "The sensor embedded in a microphone" .
+###  http://purl.org/ontology/iomust/smi#Piano
+:Piano rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> .
 
 
 ###  http://purl.org/ontology/iomust/smi#Potentiometer
@@ -443,32 +661,46 @@
               rdfs:subClassOf :GestureTrackingSensor .
 
 
-###  http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument
-:SMIElectricAcousticIntrument rdf:type owl:Class ;
-                              owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument>
-                                                                         :ElectroAcousticInstrument
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ] ;
-                              rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> ;
-                              rdfs:label "SMI Electric Acoustic Instrument" .
+###  http://purl.org/ontology/iomust/smi#SMIApplication
+:SMIApplication rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/ontology/studio/device/Application> ;
+                rdfs:comment "An application associated to a smart musical instrument" .
 
 
 ###  http://purl.org/ontology/iomust/smi#SMIElectricInstrument
 :SMIElectricInstrument rdf:type owl:Class ;
-                       owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument>
+                       owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument>
                                                                   :ElectricInstrument
                                                                 ) ;
                                              rdf:type owl:Class
                                            ] ;
-                       rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> ;
+                       rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> ;
                        rdfs:label "SMI Electric Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#SMIElectroacousticIntrument
+:SMIElectroacousticIntrument rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument>
+                                                                        :ElectroacousticInstrument
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> ;
+                             rdfs:label "SMI Electroacoustic Instrument" .
 
 
 ###  http://purl.org/ontology/iomust/smi#SMIHardwareDevice
 :SMIHardwareDevice rdf:type owl:Class ;
-                   rdfs:subClassOf <http://purl.org/ontology/studio/device/HardwareDevice> ;
-                   rdfs:comment "Any hardware components of a smart instrument" .
+                   rdfs:subClassOf <http://purl.org/ontology/studio/device/HardwareDevice> ,
+                                   <http://www.w3.org/ns/sosa/Platform> ;
+                   rdfs:comment "Any hardware components of a smart musical instrument" ;
+                   rdfs:label "SMI Hardware Device" .
+
+
+###  http://purl.org/ontology/iomust/smi#SMIService
+:SMIService rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/ontology/studio/device/Service> ;
+            rdfs:comment "A service associated to a smart musical instrument" .
 
 
 ###  http://purl.org/ontology/iomust/smi#SMISoftwareDevice
@@ -486,13 +718,28 @@
 
 ###  http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument
 :SMIVirtualRealityMusicalInstrument rdf:type owl:Class ;
-                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument>
+                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument>
                                                                                :VirtualRealityMusicalInstrument
                                                                              ) ;
                                                           rdf:type owl:Class
                                                         ] ;
-                                    rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/SmartInstrument> ;
+                                    rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> ;
                                     rdfs:label "SMI Virtual Reality Musical Instrument" .
+
+
+###  http://purl.org/ontology/iomust/smi#Sampler
+:Sampler rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.org/ontology/studio/device/Device> .
+
+
+###  http://purl.org/ontology/iomust/smi#Saxophone
+:Saxophone rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> .
+
+
+###  http://purl.org/ontology/iomust/smi#Screen
+:Screen rdf:type owl:Class ;
+        rdfs:subClassOf :VisualActuator .
 
 
 ###  http://purl.org/ontology/iomust/smi#SingleBoardComputer
@@ -503,6 +750,146 @@
                      rdfs:label "Single Board Computer" .
 
 
+###  http://purl.org/ontology/iomust/smi#SmartElectricGuitar
+:SmartElectricGuitar rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :SMIElectricInstrument
+                                                                :SmartGuitar
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :SmartGuitar .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartElectricPiano
+:SmartElectricPiano rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :SMIElectricInstrument
+                                                               :SmartPiano
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf :SmartPiano .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartElectricSaxophone
+:SmartElectricSaxophone rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :SMIElectricInstrument
+                                                                   :SmartSaxophone
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf :SmartSaxophone .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartElectricViolin
+:SmartElectricViolin rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :SMIElectricInstrument
+                                                                :SmartViolin
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :SMIElectricInstrument .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar
+:SmartElectroacousticGuitar rdf:type owl:Class ;
+                            owl:equivalentClass [ owl:intersectionOf ( :SMIElectroacousticIntrument
+                                                                       :SmartGuitar
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
+                            rdfs:subClassOf :SmartGuitar .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartElectroacousticPiano
+:SmartElectroacousticPiano rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :SMIElectroacousticIntrument
+                                                                      :SmartPiano
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :SmartPiano .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartElectroacousticSaxophone
+:SmartElectroacousticSaxophone rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( :SMIElectroacousticIntrument
+                                                                          :SmartSaxophone
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                               rdfs:subClassOf :SmartSaxophone .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartElectroacousticViolin
+:SmartElectroacousticViolin rdf:type owl:Class ;
+                            owl:equivalentClass [ owl:intersectionOf ( :SMIElectroacousticIntrument
+                                                                       :SmartViolin
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
+                            rdfs:subClassOf :SmartViolin .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartGuitar
+:SmartGuitar rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartPiano
+:SmartPiano rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartSaxophone
+:SmartSaxophone rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartViolin
+:SmartViolin rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartVirtualRealityGuitar
+:SmartVirtualRealityGuitar rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :SMIVirtualRealityMusicalInstrument
+                                                                      :SmartGuitar
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :SmartGuitar .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartVirtualRealityPiano
+:SmartVirtualRealityPiano rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :SMIVirtualRealityMusicalInstrument
+                                                                     :SmartPiano
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :SmartPiano .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartVirtualRealitySaxophone
+:SmartVirtualRealitySaxophone rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( :SMIVirtualRealityMusicalInstrument
+                                                                         :SmartSaxophone
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf :SmartSaxophone .
+
+
+###  http://purl.org/ontology/iomust/smi#SmartVirtualRealityViolin
+:SmartVirtualRealityViolin rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :SMIVirtualRealityMusicalInstrument
+                                                                      :SmartViolin
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :SmartViolin .
+
+
 ###  http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject
 :SoftwareMultitrackProject rdf:type owl:Class ;
                            rdfs:subClassOf <http://purl.org/ontology/studio/device/SoftwareDevice> ;
@@ -511,7 +898,8 @@
 
 ###  http://purl.org/ontology/iomust/smi#SoundDeliverySystem
 :SoundDeliverySystem rdf:type owl:Class ;
-                     rdfs:subClassOf :SMIHardwareDevice .
+                     rdfs:subClassOf :SMIHardwareDevice ,
+                                     <http://www.w3.org/ns/sosa/Platform> .
 
 
 ###  http://purl.org/ontology/iomust/smi#SoundEngine
@@ -519,6 +907,16 @@
              rdfs:subClassOf :SMISoftwareDevice ;
              rdfs:comment "A piece of software that handles audio processing" ;
              rdfs:label "Sound Engine" .
+
+
+###  http://purl.org/ontology/iomust/smi#Synthesizer
+:Synthesizer rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/ontology/studio/device/Device> .
+
+
+###  http://purl.org/ontology/iomust/smi#Touchscreen
+:Touchscreen rdf:type owl:Class ;
+             rdfs:subClassOf :VisualActuator .
 
 
 ###  http://purl.org/ontology/iomust/smi#VST2
@@ -534,15 +932,46 @@
       rdfs:label "VST 3"@en .
 
 
+###  http://purl.org/ontology/iomust/smi#VibrationMotor
+:VibrationMotor rdf:type owl:Class ;
+                rdfs:subClassOf :HapticActuator .
+
+
+###  http://purl.org/ontology/iomust/smi#VibrationSpeaker
+:VibrationSpeaker rdf:type owl:Class ;
+                  rdfs:subClassOf :AudioActuator .
+
+
+###  http://purl.org/ontology/iomust/smi#Violin
+:Violin rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> .
+
+
 ###  http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument
 :VirtualRealityMusicalInstrument rdf:type owl:Class ;
                                  rdfs:subClassOf <http://purl.org/ontology/mo/Instrument> ;
                                  rdfs:label "Virtual Reality Musical Instrument" .
 
 
+###  http://purl.org/ontology/iomust/smi#VirtualRealityViolin
+:VirtualRealityViolin rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :Violin
+                                                                 :VirtualRealityMusicalInstrument
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :Violin .
+
+
+###  http://purl.org/ontology/iomust/smi#VisualActuator
+:VisualActuator rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/Actuator> .
+
+
 ###  http://purl.org/ontology/iomust/smi#VisualDeliverySystem
 :VisualDeliverySystem rdf:type owl:Class ;
-                      rdfs:subClassOf :SMIHardwareDevice .
+                      rdfs:subClassOf :SMIHardwareDevice ,
+                                      <http://www.w3.org/ns/sosa/Platform> .
 
 
 ###  http://purl.org/ontology/iomust/smi#VisualEngine
@@ -550,11 +979,6 @@
               rdfs:subClassOf :SMISoftwareDevice ;
               rdfs:comment "A piece of software that handles visual processing" ;
               rdfs:label "Visual Engine" .
-
-
-###  http://purl.org/ontology/iomust/smi#multichannel
-:multichannel rdf:type owl:Class ;
-              rdfs:subClassOf <http://purl.org/ontology/iomust/smiChannel> .
 
 
 ###  http://purl.org/ontology/mo/Instrument
@@ -565,8 +989,16 @@
 <http://purl.org/ontology/mo/Signal> rdf:type owl:Class .
 
 
+###  http://purl.org/ontology/studio/device/Application
+<http://purl.org/ontology/studio/device/Application> rdf:type owl:Class .
+
+
 ###  http://purl.org/ontology/studio/device/Converter
 <http://purl.org/ontology/studio/device/Converter> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/studio/device/Device
+<http://purl.org/ontology/studio/device/Device> rdf:type owl:Class .
 
 
 ###  http://purl.org/ontology/studio/device/HardwareDevice
@@ -579,6 +1011,10 @@
                                                 rdfs:label "Plugin" .
 
 
+###  http://purl.org/ontology/studio/device/Service
+<http://purl.org/ontology/studio/device/Service> rdf:type owl:Class .
+
+
 ###  http://purl.org/ontology/studio/device/SoftwareDevice
 <http://purl.org/ontology/studio/device/SoftwareDevice> rdf:type owl:Class .
 
@@ -589,6 +1025,18 @@
 
 ###  http://purl.org/ontology/studio/microphone/Microphone
 <http://purl.org/ontology/studio/microphone/Microphone> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/studio/microphone/PizoelectricMicrophone
+<http://purl.org/ontology/studio/microphone/PizoelectricMicrophone> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/studio/mixer/Channel
+<http://purl.org/ontology/studio/mixer/Channel> rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/studio/multitrack#MidiTrack
+<http://purl.org/ontology/studio/multitrack#MidiTrack> rdf:type owl:Class .
 
 
 ###  http://purl.org/ontology/studio/multitrack#MultitrackProject
@@ -643,15 +1091,6 @@
 
 ###  https://w3id.org/aufx/ontology/1.0#VST
 <https://w3id.org/aufx/ontology/1.0#VST> rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://purl.org/ontology/iomust/smi#Decibel
-:Decibel rdf:type owl:NamedIndividual ,
-                  <http://qudt.org/schema/qudt#Unit> .
 
 
 #################################################################

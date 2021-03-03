@@ -3,53 +3,27 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
+      "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler"
     }, {
-      "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
       "@id" : "http://purl.org/ontology/iomust/smi#HapticEngine"
     }, {
       "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
     }, {
-      "@id" : "http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument"
+      "@id" : "http://purl.org/ontology/iomust/smi#VisualEngine"
     } ]
   } ]
 }, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
-    }, {
-      "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+      "@id" : "http://purl.org/ontology/iomust/smi#Violin"
     }, {
       "@id" : "http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument"
     } ]
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid104",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -73,7 +47,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid114",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -91,7 +65,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -101,11 +75,11 @@
     }, {
       "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine"
     }, {
-      "@id" : "http://purl.org/ontology/iomust/smi#VisualEngine"
+      "@id" : "http://purl.org/ontology/studio/device/Converter"
     } ]
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid121",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -121,19 +95,308 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#HapticEngine"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#AcousticInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Guitar"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#AcousticInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Piano"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#AcousticInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Saxophone"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#AcousticInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Violin"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Guitar"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Piano"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Saxophone"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Violin"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Guitar"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Piano"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Saxophone"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#Violin"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIElectricInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartGuitar"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIElectricInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartPiano"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIElectricInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartSaxophone"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIElectricInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartViolin"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIElectroacousticIntrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartGuitar"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIElectroacousticIntrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartPiano"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIElectroacousticIntrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartSaxophone"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIElectroacousticIntrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartViolin"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartGuitar"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler"
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
     }, {
-      "@id" : "http://purl.org/ontology/iomust/smi#HapticEngine"
-    }, {
-      "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine"
-    }, {
-      "@id" : "http://purl.org/ontology/studio/device/Converter"
+      "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
     } ]
   } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartPiano"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartSaxophone"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument"
+    }, {
+      "@id" : "http://purl.org/ontology/iomust/smi#SmartViolin"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/NET/c4dm/event.owl#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -153,13 +416,13 @@
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://purl.org/ontology/iomust/internet_of_things/Thing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi",
+  "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@value" : "Andrea Molinari"
@@ -227,6 +490,15 @@
     "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#AcousticGuitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#AcousticInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid20"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#AcousticInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -236,10 +508,45 @@
     "@id" : "http://purl.org/ontology/mo/Instrument"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#AcousticPiano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#AcousticInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#AcousticSaxophone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#AcousticInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#AcousticViolin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#Violin"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#AudioActuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Actuator"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#AudioInputInterface",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Platform"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#AudioTrackingSensor",
@@ -272,13 +579,25 @@
     "@id" : "http://purl.org/ontology/studio/sigproc/DAC"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#Decibel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://qudt.org/schema/qudt#Unit" ]
-}, {
   "@id" : "http://purl.org/ontology/iomust/smi#DistanceSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#DrumMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/studio/device/Device"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectricGuitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid32"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument",
@@ -290,13 +609,76 @@
     "@id" : "http://purl.org/ontology/mo/Instrument"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument",
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectricPiano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectricSaxophone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#ElectricInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid38"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectricViolin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#Violin"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid41"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticGuitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Electro Acoustic Instrument"
+    "@value" : "Electroacoustic Instrument"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/mo/Instrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticPiano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid47"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticSaxophone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid50"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#ElectroacousticViolin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#Violin"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid53"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem",
@@ -344,7 +726,7 @@
     "@id" : "http://purl.org/ontology/iomust/smi#SMITransform"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTransform"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor",
@@ -356,16 +738,30 @@
     "@id" : "http://www.w3.org/ns/sosa/Sensor"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#Guitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/Instrument"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#Gyroscope",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#HapticActuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Actuator"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#HapticDeliverySystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Platform"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#HapticEngine",
@@ -386,6 +782,18 @@
     "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#Loudspeaker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#AudioActuator"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#MIDIScore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#Magnetometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -404,7 +812,7 @@
     "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform",
+  "@id" : "http://purl.org/ontology/iomust/smi#MappingTransform",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin."
@@ -417,13 +825,10 @@
     "@id" : "http://purl.org/ontology/iomust/smi#SMITransform"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#Microphone_Transducer",
+  "@id" : "http://purl.org/ontology/iomust/smi#Piano",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The sensor embedded in a microphone"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi#AudioTrackingSensor"
+    "@id" : "http://purl.org/ontology/mo/Instrument"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#Potentiometer",
@@ -460,16 +865,13 @@
     "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument",
+  "@id" : "http://purl.org/ontology/iomust/smi#SMIApplication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "SMI Electric Acoustic Instrument"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An application associated to a smart musical instrument"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid17"
+    "@id" : "http://purl.org/ontology/studio/device/Application"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#SMIElectricInstrument",
@@ -478,19 +880,45 @@
     "@value" : "SMI Electric Instrument"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid20"
+    "@id" : "_:genid56"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SMIElectroacousticIntrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SMI Electroacoustic Instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid59"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Any hardware components of a smart instrument"
+    "@value" : "Any hardware components of a smart musical instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SMI Hardware Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/studio/device/HardwareDevice"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Platform"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SMIService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A service associated to a smart musical instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/studio/device/Service"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice",
@@ -522,22 +950,10 @@
     "@value" : "SMI Virtual Reality Musical Instrument"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid23"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/iomust/smi#SMIcomponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/studio/device/component"
+    "@id" : "_:genid62"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#SMIhosts",
@@ -551,6 +967,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/ontology/studio/multitrack#MultitrackProject"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#Sampler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/studio/device/Device"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#Saxophone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/Instrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#Screen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#VisualActuator"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#SingleBoardComputer",
@@ -567,6 +1001,138 @@
     "@id" : "http://www.w3.org/ns/sosa/Platform"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartElectricGuitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartGuitar"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid65"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartElectricPiano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartPiano"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid68"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartElectricSaxophone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartSaxophone"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid71"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartElectricViolin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIElectricInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid74"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartGuitar"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid77"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticPiano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartPiano"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid80"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticSaxophone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartSaxophone"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid83"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticViolin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartViolin"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid86"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartGuitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartPiano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartSaxophone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartViolin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartVirtualRealityGuitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartGuitar"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid89"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartVirtualRealityPiano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartPiano"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid92"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartVirtualRealitySaxophone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartSaxophone"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid95"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#SmartVirtualRealityViolin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SmartViolin"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid98"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -581,6 +1147,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Platform"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#SoundEngine",
@@ -593,6 +1161,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#Synthesizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/studio/device/Device"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#Touchscreen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#VisualActuator"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#VST2",
@@ -618,6 +1198,24 @@
     "@id" : "https://w3id.org/aufx/ontology/1.0#VST"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#VibrationMotor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#HapticActuator"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#VibrationSpeaker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#AudioActuator"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#Violin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/mo/Instrument"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -627,10 +1225,27 @@
     "@id" : "http://purl.org/ontology/mo/Instrument"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#VirtualRealityViolin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#Violin"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid101"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#VisualActuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Actuator"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#VisualDeliverySystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Platform"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#VisualEngine",
@@ -645,34 +1260,10 @@
     "@id" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#component_mic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi#Microphone_Transducer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/studio/microphone/Microphone"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/studio/device/component"
-  } ]
-}, {
-  "@id" : "http://purl.org/ontology/iomust/smi#component_platform",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/iomust/internet_of_things/Thing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/Platform"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/studio/device/component"
-  } ]
-}, {
   "@id" : "http://purl.org/ontology/iomust/smi#converter_sample_rate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid12"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "converter sample rate"
@@ -702,7 +1293,7 @@
     "@value" : "executes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid4"
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#filter_type",
@@ -717,6 +1308,21 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#hosts_plugin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/studio/mixer/Channel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/aufx/ontology/1.0#PlugIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#in_channel"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#implementation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -724,6 +1330,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/aufx/ontology/1.0#SoftwareImplementation"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#in_channel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/aufx/ontology/1.0#PlugIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/studio/mixer/Channel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#mapping_function",
@@ -736,7 +1354,7 @@
     "@id" : "http://purl.org/ontology/iomust/smi#GestureTrackingSensor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTransform"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#mapping_function_parameter",
@@ -745,7 +1363,7 @@
     "@value" : "A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTransform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "mapping function parameter"
@@ -760,7 +1378,7 @@
     "@value" : "A mathematical function that can be e.g., linear, exponential, logarithmic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTransform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "mapping function type"
@@ -775,7 +1393,7 @@
     "@value" : "A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTransform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "mapping implementation"
@@ -790,7 +1408,7 @@
   "@id" : "http://purl.org/ontology/iomust/smi#maps",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smi#MappingTrasform"
+    "@id" : "http://purl.org/ontology/iomust/smi#MappingTransform"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/aufx/ontology/1.0#Parameter"
@@ -808,10 +1426,16 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smi#multichannel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/iomust/smiChannel"
+  "@id" : "http://purl.org/ontology/iomust/smi#midi_score",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/studio/multitrack#MidiTrack"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#MIDIScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#name_plugin",
@@ -825,6 +1449,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#plugin_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates an audio plugin to a plugin category (e.g., audio effect, synthesizer, sampler, drum machine)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/aufx/ontology/1.0#PlugIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/studio/device/Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/iomust/smi#processes_sensor_signal",
@@ -863,6 +1502,90 @@
     "@id" : "http://purl.org/ontology/iomust/smi#implementation"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/iomust/smi#smi_application",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a smart musica instrument to an application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIApplication"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#smi_application_purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIApplication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#smi_component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates a software or hardware device to a smart musical instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/ontology/studio/device/component"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#smi_component_of"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#smi_component_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse property of smi_component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/ontology/studio/device/component_of"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#smi_service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a smart musica instrument to a service it provides"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/ontology/studio/device/service"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/iomust/smi#smi_service_purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/iomust/smi#SMIService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/iomust/smi#threshold",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -878,7 +1601,7 @@
   "@id" : "http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid14"
+    "@id" : "_:genid17"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -901,16 +1624,19 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/iomust/smiChannel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://purl.org/ontology/mo/Instrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/ontology/mo/Signal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://purl.org/ontology/studio/device/Application",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/ontology/studio/device/Converter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/ontology/studio/device/Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/ontology/studio/device/HardwareDevice",
@@ -925,10 +1651,19 @@
     "@id" : "https://w3id.org/aufx/ontology/1.0#PlugIn"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/studio/device/Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/ontology/studio/device/SoftwareDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/ontology/studio/device/component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/studio/device/component_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/studio/device/service",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://purl.org/ontology/studio/main/Transform",
@@ -937,10 +1672,19 @@
   "@id" : "http://purl.org/ontology/studio/microphone/Microphone",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://purl.org/ontology/studio/microphone/PizoelectricMicrophone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/ontology/studio/mixer/Channel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/ontology/studio/multitrack#AudioTrack",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An audio track can also contain plugins that generate sound in real time (for example synthesizers) or that process sounds incoming from microphones (for example, audio effects that alter the sound)."
   } ]
+}, {
+  "@id" : "http://purl.org/ontology/studio/multitrack#MidiTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/ontology/studio/multitrack#MultitrackProject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]

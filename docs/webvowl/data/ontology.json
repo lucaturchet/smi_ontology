@@ -2,11 +2,11 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "http://purl.org/ontology/studio/main", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/aufx/ontology/1.0", "http://www.w3.org/ns/sosa", "http://purl.org/ontology/studio/device", "http://purl.org/ontology/studio/sigproc", "http://purl.org/ontology/iomust/smi", "http://purl.org/ontology/studio/microphone", "http://purl.org/ontology/iomust", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/ontology/studio/multitrack", "http://purl.org/ontology/mo", "http://purl.org/ontology/iomust/internet_of_things" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "http://purl.org/NET/c4dm/event.owl", "http://www.w3.org/2002/07/owl", "http://purl.org/ontology/studio/main", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/aufx/ontology/1.0", "http://www.w3.org/ns/sosa", "http://purl.org/ontology/studio/device", "http://purl.org/ontology/studio/sigproc", "http://purl.org/ontology/iomust/internet_of_things/iomust", "http://purl.org/ontology/studio/mixer", "http://purl.org/ontology/iomust/smi", "http://purl.org/ontology/studio/microphone", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/ontology/studio/multitrack", "http://purl.org/ontology/mo", "http://purl.org/ontology/iomust/internet_of_things" ],
     "title" : {
       "undefined" : "Smart Musical Instruments Ontology"
     },
-    "iri" : "http://purl.org/ontology/iomust/smi",
+    "iri" : "http://purl.org/ontology/iomust/smi#",
     "version" : "http://purl.org/ontology/iomust/smi",
     "author" : [ "Luca Turchet" ],
     "other" : {
@@ -25,17 +25,17 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Paolo Bouquet",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
         "value" : "Gyorgy Fazekas",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Andrea Molinari",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Paolo Bouquet",
         "type" : "label"
       } ],
       "created" : [ {
@@ -78,256 +78,421 @@
     "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
     "id" : "24",
     "type" : "owl:Class"
   }, {
     "id" : "26",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
     "type" : "owl:Class"
   }, {
     "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
+    "id" : "44",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
+    "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "47",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "71",
-    "type" : "owl:Class"
-  }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "40",
-    "type" : "owl:Class"
-  }, {
-    "id" : "78",
-    "type" : "owl:Class"
-  }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "75",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
     "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
     "type" : "owl:Class"
   }, {
     "id" : "80",
     "type" : "owl:Class"
   }, {
-    "id" : "81",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "7",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "17",
+    "id" : "61",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "89",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "35",
+    "id" : "124",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "128",
     "type" : "owl:Class"
   }, {
-    "id" : "74",
-    "type" : "owl:Class"
+    "id" : "36",
+    "type" : "owl:intersectionOf"
   }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "89",
-    "type" : "owl:Class"
+    "id" : "150",
+    "type" : "owl:equivalentClass"
   }, {
     "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
+    "id" : "28",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "90",
+    "id" : "155",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "92",
+    "id" : "137",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "178",
     "type" : "owl:Class"
   }, {
-    "id" : "91",
+    "id" : "179",
     "type" : "owl:Class"
   }, {
-    "id" : "98",
+    "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "54",
+    "id" : "7",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "101",
+    "id" : "152",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "181",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "183",
     "type" : "owl:Class"
   }, {
-    "id" : "33",
+    "id" : "174",
     "type" : "owl:Class"
   }, {
-    "id" : "130",
+    "id" : "182",
     "type" : "owl:Class"
   }, {
-    "id" : "29",
+    "id" : "172",
     "type" : "owl:Class"
   }, {
-    "id" : "61",
+    "id" : "193",
     "type" : "owl:Class"
   }, {
-    "id" : "109",
+    "id" : "123",
     "type" : "owl:Class"
   }, {
-    "id" : "82",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "77",
-    "type" : "owl:Class"
-  }, {
-    "id" : "88",
-    "type" : "owl:Class"
-  }, {
-    "id" : "131",
-    "type" : "owl:Class"
-  }, {
-    "id" : "164",
-    "type" : "owl:Class"
-  }, {
-    "id" : "168",
+    "id" : "105",
     "type" : "owl:Class"
   }, {
     "id" : "132",
     "type" : "owl:Class"
   }, {
-    "id" : "84",
+    "id" : "25",
     "type" : "owl:Class"
-  }, {
-    "id" : "176",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "177",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "63",
     "type" : "owl:Class"
   }, {
-    "id" : "127",
-    "type" : "rdfs:Literal"
+    "id" : "34",
+    "type" : "owl:intersectionOf"
   }, {
-    "id" : "117",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "178",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "179",
+    "id" : "82",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "75",
     "type" : "owl:Class"
   }, {
-    "id" : "180",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "87",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "105",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "86",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "129",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "165",
+    "id" : "204",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "79",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "153",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "226",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "143",
     "type" : "owl:Class"
   }, {
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "149",
+    "id" : "229",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "248",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "133",
     "type" : "owl:Class"
   }, {
     "id" : "116",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "145",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "292",
+    "type" : "owl:Class"
+  }, {
+    "id" : "295",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "296",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "297",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "298",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "299",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
     "type" : "owl:Class"
   }, {
     "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "143",
-    "type" : "owl:Thing"
+    "id" : "164",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "148",
-    "type" : "owl:Class"
-  }, {
-    "id" : "72",
-    "type" : "owl:Class"
-  }, {
-    "id" : "133",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "69",
+    "id" : "163",
     "type" : "owl:unionOf"
   }, {
-    "id" : "55",
+    "id" : "225",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "251",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "101",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "169",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "208",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "221",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "241",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "223",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "197",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "103",
+    "id" : "94",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "70",
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "246",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "281",
     "type" : "rdfs:Datatype"
   } ],
   "classAttribute" : [ {
@@ -352,7 +517,7 @@
     },
     "subClasses" : [ "16", "17" ],
     "id" : "15",
-    "superClasses" : [ "2" ]
+    "superClasses" : [ "1", "2" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#Magnetometer",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -360,8 +525,28 @@
     "label" : {
       "IRI-based" : "Magnetometer"
     },
-    "id" : "21",
-    "superClasses" : [ "14" ]
+    "id" : "22",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#Synthesizer",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Synthesizer"
+    },
+    "id" : "24",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectricPiano",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartElectricPiano"
+    },
+    "intersection" : [ "28", "27" ],
+    "attributes" : [ "intersection" ],
+    "id" : "26",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "https://w3id.org/aufx/ontology/1.0#PlugInAPI",
     "baseIri" : "https://w3id.org/aufx/ontology/1.0",
@@ -369,9 +554,38 @@
     "label" : {
       "IRI-based" : "PlugInAPI"
     },
-    "subClasses" : [ "25" ],
+    "subClasses" : [ "30" ],
     "attributes" : [ "external" ],
-    "id" : "24"
+    "id" : "29"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartSaxophone",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartSaxophone"
+    },
+    "subClasses" : [ "33", "34", "35" ],
+    "id" : "31",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartPiano",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartPiano"
+    },
+    "subClasses" : [ "36", "37", "26" ],
+    "id" : "27",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/mixer/Channel",
+    "baseIri" : "http://purl.org/ontology/studio/mixer",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Channel"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#ADCsensor",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -383,8 +597,19 @@
     "comment" : {
       "undefined" : "Analog to Digital converter for gesture tracking sensors"
     },
-    "id" : "26",
-    "superClasses" : [ "27" ]
+    "id" : "45",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#ElectricGuitar",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectricGuitar"
+    },
+    "intersection" : [ "48", "49" ],
+    "attributes" : [ "intersection" ],
+    "id" : "47",
+    "superClasses" : [ "48" ]
   }, {
     "iri" : "http://purl.org/ontology/studio/sigproc/ADC",
     "baseIri" : "http://purl.org/ontology/studio/sigproc",
@@ -392,9 +617,18 @@
     "label" : {
       "IRI-based" : "ADC"
     },
-    "subClasses" : [ "30", "26" ],
+    "subClasses" : [ "53", "45" ],
     "attributes" : [ "external" ],
-    "id" : "27"
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#VibrationMotor",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VibrationMotor"
+    },
+    "id" : "62",
+    "superClasses" : [ "63" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#AcousticInstrument",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -403,8 +637,9 @@
       "IRI-based" : "AcousticInstrument",
       "undefined" : "Acoustic Instrument"
     },
-    "id" : "50",
-    "superClasses" : [ "51" ]
+    "subClasses" : [ "77", "78", "79" ],
+    "id" : "70",
+    "superClasses" : [ "57" ]
   }, {
     "iri" : "http://qudt.org/schema/qudt#Unit",
     "baseIri" : "http://qudt.org/schema/qudt",
@@ -412,15 +647,37 @@
     "label" : {
       "IRI-based" : "Unit"
     },
-    "individuals" : [ {
-      "iri" : "http://purl.org/ontology/iomust/smi#Decibel",
-      "baseIri" : "http://purl.org/ontology/iomust/smi",
-      "labels" : {
-        "IRI-based" : "Decibel"
-      }
-    } ],
     "attributes" : [ "external" ],
-    "id" : "52"
+    "id" : "80"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#Piano",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Piano"
+    },
+    "id" : "61",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartVirtualRealityViolin",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartVirtualRealityViolin"
+    },
+    "intersection" : [ "90", "91" ],
+    "attributes" : [ "intersection" ],
+    "id" : "89",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#Saxophone",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Saxophone"
+    },
+    "id" : "66",
+    "superClasses" : [ "57" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SMIVirtualRealityMusicalInstrument",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -429,9 +686,31 @@
       "IRI-based" : "SMIVirtualRealityMusicalInstrument",
       "undefined" : "SMI Virtual Reality Musical Instrument"
     },
-    "intersection" : [ "64", "5" ],
+    "intersection" : [ "87", "32" ],
     "attributes" : [ "intersection" ],
-    "id" : "9",
+    "id" : "91",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartVirtualRealitySaxophone",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartVirtualRealitySaxophone"
+    },
+    "intersection" : [ "31", "91" ],
+    "attributes" : [ "intersection" ],
+    "id" : "35",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#ElectroacousticViolin",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectroacousticViolin"
+    },
+    "intersection" : [ "5", "68" ],
+    "attributes" : [ "intersection" ],
+    "id" : "55",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#VisualEngine",
@@ -444,8 +723,19 @@
     "comment" : {
       "undefined" : "A piece of software that handles visual processing"
     },
-    "id" : "71",
-    "superClasses" : [ "72" ]
+    "id" : "95",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartVirtualRealityGuitar",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartVirtualRealityGuitar"
+    },
+    "intersection" : [ "98", "91" ],
+    "attributes" : [ "intersection" ],
+    "id" : "97",
+    "superClasses" : [ "98" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/internet_of_things/Thing",
     "baseIri" : "http://purl.org/ontology/iomust/internet_of_things",
@@ -454,7 +744,7 @@
       "IRI-based" : "Thing"
     },
     "attributes" : [ "external" ],
-    "id" : "66"
+    "id" : "99"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#EmbeddedVibrationSpeakerSystem",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -465,6 +755,26 @@
     "id" : "16",
     "superClasses" : [ "15" ]
   }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#Touchscreen",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Touchscreen"
+    },
+    "id" : "104",
+    "superClasses" : [ "105" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#AcousticSaxophone",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcousticSaxophone"
+    },
+    "intersection" : [ "66", "70" ],
+    "attributes" : [ "intersection" ],
+    "id" : "77",
+    "superClasses" : [ "70" ]
+  }, {
     "iri" : "http://purl.org/ontology/studio/sigproc/LowPassFilter",
     "baseIri" : "http://purl.org/ontology/studio/sigproc",
     "instances" : 0,
@@ -472,7 +782,7 @@
       "IRI-based" : "LowPassFilter"
     },
     "attributes" : [ "external" ],
-    "id" : "73"
+    "id" : "106"
   }, {
     "iri" : "http://purl.org/ontology/mo/Instrument",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -480,9 +790,20 @@
     "label" : {
       "IRI-based" : "Instrument"
     },
-    "subClasses" : [ "64", "74", "75", "50" ],
+    "subClasses" : [ "87", "48", "49", "61", "5", "66", "68", "70" ],
     "attributes" : [ "external" ],
-    "id" : "51"
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#AcousticGuitar",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcousticGuitar"
+    },
+    "intersection" : [ "49", "70" ],
+    "attributes" : [ "intersection" ],
+    "id" : "78",
+    "superClasses" : [ "70" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#InertialMeasurementUnit",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -490,8 +811,19 @@
     "label" : {
       "IRI-based" : "InertialMeasurementUnit"
     },
-    "id" : "40",
-    "superClasses" : [ "14" ]
+    "id" : "109",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectricViolin",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartElectricViolin"
+    },
+    "intersection" : [ "90", "28" ],
+    "attributes" : [ "intersection" ],
+    "id" : "110",
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "http://purl.org/ontology/studio/multitrack#MultitrackProject",
     "baseIri" : "http://purl.org/ontology/studio/multitrack",
@@ -500,7 +832,7 @@
       "IRI-based" : "MultitrackProject"
     },
     "attributes" : [ "external" ],
-    "id" : "78"
+    "id" : "117"
   }, {
     "iri" : "http://purl.org/ontology/studio/device/HardwareDevice",
     "baseIri" : "http://purl.org/ontology/studio/device",
@@ -508,19 +840,28 @@
     "label" : {
       "IRI-based" : "HardwareDevice"
     },
-    "subClasses" : [ "12", "59", "2" ],
+    "subClasses" : [ "72", "75", "2" ],
     "attributes" : [ "external" ],
-    "id" : "57"
+    "id" : "73"
   }, {
-    "iri" : "http://purl.org/ontology/iomust/smi#ElectroAcousticInstrument",
+    "iri" : "http://purl.org/ontology/studio/device/Service",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service"
+    },
+    "subClasses" : [ "51" ],
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#Screen",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ElectroAcousticInstrument",
-      "undefined" : "Electro Acoustic Instrument"
+      "IRI-based" : "Screen"
     },
-    "id" : "75",
-    "superClasses" : [ "51" ]
+    "id" : "120",
+    "superClasses" : [ "105" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#AudioInputInterface",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -528,21 +869,30 @@
     "label" : {
       "IRI-based" : "AudioInputInterface"
     },
-    "id" : "23",
-    "superClasses" : [ "2" ]
+    "id" : "121",
+    "superClasses" : [ "1", "2" ]
   }, {
-    "iri" : "http://purl.org/ontology/iomust/smi#MappingTrasform",
+    "iri" : "http://purl.org/ontology/iomust/smi#VirtualRealityViolin",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "MappingTrasform",
-      "en" : "Mapping Transform"
+      "IRI-based" : "VirtualRealityViolin"
     },
-    "comment" : {
-      "undefined" : "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin."
+    "intersection" : [ "87", "5" ],
+    "attributes" : [ "intersection" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#ElectroacousticPiano",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectroacousticPiano"
     },
-    "id" : "46",
-    "superClasses" : [ "47" ]
+    "intersection" : [ "61", "68" ],
+    "attributes" : [ "intersection" ],
+    "id" : "124",
+    "superClasses" : [ "68" ]
   }, {
     "iri" : "https://w3id.org/aufx/ontology/1.0#SoftwareImplementation",
     "baseIri" : "https://w3id.org/aufx/ontology/1.0",
@@ -551,29 +901,38 @@
       "IRI-based" : "SoftwareImplementation"
     },
     "attributes" : [ "external" ],
-    "id" : "80"
+    "id" : "128"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartVirtualRealityPiano",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartVirtualRealityPiano"
+    },
+    "intersection" : [ "27", "91" ],
+    "attributes" : [ "intersection" ],
+    "id" : "36",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "https://w3id.org/aufx/ontology/1.0#PlugIn",
-    "equivalent" : [ "82" ],
+    "equivalent" : [ "151" ],
     "baseIri" : "https://w3id.org/aufx/ontology/1.0",
     "instances" : 0,
     "label" : {
       "IRI-based" : "PlugIn"
     },
     "attributes" : [ "equivalent", "external" ],
-    "id" : "81"
+    "id" : "150"
   }, {
-    "iri" : "http://purl.org/ontology/iomust/smi#SMIElectricAcousticIntrument",
+    "iri" : "http://purl.org/ontology/iomust/smi#Violin",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SMIElectricAcousticIntrument",
-      "undefined" : "SMI Electric Acoustic Instrument"
+      "IRI-based" : "Violin"
     },
-    "intersection" : [ "75", "5" ],
-    "attributes" : [ "intersection" ],
-    "id" : "7",
-    "superClasses" : [ "5" ]
+    "subClasses" : [ "55", "4", "7", "9" ],
+    "id" : "5",
+    "superClasses" : [ "57" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#EmbeddedLoudspeakerSystem",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -590,12 +949,12 @@
     "label" : {
       "IRI-based" : "GestureTrackingSensor"
     },
-    "subClasses" : [ "61", "63", "33", "35", "21", "38", "40", "42", "44" ],
+    "subClasses" : [ "11", "14", "19", "21", "22", "152", "109", "153", "154" ],
     "comment" : {
       "undefined" : "A sensor that detects the performer's gestures"
     },
-    "id" : "14",
-    "superClasses" : [ "12" ]
+    "id" : "12",
+    "superClasses" : [ "72" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SMIElectricInstrument",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -604,10 +963,11 @@
       "IRI-based" : "SMIElectricInstrument",
       "undefined" : "SMI Electric Instrument"
     },
-    "intersection" : [ "74", "5" ],
+    "subClasses" : [ "110" ],
+    "intersection" : [ "48", "32" ],
     "attributes" : [ "intersection" ],
-    "id" : "4",
-    "superClasses" : [ "5" ]
+    "id" : "28",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#Gyroscope",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -615,8 +975,20 @@
     "label" : {
       "IRI-based" : "Gyroscope"
     },
-    "id" : "35",
-    "superClasses" : [ "14" ]
+    "id" : "21",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SMIElectroacousticIntrument",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SMIElectroacousticIntrument",
+      "undefined" : "SMI Electroacoustic Instrument"
+    },
+    "intersection" : [ "32", "68" ],
+    "attributes" : [ "intersection" ],
+    "id" : "155",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#ElectricInstrument",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -625,8 +997,9 @@
       "IRI-based" : "ElectricInstrument",
       "undefined" : "Electric Instrument"
     },
-    "id" : "74",
-    "superClasses" : [ "51" ]
+    "subClasses" : [ "168", "169", "47" ],
+    "id" : "48",
+    "superClasses" : [ "57" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SMITransform",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -635,9 +1008,9 @@
       "IRI-based" : "SMITransform",
       "en" : "SMI Transform"
     },
-    "subClasses" : [ "46", "49" ],
-    "id" : "47",
-    "superClasses" : [ "88" ]
+    "subClasses" : [ "123", "174" ],
+    "id" : "137",
+    "superClasses" : [ "138" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#MappingHandler",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -649,18 +1022,40 @@
     "comment" : {
       "undefined" : "A piece of software that handles the mapping functions from sensor values to plugin parameters"
     },
-    "id" : "89",
-    "superClasses" : [ "72" ]
+    "id" : "178",
+    "superClasses" : [ "96" ]
   }, {
-    "iri" : "http://purl.org/ontology/iomust/internet_of_things/SmartInstrument",
-    "baseIri" : "http://purl.org/ontology/iomust/internet_of_things",
+    "iri" : "http://purl.org/ontology/studio/microphone/PizoelectricMicrophone",
+    "baseIri" : "http://purl.org/ontology/studio/microphone",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SmartInstrument"
+      "IRI-based" : "PizoelectricMicrophone"
     },
-    "subClasses" : [ "4", "7", "9" ],
     "attributes" : [ "external" ],
-    "id" : "5"
+    "id" : "179"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SMIService",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SMIService"
+    },
+    "comment" : {
+      "undefined" : "A service associated to a smart musical instrument"
+    },
+    "id" : "51",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#AcousticViolin",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcousticViolin"
+    },
+    "intersection" : [ "5", "70" ],
+    "attributes" : [ "intersection" ],
+    "id" : "7",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://www.w3.org/ns/sosa/Sensor",
     "baseIri" : "http://www.w3.org/ns/sosa",
@@ -668,10 +1063,10 @@
     "label" : {
       "IRI-based" : "Sensor"
     },
-    "subClasses" : [ "11", "14" ],
+    "subClasses" : [ "180", "12" ],
     "attributes" : [ "external" ],
-    "id" : "12",
-    "superClasses" : [ "57" ]
+    "id" : "72",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#Accelerometer",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -679,8 +1074,8 @@
     "label" : {
       "IRI-based" : "Accelerometer"
     },
-    "id" : "38",
-    "superClasses" : [ "14" ]
+    "id" : "152",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://purl.org/ontology/studio/device/SoftwareDevice",
     "baseIri" : "http://purl.org/ontology/studio/device",
@@ -688,9 +1083,9 @@
     "label" : {
       "IRI-based" : "SoftwareDevice"
     },
-    "subClasses" : [ "91", "72" ],
+    "subClasses" : [ "182", "96" ],
     "attributes" : [ "external" ],
-    "id" : "90"
+    "id" : "181"
   }, {
     "iri" : "http://purl.org/ontology/studio/device/Converter",
     "baseIri" : "http://purl.org/ontology/studio/device",
@@ -699,7 +1094,7 @@
       "IRI-based" : "Converter"
     },
     "attributes" : [ "external" ],
-    "id" : "92"
+    "id" : "183"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#GestureSensorTransform",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -711,8 +1106,8 @@
     "comment" : {
       "en" : "A transformation applied by a SMI Gesture Sensor Handler to the signal observed by a sensor tracking a player's gesture"
     },
-    "id" : "49",
-    "superClasses" : [ "47" ]
+    "id" : "174",
+    "superClasses" : [ "137" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SoftwareMultitrackProject",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -721,8 +1116,17 @@
       "IRI-based" : "SoftwareMultitrackProject",
       "en" : "Software Multitrack Project"
     },
-    "id" : "91",
-    "superClasses" : [ "90" ]
+    "id" : "182",
+    "superClasses" : [ "181" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#DrumMachine",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DrumMachine"
+    },
+    "id" : "172",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#GestureInterface",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -730,8 +1134,71 @@
     "label" : {
       "IRI-based" : "GestureInterface"
     },
-    "id" : "98",
+    "id" : "193",
     "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#MappingTransform",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MappingTransform",
+      "en" : "Mapping Transform"
+    },
+    "comment" : {
+      "undefined" : "A MappingTransform is the function which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin."
+    },
+    "id" : "123",
+    "superClasses" : [ "137" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#VisualActuator",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VisualActuator"
+    },
+    "subClasses" : [ "104", "120" ],
+    "id" : "105",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#Loudspeaker",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Loudspeaker"
+    },
+    "id" : "132",
+    "superClasses" : [ "133" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/device/Device",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device"
+    },
+    "subClasses" : [ "172", "24", "176" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#HapticActuator",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HapticActuator"
+    },
+    "subClasses" : [ "62" ],
+    "id" : "63",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticSaxophone",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartElectroacousticSaxophone"
+    },
+    "intersection" : [ "31", "155" ],
+    "attributes" : [ "intersection" ],
+    "id" : "34",
+    "superClasses" : [ "31" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#GestureSensorHandler",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -743,8 +1210,19 @@
     "comment" : {
       "en" : "A piece of software which carries out observations through sensors (like a microphone or a pressure sensor). Typically an SMI sensor observer acts upon the digital values of an ADC (analogue to digital converter)."
     },
-    "id" : "54",
-    "superClasses" : [ "72" ]
+    "id" : "82",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Actuator",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actuator"
+    },
+    "subClasses" : [ "105", "63", "133" ],
+    "attributes" : [ "external" ],
+    "id" : "75",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#HapticEngine",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -756,18 +1234,19 @@
     "comment" : {
       "undefined" : "A piece of software that handles haptic processing"
     },
-    "id" : "101",
-    "superClasses" : [ "72" ]
+    "id" : "204",
+    "superClasses" : [ "96" ]
   }, {
-    "iri" : "http://www.w3.org/ns/sosa/Actuator",
-    "baseIri" : "http://www.w3.org/ns/sosa",
+    "iri" : "http://purl.org/ontology/iomust/smi#AcousticPiano",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Actuator"
+      "IRI-based" : "AcousticPiano"
     },
-    "attributes" : [ "external" ],
-    "id" : "59",
-    "superClasses" : [ "57" ]
+    "intersection" : [ "61", "70" ],
+    "attributes" : [ "intersection" ],
+    "id" : "79",
+    "superClasses" : [ "70" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#Potentiometer",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -775,8 +1254,27 @@
     "label" : {
       "IRI-based" : "Potentiometer"
     },
-    "id" : "42",
-    "superClasses" : [ "14" ]
+    "id" : "153",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#MIDIScore",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MIDIScore"
+    },
+    "id" : "160",
+    "superClasses" : [ "161" ]
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/event.owl#Event",
+    "baseIri" : "http://purl.org/NET/c4dm/event.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "160" ],
+    "attributes" : [ "external" ],
+    "id" : "161"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#PushButton",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -784,8 +1282,19 @@
     "label" : {
       "IRI-based" : "PushButton"
     },
-    "id" : "33",
-    "superClasses" : [ "14" ]
+    "id" : "19",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticViolin",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartElectroacousticViolin"
+    },
+    "intersection" : [ "90", "155" ],
+    "attributes" : [ "intersection" ],
+    "id" : "226",
+    "superClasses" : [ "90" ]
   }, {
     "iri" : "https://w3id.org/aufx/ontology/1.0#VST",
     "baseIri" : "https://w3id.org/aufx/ontology/1.0",
@@ -793,21 +1302,9 @@
     "label" : {
       "IRI-based" : "VST"
     },
-    "subClasses" : [ "131", "132" ],
+    "subClasses" : [ "166", "142" ],
     "attributes" : [ "external" ],
-    "id" : "130"
-  }, {
-    "iri" : "http://purl.org/ontology/iomust/smi#Microphone_Transducer",
-    "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Microphone_Transducer"
-    },
-    "comment" : {
-      "undefined" : "The sensor embedded in a microphone"
-    },
-    "id" : "29",
-    "superClasses" : [ "11" ]
+    "id" : "143"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#DistanceSensor",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -815,8 +1312,8 @@
     "label" : {
       "IRI-based" : "DistanceSensor"
     },
-    "id" : "61",
-    "superClasses" : [ "14" ]
+    "id" : "11",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#VisualDeliverySystem",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -824,11 +1321,21 @@
     "label" : {
       "IRI-based" : "VisualDeliverySystem"
     },
-    "id" : "109",
-    "superClasses" : [ "2" ]
+    "id" : "229",
+    "superClasses" : [ "1", "2" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartGuitar",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartGuitar"
+    },
+    "subClasses" : [ "145", "147", "97" ],
+    "id" : "98",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "http://purl.org/ontology/studio/device/Plugin",
-    "equivalent" : [ "81" ],
+    "equivalent" : [ "150" ],
     "baseIri" : "http://purl.org/ontology/studio/device",
     "instances" : 0,
     "label" : {
@@ -836,7 +1343,16 @@
       "undefined" : "Plugin"
     },
     "attributes" : [ "equivalent", "external" ],
-    "id" : "82"
+    "id" : "151"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#Sampler",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sampler"
+    },
+    "id" : "176",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#HapticDeliverySystem",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -844,8 +1360,40 @@
     "label" : {
       "IRI-based" : "HapticDeliverySystem"
     },
-    "id" : "20",
-    "superClasses" : [ "2" ]
+    "id" : "248",
+    "superClasses" : [ "1", "2" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#ElectroacousticInstrument",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectroacousticInstrument",
+      "undefined" : "Electroacoustic Instrument"
+    },
+    "subClasses" : [ "124", "127", "130" ],
+    "id" : "68",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#ElectricPiano",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectricPiano"
+    },
+    "intersection" : [ "48", "61" ],
+    "attributes" : [ "intersection" ],
+    "id" : "168",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#AudioActuator",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AudioActuator"
+    },
+    "subClasses" : [ "132", "135" ],
+    "id" : "133",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SoundEngine",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -857,8 +1405,19 @@
     "comment" : {
       "undefined" : "A piece of software that handles audio processing"
     },
-    "id" : "77",
-    "superClasses" : [ "72" ]
+    "id" : "116",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartElectroacousticGuitar"
+    },
+    "intersection" : [ "98", "155" ],
+    "attributes" : [ "intersection" ],
+    "id" : "145",
+    "superClasses" : [ "98" ]
   }, {
     "iri" : "http://purl.org/ontology/studio/main/Transform",
     "baseIri" : "http://purl.org/ontology/studio/main",
@@ -866,9 +1425,9 @@
     "label" : {
       "IRI-based" : "Transform"
     },
-    "subClasses" : [ "47" ],
+    "subClasses" : [ "137" ],
     "attributes" : [ "external" ],
-    "id" : "88"
+    "id" : "138"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#VST2",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -877,18 +1436,8 @@
       "IRI-based" : "VST2",
       "en" : "VST 2"
     },
-    "id" : "131",
-    "superClasses" : [ "130" ]
-  }, {
-    "iri" : "http://purl.org/ontology/iomust/smiChannel",
-    "baseIri" : "http://purl.org/ontology/iomust",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "smiChannel"
-    },
-    "subClasses" : [ "165" ],
-    "attributes" : [ "external" ],
-    "id" : "164"
+    "id" : "166",
+    "superClasses" : [ "143" ]
   }, {
     "iri" : "http://purl.org/ontology/studio/sigproc/DAC",
     "baseIri" : "http://purl.org/ontology/studio/sigproc",
@@ -896,9 +1445,9 @@
     "label" : {
       "IRI-based" : "DAC"
     },
-    "subClasses" : [ "148", "149" ],
+    "subClasses" : [ "140", "112" ],
     "attributes" : [ "external" ],
-    "id" : "168"
+    "id" : "113"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#VST3",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -907,8 +1456,19 @@
       "IRI-based" : "VST3",
       "en" : "VST 3"
     },
-    "id" : "132",
-    "superClasses" : [ "130" ]
+    "id" : "142",
+    "superClasses" : [ "143" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#ElectricViolin",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectricViolin"
+    },
+    "intersection" : [ "48", "5" ],
+    "attributes" : [ "intersection" ],
+    "id" : "9",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://purl.org/ontology/studio/microphone/Microphone",
     "baseIri" : "http://purl.org/ontology/studio/microphone",
@@ -917,20 +1477,20 @@
       "IRI-based" : "Microphone"
     },
     "attributes" : [ "external" ],
-    "id" : "84"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "176",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "292"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "177",
+    "id" : "295",
     "label" : {
       "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "296",
+    "label" : {
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#PressureSensor",
@@ -939,30 +1499,39 @@
     "label" : {
       "IRI-based" : "PressureSensor"
     },
-    "id" : "63",
-    "superClasses" : [ "14" ]
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "127",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+    "id" : "14",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "117",
+    "id" : "209",
     "label" : {
       "IRI-based" : "integer"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "178",
+    "id" : "297",
     "label" : {
       "IRI-based" : "string"
     }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "298",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument",
+    "baseIri" : "http://purl.org/ontology/iomust/internet_of_things/iomust",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartInstrument"
+    },
+    "subClasses" : [ "31", "90", "28", "27", "98", "155", "91" ],
+    "attributes" : [ "external" ],
+    "id" : "32"
   }, {
     "iri" : "https://w3id.org/aufx/ontology/1.0#Parameter",
     "baseIri" : "https://w3id.org/aufx/ontology/1.0",
@@ -971,7 +1540,17 @@
       "IRI-based" : "Parameter"
     },
     "attributes" : [ "external" ],
-    "id" : "179"
+    "id" : "299"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartViolin",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartViolin"
+    },
+    "subClasses" : [ "89", "226" ],
+    "id" : "90",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#RE",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -982,46 +1561,35 @@
     "comment" : {
       "en" : "Rack Extensions for a plugin API (by Propellerheads)"
     },
-    "id" : "25",
-    "superClasses" : [ "24" ]
+    "id" : "30",
+    "superClasses" : [ "29" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "180",
-    "label" : {
-      "IRI-based" : "float"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "87",
+    "id" : "164",
     "label" : {
       "IRI-based" : "float"
     }
   }, {
     "instances" : 0,
-    "union" : [ "72", "2" ],
+    "union" : [ "82", "116", "204", "183" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "105"
+    "id" : "163"
   }, {
     "instances" : 0,
-    "union" : [ "54", "77", "101", "92" ],
+    "union" : [ "82", "116", "95", "204" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "86"
+    "id" : "225"
   }, {
     "instances" : 0,
-    "union" : [ "54", "77", "71", "101" ],
+    "union" : [ "96", "2" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "129"
+    "id" : "251"
   }, {
-    "iri" : "http://purl.org/ontology/iomust/smi#multichannel",
-    "baseIri" : "http://purl.org/ontology/iomust/smi",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "multichannel"
-    },
-    "id" : "165",
-    "superClasses" : [ "164" ]
+    "union" : [ "96", "2" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "101"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#VirtualRealityMusicalInstrument",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -1030,8 +1598,19 @@
       "IRI-based" : "VirtualRealityMusicalInstrument",
       "undefined" : "Virtual Reality Musical Instrument"
     },
-    "id" : "64",
-    "superClasses" : [ "51" ]
+    "id" : "87",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectricSaxophone",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartElectricSaxophone"
+    },
+    "intersection" : [ "31", "28" ],
+    "attributes" : [ "intersection" ],
+    "id" : "33",
+    "superClasses" : [ "31" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#RibbonSensor",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -1039,8 +1618,19 @@
     "label" : {
       "IRI-based" : "RibbonSensor"
     },
-    "id" : "44",
-    "superClasses" : [ "14" ]
+    "id" : "154",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticPiano",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartElectroacousticPiano"
+    },
+    "intersection" : [ "27", "155" ],
+    "attributes" : [ "intersection" ],
+    "id" : "37",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#AudioTrackingSensor",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -1048,12 +1638,33 @@
     "label" : {
       "IRI-based" : "AudioTrackingSensor"
     },
-    "subClasses" : [ "29" ],
     "comment" : {
       "undefined" : "A sensor that detects audio signals"
     },
-    "id" : "11",
-    "superClasses" : [ "12" ]
+    "id" : "180",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#ElectroacousticGuitar",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectroacousticGuitar"
+    },
+    "intersection" : [ "49", "68" ],
+    "attributes" : [ "intersection" ],
+    "id" : "127",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#ElectricSaxophone",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectricSaxophone"
+    },
+    "intersection" : [ "48", "66" ],
+    "attributes" : [ "intersection" ],
+    "id" : "169",
+    "superClasses" : [ "48" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#DACaudio",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -1064,8 +1675,8 @@
     "comment" : {
       "undefined" : "Digital to Analog converter for audio signals"
     },
-    "id" : "149",
-    "superClasses" : [ "168" ]
+    "id" : "112",
+    "superClasses" : [ "113" ]
   }, {
     "iri" : "http://www.w3.org/ns/sosa/Platform",
     "baseIri" : "http://www.w3.org/ns/sosa",
@@ -1073,7 +1684,7 @@
     "label" : {
       "IRI-based" : "Platform"
     },
-    "subClasses" : [ "0" ],
+    "subClasses" : [ "0", "248", "121", "15", "229", "2" ],
     "attributes" : [ "external" ],
     "id" : "1"
   }, {
@@ -1084,20 +1695,76 @@
       "IRI-based" : "Signal"
     },
     "attributes" : [ "external" ],
-    "id" : "116"
+    "id" : "208"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SMIHardwareDevice",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SMIHardwareDevice"
+      "IRI-based" : "SMIHardwareDevice",
+      "undefined" : "SMI Hardware Device"
     },
-    "subClasses" : [ "0", "20", "23", "98", "15", "109" ],
+    "subClasses" : [ "0", "248", "121", "193", "15", "229" ],
     "comment" : {
-      "undefined" : "Any hardware components of a smart instrument"
+      "undefined" : "Any hardware components of a smart musical instrument"
     },
     "id" : "2",
-    "superClasses" : [ "57" ]
+    "superClasses" : [ "1", "73" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectricGuitar",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartElectricGuitar"
+    },
+    "intersection" : [ "28", "98" ],
+    "attributes" : [ "intersection" ],
+    "id" : "147",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SMIApplication",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SMIApplication"
+    },
+    "comment" : {
+      "undefined" : "An application associated to a smart musical instrument"
+    },
+    "id" : "221",
+    "superClasses" : [ "246" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#VibrationSpeaker",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VibrationSpeaker"
+    },
+    "id" : "135",
+    "superClasses" : [ "133" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "241",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/studio/multitrack#MidiTrack",
+    "baseIri" : "http://purl.org/ontology/studio/multitrack",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MidiTrack"
+    },
+    "attributes" : [ "external" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "39",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#ADCaudio",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -1109,14 +1776,37 @@
     "comment" : {
       "undefined" : "Audio to Digital converter for audio signals"
     },
-    "id" : "30",
-    "superClasses" : [ "27" ]
+    "id" : "53",
+    "superClasses" : [ "46" ]
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "143",
+    "iri" : "http://purl.org/ontology/iomust/smi#Guitar",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
     "label" : {
-      "undefined" : "Thing"
+      "IRI-based" : "Guitar"
+    },
+    "id" : "49",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "197",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "float"
     }
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#DACactuator",
@@ -1128,8 +1818,29 @@
     "comment" : {
       "undefined" : "Digital to Analog converter for haptic signals"
     },
-    "id" : "148",
-    "superClasses" : [ "168" ]
+    "id" : "140",
+    "superClasses" : [ "113" ]
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#ElectroacousticSaxophone",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectroacousticSaxophone"
+    },
+    "intersection" : [ "66", "68" ],
+    "attributes" : [ "intersection" ],
+    "id" : "130",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/device/Application",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Application"
+    },
+    "subClasses" : [ "221" ],
+    "attributes" : [ "external" ],
+    "id" : "246"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SMISoftwareDevice",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -1138,44 +1849,45 @@
       "IRI-based" : "SMISoftwareDevice",
       "undefined" : "SMI Software Device"
     },
-    "subClasses" : [ "54", "77", "89", "71", "101" ],
+    "subClasses" : [ "82", "116", "178", "95", "204" ],
     "comment" : {
       "en" : "Any software component of a smart musical instrument"
     },
-    "id" : "72",
-    "superClasses" : [ "90" ]
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "133",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "id" : "96",
+    "superClasses" : [ "181" ]
   }, {
     "instances" : 0,
-    "union" : [ "77", "101" ],
+    "union" : [ "116", "204" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "69"
+    "id" : "93"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "55",
+    "id" : "222",
     "label" : {
-      "IRI-based" : "float"
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "219",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "103",
+    "id" : "83",
     "label" : {
       "IRI-based" : "float"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "70",
+    "id" : "281",
     "label" : {
-      "IRI-based" : "float"
+      "IRI-based" : "string"
     }
   } ],
   "property" : [ {
@@ -1197,323 +1909,200 @@
     "id" : "18",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
+    "id" : "23",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "28",
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "31",
+    "id" : "54",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "32",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "34",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "36",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "37",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "39",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "41",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "43",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "45",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "48",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "53",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "56",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "58",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "60",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "62",
+    "id" : "64",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "65",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "68",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "76",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "79",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "83",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "85",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "93",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "94",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "95",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "96",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "97",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "99",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "100",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "102",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "104",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "106",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "107",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "108",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "110",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "112",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "113",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "114",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "115",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "118",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "119",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "120",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "121",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "122",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "123",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "124",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "125",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "126",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "128",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "134",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "135",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "136",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "137",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "138",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "139",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "140",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "141",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "142",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "144",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "145",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "146",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "147",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "150",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "151",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "152",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "153",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "154",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "155",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "156",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "157",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "158",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "159",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "160",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "161",
-    "type" : "owl:disjointWith"
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "162",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "163",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "166",
-    "type" : "owl:disjointWith"
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "167",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "169",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "170",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "171",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "172",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "173",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "174",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "175",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "181",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "182",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "183",
-    "type" : "owl:disjointWith"
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "184",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "185",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "186",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "187",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "188",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "189",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "190",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "191",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "192",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "193",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "194",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "195",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "196",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "197",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "198",
     "type" : "rdfs:SubClassOf"
@@ -1525,15 +2114,9 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "201",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "202",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "203",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "204",
     "type" : "owl:disjointWith"
   }, {
     "id" : "205",
@@ -1543,13 +2126,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "207",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "208",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "209",
-    "type" : "owl:disjointWith"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "210",
     "type" : "owl:disjointWith"
@@ -1561,462 +2138,1010 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "213",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "214",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "215",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "216",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "217",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "218",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "219",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "220",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "221",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "222",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "223",
+    "id" : "220",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "224",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "230",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "234",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "236",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "238",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "239",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "240",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "242",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "243",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "244",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "245",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "249",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "250",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "252",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "253",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "254",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "256",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "257",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "258",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "260",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "264",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "265",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "267",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "269",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "270",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "271",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "272",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "273",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "275",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "276",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "282",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "283",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "284",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "286",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "288",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "289",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "290",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "291",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "293",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "294",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "300",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "301",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "302",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "303",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "304",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "305",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "306",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "307",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "308",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "309",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "310",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "311",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "312",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "313",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "314",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "315",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "316",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "317",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "318",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "319",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "320",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "321",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "322",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "323",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "324",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "325",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "326",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "327",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "328",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "329",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "330",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "331",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "332",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "333",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "334",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "335",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "336",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "339",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "range" : "5",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "6"
   }, {
     "range" : "5",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "8"
   }, {
     "range" : "12",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "10"
   }, {
     "range" : "12",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "13"
   }, {
-    "range" : "2",
-    "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "12",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
-    "range" : "2",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "19"
-  }, {
-    "range" : "2",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "22"
-  }, {
-    "range" : "11",
-    "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "28"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "31"
-  }, {
-    "range" : "14",
-    "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "32"
-  }, {
-    "range" : "14",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "34"
-  }, {
-    "range" : "14",
+    "range" : "12",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "36"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
   }, {
-    "range" : "14",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "37"
+    "range" : "12",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
   }, {
-    "range" : "14",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "39"
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "39",
+    "subproperty" : [ "40", "41", "42", "43" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "38"
   }, {
-    "range" : "14",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "41"
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
   }, {
-    "range" : "14",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "43"
+    "range" : "5",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
   }, {
-    "range" : "47",
-    "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "45"
-  }, {
-    "range" : "47",
+    "range" : "57",
     "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "48"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#smi_service",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "smi_service"
+    },
+    "superproperty" : [ "59" ],
+    "domain" : "32",
+    "comment" : {
+      "undefined" : "Relates a smart musica instrument to a service it provides"
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "range" : "57",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "57",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "57",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "57",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "57",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "73",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "73",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "73",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#threshold",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "55",
+    "range" : "83",
     "label" : {
       "IRI-based" : "threshold",
       "undefined" : "threshold"
     },
-    "domain" : "54",
+    "domain" : "82",
     "attributes" : [ "datatype" ],
-    "id" : "53"
+    "id" : "81"
+  }, {
+    "range" : "70",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "70",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
   }, {
     "range" : "57",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
   }, {
     "range" : "57",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
-  }, {
-    "range" : "14",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
-  }, {
-    "range" : "14",
-    "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "62"
-  }, {
-    "iri" : "http://purl.org/ontology/iomust/smi#component_platform",
-    "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "component_platform"
-    },
-    "superproperty" : [ "67" ],
-    "domain" : "66",
-    "attributes" : [ "object" ],
-    "id" : "65"
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#works_at_audio_sampling_rate",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "70",
+    "range" : "94",
     "label" : {
       "IRI-based" : "works_at_audio_sampling_rate",
       "en" : "works at audio sampling rate"
     },
-    "domain" : "69",
+    "domain" : "93",
     "attributes" : [ "datatype" ],
-    "id" : "68"
+    "id" : "92"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#smi_component",
+    "inverse" : "102",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "smi_component"
+    },
+    "superproperty" : [ "103" ],
+    "domain" : "32",
+    "comment" : {
+      "undefined" : "Associates a software or hardware device to a smart musical instrument"
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "107"
+  }, {
+    "range" : "113",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "32",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SMIhosts",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "78",
+    "range" : "117",
     "label" : {
       "IRI-based" : "SMIhosts",
       "en" : "SMI hosts"
     },
-    "domain" : "77",
+    "domain" : "116",
     "attributes" : [ "object" ],
-    "id" : "76"
+    "id" : "115"
+  }, {
+    "range" : "32",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "32",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#mapping_function",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "46",
+    "range" : "123",
     "label" : {
       "IRI-based" : "mapping_function"
     },
-    "domain" : "14",
+    "domain" : "12",
     "comment" : {
       "en" : "This predicate associates a sensor tracking a gesture to a Mapping Transform, i.e., the mapping function from sensor signal to a plugin feedback parameter"
     },
     "attributes" : [ "object" ],
-    "id" : "79"
+    "id" : "122"
   }, {
-    "iri" : "http://purl.org/ontology/iomust/smi#component_mic",
-    "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "84",
+    "iri" : "http://purl.org/ontology/studio/device/component_of",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "range" : "39",
     "label" : {
-      "IRI-based" : "component_mic"
+      "IRI-based" : "component_of"
     },
-    "superproperty" : [ "67" ],
-    "domain" : "29",
-    "attributes" : [ "object" ],
-    "id" : "83"
+    "domain" : "39",
+    "subproperty" : [ "102" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "125"
+  }, {
+    "range" : "68",
+    "domain" : "127",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "68",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "133",
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "133",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "138",
+    "domain" : "137",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "113",
+    "domain" : "140",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "143",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "98",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "98",
+    "domain" : "147",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "98",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "68",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "75",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "75",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "75",
+    "domain" : "133",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "161",
+    "domain" : "160",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#converter_sample_rate",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "87",
+    "range" : "164",
     "label" : {
       "IRI-based" : "converter_sample_rate",
       "undefined" : "converter sample rate"
     },
-    "domain" : "86",
+    "domain" : "163",
     "attributes" : [ "datatype" ],
-    "id" : "85"
+    "id" : "162"
   }, {
-    "range" : "90",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "93"
+    "range" : "143",
+    "domain" : "166",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
   }, {
-    "range" : "90",
-    "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "94"
+    "range" : "105",
+    "domain" : "104",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "105",
+    "domain" : "120",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "25",
+    "domain" : "172",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "25",
+    "domain" : "176",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "63",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
   }, {
     "range" : "72",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "95"
+    "domain" : "180",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
   }, {
     "range" : "72",
-    "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "96"
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
   }, {
-    "range" : "72",
-    "domain" : "89",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "97"
+    "range" : "181",
+    "domain" : "182",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
   }, {
-    "range" : "72",
-    "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "99"
+    "range" : "181",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
   }, {
-    "range" : "72",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "100"
+    "range" : "12",
+    "domain" : "154",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "28",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "48",
+    "domain" : "168",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "48",
+    "domain" : "169",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "48",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "137",
+    "domain" : "123",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "137",
+    "domain" : "174",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#works_at_sensor_sampling_rate",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "103",
+    "range" : "197",
     "label" : {
       "IRI-based" : "works_at_sensor_sampling_rate",
       "en" : "works at sensor sampling rate"
     },
-    "domain" : "54",
+    "domain" : "82",
     "attributes" : [ "datatype" ],
-    "id" : "102"
+    "id" : "196"
   }, {
-    "iri" : "http://purl.org/ontology/iomust/smi#SMIcomponent",
-    "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "SMIcomponent"
-    },
-    "superproperty" : [ "67" ],
-    "domain" : "105",
-    "attributes" : [ "object" ],
-    "id" : "104"
+    "range" : "12",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
   }, {
-    "range" : "2",
-    "domain" : "98",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "106"
-  }, {
-    "range" : "2",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "107"
-  }, {
-    "range" : "2",
+    "range" : "12",
     "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "108"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "12",
+    "domain" : "153",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#mapping_implementation",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "89",
+    "range" : "178",
     "label" : {
       "IRI-based" : "mapping_implementation",
       "undefined" : "mapping implementation"
     },
-    "superproperty" : [ "111" ],
-    "domain" : "46",
+    "superproperty" : [ "202" ],
+    "domain" : "123",
     "comment" : {
       "undefined" : "A SMI's MappingTransform is implemented by a SMI's MappingHandler. Following the convention of the Audio Effects Ontology, a Mapping Handler is a software component of a SMI, while a Mapping Transform is the method which transforms a signal which results from an Observation of a Sensor into a parameter of a plugin."
     },
     "attributes" : [ "object" ],
-    "id" : "110"
+    "id" : "201"
   }, {
-    "range" : "44",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "112"
+    "range" : "154",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
   }, {
-    "range" : "33",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "113"
+    "range" : "19",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
   }, {
-    "range" : "63",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "114"
+    "range" : "14",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#midi_port",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "117",
+    "range" : "209",
     "label" : {
       "IRI-based" : "midi_port",
       "undefined" : "midi port"
     },
-    "domain" : "116",
+    "domain" : "208",
     "attributes" : [ "datatype" ],
-    "id" : "115"
+    "id" : "207"
   }, {
-    "range" : "33",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "118"
+    "range" : "19",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
   }, {
-    "range" : "63",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "119"
+    "range" : "14",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
   }, {
-    "range" : "42",
+    "range" : "153",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "154",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "154",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "120"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
   }, {
-    "range" : "44",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "121"
+    "range" : "19",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
   }, {
-    "range" : "44",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "122"
+    "range" : "153",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
   }, {
-    "range" : "33",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "123"
-  }, {
-    "range" : "42",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "124"
-  }, {
-    "range" : "21",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "125"
+    "range" : "22",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#name_plugin",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "127",
+    "range" : "219",
     "label" : {
       "IRI-based" : "name_plugin",
       "en" : "name_plugin"
     },
-    "domain" : "81",
+    "domain" : "150",
     "attributes" : [ "datatype" ],
-    "id" : "126"
+    "id" : "218"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#smi_application_purpose",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "222",
+    "label" : {
+      "IRI-based" : "smi_application_purpose"
+    },
+    "domain" : "221",
+    "attributes" : [ "datatype" ],
+    "id" : "220"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#midi_score",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "160",
+    "label" : {
+      "IRI-based" : "midi_score"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "223",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.org/ontology/studio/device/service",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "service"
+    },
+    "domain" : "39",
+    "subproperty" : [ "58" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "59"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#executes",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "129",
+    "range" : "225",
     "label" : {
       "IRI-based" : "executes",
       "undefined" : "executes"
     },
     "domain" : "0",
     "attributes" : [ "object" ],
-    "id" : "128"
+    "id" : "224"
   }, {
     "iri" : "http://purl.org/ontology/studio/device/component",
     "baseIri" : "http://purl.org/ontology/studio/device",
-    "range" : "133",
+    "range" : "39",
     "label" : {
       "IRI-based" : "component"
     },
-    "domain" : "133",
-    "subproperty" : [ "65", "83", "104" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "67"
+    "domain" : "39",
+    "subproperty" : [ "100" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "103"
   }, {
-    "range" : "42",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "134"
+    "range" : "153",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
   }, {
-    "range" : "21",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "135"
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
   }, {
-    "range" : "63",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "136"
+    "range" : "14",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
   }, {
-    "range" : "33",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "137"
+    "range" : "96",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "231"
   }, {
-    "range" : "63",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "138"
+    "range" : "19",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "232"
   }, {
-    "range" : "40",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "139"
+    "range" : "96",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
   }, {
-    "range" : "44",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "140"
+    "range" : "14",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "234"
   }, {
-    "range" : "40",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "141"
+    "range" : "96",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "235"
+  }, {
+    "range" : "109",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "236"
+  }, {
+    "range" : "96",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "237"
+  }, {
+    "range" : "154",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "238"
+  }, {
+    "range" : "109",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "239"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/hasResult",
     "baseIri" : "http://www.w3.org/ns/sosa",
-    "range" : "116",
+    "range" : "208",
     "annotations" : {
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
@@ -2028,432 +3153,586 @@
     "label" : {
       "IRI-based" : "hasResult"
     },
-    "domain" : "143",
+    "domain" : "241",
     "comment" : {
       "undefined" : "We added Signal as a possible result of the SOSA \"hasResult\" object property. This is done to align the SOSA with the MusicOntology: this way we link the result of an Observation produced by a sensor to a Signal."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "142"
+    "attributes" : [ "object", "external" ],
+    "id" : "240"
   }, {
-    "range" : "42",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "144"
+    "range" : "153",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
   }, {
-    "range" : "21",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "145"
+    "range" : "22",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "243"
   }, {
-    "range" : "109",
+    "range" : "229",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "146"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
   }, {
-    "range" : "149",
-    "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "147"
+    "range" : "246",
+    "domain" : "221",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "245"
   }, {
-    "range" : "109",
+    "range" : "96",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "112",
+    "domain" : "140",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "range" : "229",
     "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "150"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "250"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#smi_component_of",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "smi_component_of"
+    },
+    "superproperty" : [ "125" ],
+    "domain" : "251",
+    "comment" : {
+      "undefined" : "Inverse property of smi_component"
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#processes_sensor_signal",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "116",
+    "range" : "208",
     "label" : {
       "IRI-based" : "processes_sensor_signal",
       "en" : "processes sensor signal"
     },
-    "domain" : "54",
+    "domain" : "82",
     "comment" : {
       "undefined" : "Both the SMI Audio Input Handler and the SMI Gesture Sensor Handler process the (simple) results of an Observation"
     },
     "attributes" : [ "object" ],
-    "id" : "151"
+    "id" : "252"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#sensor_handler_implementation",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "54",
+    "range" : "82",
     "label" : {
       "IRI-based" : "sensor_handler_implementation",
       "en" : "sensor handler implementation"
     },
-    "superproperty" : [ "111" ],
-    "domain" : "49",
+    "superproperty" : [ "202" ],
+    "domain" : "174",
     "comment" : {
       "en" : "This object property is used to express the relation betweem a GestureSensorHandler with a GestureSensorTransform"
     },
     "attributes" : [ "object" ],
-    "id" : "152"
+    "id" : "253"
   }, {
     "range" : "15",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "153"
+    "domain" : "248",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "254"
+  }, {
+    "range" : "1",
+    "domain" : "229",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
   }, {
     "range" : "0",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "154"
+    "domain" : "248",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "256"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "257"
   }, {
     "range" : "15",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "155"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "258"
   }, {
-    "range" : "109",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "156"
+    "range" : "2",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "259"
+  }, {
+    "range" : "229",
+    "domain" : "248",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "260"
+  }, {
+    "range" : "2",
+    "domain" : "248",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "261"
   }, {
     "range" : "0",
-    "domain" : "98",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "157"
+    "domain" : "193",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "range" : "2",
+    "domain" : "121",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "263"
   }, {
     "iri" : "https://w3id.org/aufx/ontology/1.0#implementation",
     "baseIri" : "https://w3id.org/aufx/ontology/1.0",
-    "range" : "133",
+    "range" : "39",
     "label" : {
       "IRI-based" : "implementation"
     },
-    "superproperty" : [ "111" ],
-    "domain" : "133",
-    "attributes" : [ "external", "object" ],
-    "id" : "158"
+    "superproperty" : [ "202" ],
+    "domain" : "39",
+    "attributes" : [ "object", "external" ],
+    "id" : "264"
   }, {
-    "range" : "20",
-    "domain" : "98",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "159"
+    "range" : "248",
+    "domain" : "193",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "265"
   }, {
-    "range" : "109",
-    "domain" : "98",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "160"
+    "range" : "2",
+    "domain" : "193",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "266"
+  }, {
+    "range" : "229",
+    "domain" : "193",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "267"
+  }, {
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
   }, {
     "range" : "15",
-    "domain" : "98",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "161"
+    "domain" : "193",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "269"
+  }, {
+    "range" : "2",
+    "domain" : "229",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "270"
+  }, {
+    "range" : "1",
+    "domain" : "248",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "271"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#implementation",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "80",
+    "range" : "128",
     "label" : {
       "IRI-based" : "implementation"
     },
-    "domain" : "88",
-    "subproperty" : [ "110", "152", "158" ],
+    "domain" : "138",
+    "subproperty" : [ "201", "253", "264" ],
     "attributes" : [ "object" ],
-    "id" : "111"
+    "id" : "202"
   }, {
-    "range" : "109",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "162"
+    "range" : "1",
+    "domain" : "121",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "272"
+  }, {
+    "range" : "229",
+    "domain" : "121",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "273"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "274"
   }, {
     "range" : "15",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "163"
+    "domain" : "121",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "275"
   }, {
     "range" : "0",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "166"
+    "domain" : "121",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
   }, {
-    "range" : "44",
-    "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "167"
+    "range" : "154",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "277"
   }, {
-    "range" : "44",
-    "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "169"
+    "range" : "154",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
   }, {
-    "range" : "20",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "170"
+    "range" : "32",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "279"
   }, {
-    "range" : "98",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "171"
+    "iri" : "http://purl.org/ontology/iomust/smi#smi_service_purpose",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "281",
+    "label" : {
+      "IRI-based" : "smi_service_purpose"
+    },
+    "domain" : "51",
+    "attributes" : [ "datatype" ],
+    "id" : "280"
   }, {
-    "range" : "33",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "172"
+    "range" : "248",
+    "domain" : "121",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "282"
   }, {
-    "range" : "63",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "173"
+    "range" : "32",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "283"
   }, {
-    "range" : "33",
-    "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "174"
+    "range" : "193",
+    "domain" : "121",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "284"
   }, {
-    "range" : "44",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "175"
+    "range" : "32",
+    "domain" : "155",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
   }, {
-    "range" : "132",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "181"
+    "range" : "19",
+    "domain" : "153",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "286"
   }, {
-    "range" : "71",
+    "range" : "32",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "287"
+  }, {
+    "range" : "14",
+    "domain" : "153",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "288"
+  }, {
+    "range" : "90",
     "domain" : "89",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "182"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "289"
   }, {
-    "range" : "77",
-    "domain" : "89",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "183"
+    "iri" : "http://purl.org/ontology/iomust/smi#in_channel",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "in_channel"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "150",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "19",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "290"
+  }, {
+    "range" : "90",
+    "domain" : "226",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "291"
+  }, {
+    "range" : "154",
+    "domain" : "153",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "293"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "294"
+  }, {
+    "range" : "142",
+    "domain" : "166",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "300"
+  }, {
+    "range" : "95",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "301"
+  }, {
+    "range" : "116",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "302"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#mapping_function_parameter",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "177",
+    "range" : "295",
     "label" : {
       "IRI-based" : "mapping_function_parameter",
       "undefined" : "mapping function parameter"
     },
-    "domain" : "46",
+    "domain" : "123",
     "comment" : {
       "undefined" : "A parameter of the mapping function (e.g., the exponential coefficient of an exponential function)"
     },
     "attributes" : [ "datatype" ],
-    "id" : "184"
+    "id" : "303"
   }, {
-    "range" : "46",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "185"
+    "range" : "123",
+    "domain" : "174",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "304"
   }, {
-    "range" : "71",
-    "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "186"
+    "range" : "95",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "305"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#mapping_function_type",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "176",
+    "range" : "297",
     "label" : {
       "IRI-based" : "mapping_function_type",
       "undefined" : "mapping function type"
     },
-    "domain" : "46",
+    "domain" : "123",
     "comment" : {
       "undefined" : "A mathematical function that can be e.g., linear, exponential, logarithmic"
     },
     "attributes" : [ "datatype" ],
-    "id" : "187"
+    "id" : "306"
   }, {
-    "range" : "77",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "188"
+    "range" : "116",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "307"
   }, {
-    "range" : "89",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "189"
+    "range" : "178",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "308"
   }, {
-    "range" : "71",
-    "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "190"
+    "iri" : "http://purl.org/ontology/iomust/smi#plugin_type",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "plugin_type"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "150",
+    "comment" : {
+      "undefined" : "Associates an audio plugin to a plugin category (e.g., audio effect, synthesizer, sampler, drum machine)"
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
   }, {
-    "range" : "89",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "191"
+    "range" : "95",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "309"
   }, {
-    "range" : "101",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "192"
+    "range" : "178",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "310"
   }, {
-    "range" : "71",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "193"
+    "range" : "204",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "311"
+  }, {
+    "range" : "95",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "312"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#maps",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "179",
+    "range" : "299",
     "label" : {
       "IRI-based" : "maps"
     },
-    "domain" : "46",
+    "domain" : "123",
     "attributes" : [ "object" ],
-    "id" : "194"
+    "id" : "313"
   }, {
-    "range" : "77",
-    "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "195"
+    "range" : "116",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "314"
   }, {
-    "range" : "168",
-    "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "196"
-  }, {
-    "range" : "51",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "197"
-  }, {
-    "range" : "57",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "198"
-  }, {
-    "range" : "168",
-    "domain" : "149",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "199"
-  }, {
-    "range" : "51",
-    "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "200"
-  }, {
-    "range" : "51",
-    "domain" : "75",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "201"
-  }, {
-    "range" : "51",
-    "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "202"
-  }, {
-    "range" : "35",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "203"
-  }, {
-    "range" : "40",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "204"
-  }, {
-    "range" : "21",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "205"
-  }, {
-    "range" : "42",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "206"
-  }, {
-    "range" : "63",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "207"
-  }, {
-    "range" : "33",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "208"
-  }, {
-    "range" : "44",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "209"
-  }, {
-    "range" : "35",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "210"
-  }, {
-    "range" : "26",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "211"
-  }, {
-    "range" : "61",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "212"
-  }, {
-    "range" : "130",
-    "domain" : "132",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "213"
-  }, {
-    "range" : "130",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "214"
-  }, {
-    "range" : "164",
-    "domain" : "165",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "215"
-  }, {
-    "range" : "88",
-    "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "216"
-  }, {
-    "range" : "24",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "217"
-  }, {
-    "range" : "15",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "218"
+    "range" : "46",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "315"
   }, {
     "range" : "27",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "219"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "316"
+  }, {
+    "range" : "70",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "317"
+  }, {
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "318"
+  }, {
+    "range" : "31",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "319"
   }, {
     "range" : "27",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "320"
+  }, {
+    "range" : "27",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "321"
+  }, {
+    "range" : "21",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "322"
+  }, {
+    "range" : "109",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "323"
+  }, {
+    "range" : "22",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "324"
+  }, {
+    "range" : "153",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "325"
+  }, {
+    "range" : "14",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "326"
+  }, {
+    "range" : "19",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "327"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#hosts_plugin",
+    "inverse" : "43",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "150",
+    "label" : {
+      "IRI-based" : "hosts_plugin"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "range" : "154",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "328"
+  }, {
+    "range" : "21",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "329"
+  }, {
+    "range" : "45",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "330"
+  }, {
+    "range" : "11",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "331"
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#smi_application",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
+    "range" : "221",
+    "label" : {
+      "IRI-based" : "smi_application"
+    },
+    "domain" : "32",
+    "comment" : {
+      "undefined" : "Relates a smart musica instrument to an application"
+    },
+    "attributes" : [ "object" ],
+    "id" : "332"
+  }, {
+    "range" : "29",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "220"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "333"
+  }, {
+    "range" : "15",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "334"
+  }, {
+    "range" : "31",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "335"
+  }, {
+    "range" : "31",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "336"
   }, {
     "range" : "15",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "221"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "337"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#cutoff_frequency",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "180",
+    "range" : "298",
     "label" : {
       "IRI-based" : "cutoff_frequency",
       "undefined" : "cutoff frequency"
     },
-    "domain" : "73",
+    "domain" : "106",
     "attributes" : [ "datatype" ],
-    "id" : "222"
+    "id" : "338"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#filter_type",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "range" : "178",
+    "range" : "296",
     "label" : {
       "IRI-based" : "filter_type",
       "undefined" : "filter type"
     },
-    "domain" : "73",
+    "domain" : "106",
     "attributes" : [ "datatype" ],
-    "id" : "223"
+    "id" : "339"
   } ]
 }
